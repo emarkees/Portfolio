@@ -447,6 +447,10 @@ button {
   cursor: pointer;
 }
 
+.normalButtn:hover {
+  
+}
+
 .cardMutiple {
   box-sizing: border-box;
   display: grid;
