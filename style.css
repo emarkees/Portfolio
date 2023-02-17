@@ -286,6 +286,7 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
+  list-style-type: none;
 }
 
 .client {
@@ -384,6 +385,7 @@ span {
   flex: none;
   order: 0;
   flex-grow: 0;
+  list-style-type: none;
 }
 
 .html {
@@ -483,6 +485,7 @@ button {
   flex: none;
   order: 0;
   flex-grow: 0;
+  list-style-type: none;
 }
 
 .multipleTxt {
