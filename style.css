@@ -602,7 +602,7 @@ button {
 }
 
 .supportingText {
-  width: 125px;
+  width: 135px;
   height: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -618,8 +618,10 @@ button {
 
 .normalButtnAbout {
   display: flex;
+  width: 175px;
   align-items: center;
   text-align: center;
+  justify-content: center;
   letter-spacing: 0.03em;
   color: #396df2;
   font-size: 17px;
@@ -629,6 +631,16 @@ button {
   margin: 12px;
   cursor: pointer;
   background-color: #fff;
+}
+
+.normalButtnAbout:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.normalButtnAbout:active {
+  background: #2230d2;
+  color: #fff;
 }
 
 .skillList {
