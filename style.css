@@ -324,7 +324,7 @@ span {
   flex: none;
   order: 0;
   flex-grow: 0;
-  background: #000;
+  background: green;
 }
 
 .year {
