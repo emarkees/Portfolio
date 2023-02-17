@@ -515,3 +515,193 @@ button {
   order: 1;
   flex-grow: 0;
 }
+
+.aboutMyself {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 114px 24px;
+  position: absolute;
+  gap: 24px;
+  position: absolute;
+  width: 327px;
+  height: 1125.15px;
+  background: #fff;
+  border-radius: 0  75px 0 0;
+  top: 3506px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 12px;
+  width: 327px;
+  height: 409px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.about_header_text {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  width: 327px;
+  height: 101px;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Poppins', sans-serif;
+  line-height: 52px;
+  color: #172b4d;
+  float: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.about_body_text {
+  margin: 0;
+  width: 327px;
+  height: 144px;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Poppins', sans-serif;
+  line-height: 24px;
+  color: #344563;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.socialMedia {
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.skillList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 327px;
+  height: 464.15px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.dropdown_container {
+  flex: column;
+  align-items: flex-start;
+  padding: 0;
+  width: 327px;
+  height: 320.2px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#dropdown_header {
+  width: 327px;
+  height: 72px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.drp_text {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 24px;
+  width: 227px;
+  left: 45px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+}
+
+.dropdown_hamburger {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+  float: right;
+  right: 20px;
+  top: 15px;
+}
+
+.fa-angle-down {
+  position: relative;
+  left: 21.67%;
+  right: 25.33%;
+  top: 15%;
+  bottom: 25%;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+  width: 303px;
+  height: 235.15px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+#java_dropdown {
+  display: grid;
+  width: 303px;
+  height: 66.72px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background: #f7f7f9;
+  border-radius: 8px;
+}
+
+.image {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  margin-top: 9px;
+  margin-left: 8px;
+  border-radius: 1px solid #fff;
+  
+}
+
+.drp_txt {
+  position: absolute;
+  width: 80px;
+  height: 24px;
+  left: 110px;
+  right: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  color: #253858;
+}
+
+hr {
+  position: relative;
+  height: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
