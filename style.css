@@ -466,6 +466,7 @@ button {
   font-style: normal;
   margin: 12px;
   cursor: pointer;
+  background-color: #fff;
 }
 
 .normalButtn:hover {
@@ -601,7 +602,7 @@ button {
 }
 
 .supportingText {
-  width: 117px;
+  width: 125px;
   height: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -613,6 +614,21 @@ button {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.normalButtnAbout {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  margin: 12px;
+  cursor: pointer;
+  background-color: #fff;
 }
 
 .skillList {
