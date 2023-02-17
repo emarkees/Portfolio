@@ -600,6 +600,21 @@ button {
   flex-grow: 0;
 }
 
+.supportingText {
+  width: 117px;
+  height: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  color: #7f8cff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
 .skillList {
   display: flex;
   flex-direction: column;
