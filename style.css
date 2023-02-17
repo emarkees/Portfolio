@@ -170,6 +170,11 @@ body {
   flex-grow: 0;
 }
 
+ul li a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
 .fa-twitter {
   position: absolute;
   left: 6.4%;
@@ -196,5 +201,6 @@ body {
 
 .fa-angellist {
   position: absolute;
-  left: 42%;
+  left: 41%;
+  color: #505f79;
 }
