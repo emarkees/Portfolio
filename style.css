@@ -280,7 +280,7 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 0;
-  gap: 12px;
+  gap: 8px;
   width: 237px;
   height: 32px;
   flex: none;
@@ -324,7 +324,6 @@ span {
   flex: none;
   order: 0;
   flex-grow: 0;
-  background: green;
 }
 
 .year {
