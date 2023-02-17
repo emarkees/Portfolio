@@ -542,7 +542,6 @@ button {
   padding: 114px 24px;
   position: absolute;
   gap: 24px;
-  position: absolute;
   width: 327px;
   height: 1125.15px;
   background: #fff;
@@ -656,7 +655,6 @@ button {
 }
 
 .dropdown_container {
-  flex: column;
   align-items: flex-start;
   padding: 0;
   width: 327px;
@@ -741,7 +739,6 @@ button {
   margin-top: 9px;
   margin-left: 8px;
   border-radius: 1px solid #fff;
-  
 }
 
 .drp_txt {
