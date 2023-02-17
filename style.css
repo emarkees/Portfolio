@@ -214,23 +214,24 @@ ul li a {
   color: #505f79;
 }
 
-.works {
-  display: flex;
-  flex-direction: column;
+#works {
+  display: grid;
+  grid-template-columns: 20%;
+  grid-template-rows: 20% 28% 20% 28%;
   align-items: center;
-  padding: 114px 0;
-  gap: 88px;
+  padding: 114px 24px;
+  gap: 8px;
   position: absolute;
-  width: 375px;
+  width: 325px;
   height: 2788px;
-  left: 0;
+  left: 5px;
   top: 718px;
 }
 
 .card {
   box-sizing: border-box;
-  display: grid;
-  grid-column: 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 16px;
   gap: 12px;
