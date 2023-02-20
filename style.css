@@ -254,7 +254,6 @@ ul li a {
 .left {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 0;
   gap: 12px;
   width: 295px;
@@ -375,8 +374,9 @@ ul li a {
 
 .tag {
   display: flex;
+  float: left;
+  position: relative;
   flex-direction: row;
-  align-items: center;
   padding: 0;
   gap: 8px;
   width: 215px;
@@ -385,6 +385,8 @@ ul li a {
   order: 2;
   flex-grow: 0;
   margin: 0;
+  float: float;
+  
 }
 
 .tags {
@@ -404,6 +406,7 @@ ul li a {
   order: 0;
   flex-grow: 0;
   list-style-type: none;
+  
 }
 
 .html {
