@@ -373,7 +373,6 @@ ul li a {
 }
 
 .tag {
-  display: flex;
   float: left;
   position: relative;
   flex-direction: row;
@@ -386,10 +385,10 @@ ul li a {
   flex-grow: 0;
   margin: 0;
   float: float;
-  
 }
 
 .tags {
+  float: left;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -406,7 +405,6 @@ ul li a {
   order: 0;
   flex-grow: 0;
   list-style-type: none;
-  
 }
 
 .html {
@@ -418,6 +416,7 @@ ul li a {
 }
 
 .java {
+  float: left;
   display: flex;
   flex-direction: row;
   align-items: center;
