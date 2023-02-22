@@ -620,8 +620,9 @@ button {
 
 .normalButtnAbout {
   display: flex;
+  flex-direction: row;
   width: 175px;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
   justify-content: center;
   letter-spacing: 0.03em;
@@ -630,6 +631,7 @@ button {
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
+  left: 12px;
   margin: 12px;
   cursor: pointer;
   background-color: #fff;
