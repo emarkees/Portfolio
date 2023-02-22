@@ -783,7 +783,7 @@ hr {
   width: 375px;
   height: 56px;
   left: 3px;
-  top: 59px;
+  top: 80px;
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-weight: 700;
@@ -805,4 +805,37 @@ hr {
   line-height: 28px;
   color: #ebebff;
   text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top:350px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+#name {
+  border-radius: 8px;
+  border: 1px #cfd8dc solid;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 7px 12px;;
+}
+
+#mail {
+  border-radius: 8px;
+  border: 1px #cfd8dc solid;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 7px 12px;
+}
+
+#textarea {
+  border-radius: 8px;
+  border: 1px #cfd8dc solid;
+  background-color: #fff;
+  width: 301px;
+  padding: 7px 12px;
+  margin-bottom: 15px;
 }
