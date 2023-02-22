@@ -33,6 +33,7 @@ This project was made with:
 
 - **[header-background-mobile]**
 - **[Headline]**
+- **[Contact_Me]**
 
 ### 🚀 Live Demo  <a name="Live Demo"></a>
 [Link to Live demo] Coming soon!
@@ -56,6 +57,7 @@ cd my-folder [https://github.com/emarkees/Portfolio.git]
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Author1** Adeyemi Olusola
+👤 **Author2** Federica Ulzurrun
 
 - GitHub: [@emarkees](https://github.com/emarkees)
 - Twitter: [@McEmarkees](https://twitter.com/McEmarkees)
