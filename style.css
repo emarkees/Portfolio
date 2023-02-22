@@ -770,7 +770,7 @@ hr {
 .contactMe {
   position: absolute;
   width: 375px;
-  height: 779px;
+  height: 759px;
   top: 4720px;
   border-radius: 75px 0 0 0;
   background: #6070ff;
@@ -813,7 +813,7 @@ hr {
 .form {
   display: flex;
   flex-direction: column;
-  margin-top: 350px;
+  margin-top: 380px;
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -841,4 +841,5 @@ hr {
   width: 77%;
   padding: 10px 35px;
   margin-bottom: 15px;
+  color: #b3bac5;
 }
