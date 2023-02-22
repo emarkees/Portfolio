@@ -632,7 +632,7 @@ button {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   left: 12px;
-  margin: 12px;
+  margin: 8px;
   cursor: pointer;
   background-color: #fff;
 }
@@ -815,7 +815,7 @@ hr {
 .form {
   display: flex;
   flex-direction: column;
-  margin-top: 380px;
+  margin-top: 362px;
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -825,7 +825,7 @@ hr {
   border: 1px #cfd8dc solid;
   background-color: #fff;
   margin-bottom: 20px;
-  padding: 10px 35px;
+  padding: 15px 35px;
 }
 
 #mail {
@@ -833,7 +833,7 @@ hr {
   border: 1px #cfd8dc solid;
   background-color: #fff;
   margin-bottom: 20px;
-  padding: 10px 35px;
+  padding: 15px 35px;
 }
 
 #textarea {
