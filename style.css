@@ -820,7 +820,7 @@ hr {
   border: 1px #cfd8dc solid;
   background-color: #fff;
   margin-bottom: 20px;
-  padding: 7px 12px;;
+  padding: 7px 15px;;
 }
 
 #mail {
@@ -828,14 +828,14 @@ hr {
   border: 1px #cfd8dc solid;
   background-color: #fff;
   margin-bottom: 20px;
-  padding: 7px 12px;
+  padding: 7px 15px;
 }
 
 #textarea {
   border-radius: 8px;
   border: 1px #cfd8dc solid;
   background-color: #fff;
-  width: 301px;
-  padding: 7px 12px;
+  width: 90%;
+  padding: 7px 15px;
   margin-bottom: 15px;
 }
