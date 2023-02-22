@@ -13,7 +13,7 @@ body {
   border-radius: 0 0 0 75px;
   background: #fff;
   background-image: url(./asset/images/headershape.svg);
-  background-position: 0px 100px;
+  background-position: 0 95px;
   background-repeat: no-repeat;
 }
 
@@ -813,7 +813,7 @@ hr {
 .form {
   display: flex;
   flex-direction: column;
-  margin-top:350px;
+  margin-top: 350px;
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -823,7 +823,7 @@ hr {
   border: 1px #cfd8dc solid;
   background-color: #fff;
   margin-bottom: 20px;
-  padding: 7px 15px;;
+  padding: 7px 15px;
 }
 
 #mail {
