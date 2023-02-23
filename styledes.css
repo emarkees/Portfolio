@@ -14,11 +14,11 @@
     left: 0;
     top: 0;
     background-repeat: no-repeat;
-    background-position: 15% 40%;
+    background-position: 20% 40%;
     align-items: center;
     align-content: center;
     background-image: url(./asset/images/header.svg);
-    background-size: 100%;
+    background-size: 95%;
   }
 
   #appBar {
@@ -40,7 +40,7 @@
     padding: 20px 15px;
     margin-left: 120px;
     align-content: center;
-    top: 6px;
+    top: 16px;
     background: #fff;
   }
 
@@ -51,11 +51,13 @@
   #menu {
     display: flex;
     flex-direction: row;
+    align-items: center;
     float: right;
     padding: 0;
-    gap: 8px;
-    width: 295px;
-    height: 40px;
+    gap: 30px;
+    right: 125px;
+    width: 435px;
+    height: 55px;
   }
 
   .Portfolio {
@@ -66,19 +68,9 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    /* identical to box height, or 133% */
-    
     display: flex;
     align-items: center;
     text-align: center;
-    
-    /* Neutrals/N600 */
-    
-    color: #344563;
-    
-    
-    /* Inside auto layout */
-    
     flex: none;
     order: 0;
     flex-grow: 0;
