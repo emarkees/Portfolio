@@ -8,16 +8,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" integrity="sha512-XJ3ntWHl40opEiE+6dGhfK9NAKOCELrpjiBRQKtu6uJf9Pli8XY+Hikp7rlFzY4ElLSFtzjx9GGgHql7PLSeog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styledes.css">
   <title>Document</title>
 </head>
 <body>
    <main class="header-bg">
     <header>
       <nav id="appBar">
+        <div class="logoPlaceHolder">
+          <a href="#" class="logo"> My Logo</a>
+        </div>
+        <ul >
+          <ul id="menu">
+            <li class="Portfolio"><a href="#">Portfolio</a></li>
+            <li class="About"><a href="#About">About</a></li>
+            <li class="Contact"><a href="#Contact">Contact</a></li>
+          </ul>
+        </ul>
         <div id="toolsBar">
-          <div class="logoPlaceHolder">
-            <a href="#" class="logo"> My Logo</a>
-          </div>
+          
           <div id="Hamburger">
             <div class="union">
               <span class="bar"></span>
@@ -31,7 +40,7 @@
       </nav>
     </header>
     
-    <section class="body-shae">
+    <section class="bodyf">
       <div class="headline">
         <h1 
           class="headerText">
@@ -62,7 +71,7 @@
   <section id="works">
     <div class="card">
       <div class="snapshot">
-        <img src="./asset/images/avocado.svg" alt="">
+        <img src="./asset/images/avoado.svg" alt="">
       </div>
       <div class="left block">
         <div class="pryText">
@@ -94,8 +103,8 @@
         </div>
       </div>
     </div>
-    <div class="cardMutiple">
-      <div class="snapshot">
+    <div class="card">
+      <div class="snapshot available">
         <img src="./asset/images/available.svg" alt="" cl>
       </div>
       <div class="multipleLeft block">
@@ -131,7 +140,7 @@
     </div>
     <div class="card">
       <div class="snapshot">
-        <img src="./asset/images/professional.svg" alt="" cl>
+        <img src="./asset/images/professional.svg" alt="" class="profession">
       </div>
       <div class="left block">
         <div class="pryText">
@@ -163,9 +172,9 @@
         </div>
       </div>
     </div>
-    <div class="cardMutiple">
+    <div class="card">
       <div class="snapshot">
-        <img src="./asset/images/yoga.svg" alt="" cl>
+        <img src="./asset/images/yoa.svg" alt="" class="yoga">
       </div>
       <div class="multipleLeft block">
         <div class="multiplePryText">
@@ -222,8 +231,8 @@
             <li><a href="angellist.com" class="fa-brands fa-angellist"></a></li>
           </ul>
         </div>
-        <div id="action">
-          <button class="normalButtnAbout"> Get my resume</button>
+        <div id="actin">
+          <button class="normlButtnAbout"> Get my resume</button>
         </div>
       </div>
       
@@ -253,30 +262,27 @@
         </section>         
       </div>
      
-      <div class="">
-        <div id="dropdown_header">
-          <h3 class="drp_text">Frameworks</h3>
-          <i class="dropdown_hamburger">
-            <i class="fa-solid fa-angle-right"></i>
-          </i>
-        </div>
+      <div id="dropdown_header">
+        <h3 class="drp_text">Frameworks</h3>
+        <i class="dropdown_hamburger">
+          <i class="fa-solid fa-angle-right"></i>
+        </i>
       </div>
       
-      <div class="">
-        <hr class="separate"></hr>
-        <div id="dropdown_header">
-          <h3 class="drp_text">Skills</h3>
-          <i class="dropdown_hamburger">
-            <i class="fa-solid fa-angle-right"></i>
-          </i>
-        </div>
-        <hr class="separate"></hr>
+      <hr class="separate"></hr>
+
+      <div id="dropdown_header">
+        <h3 class="drp_text">Skills</h3>
+        <i class="dropdown_hamburger">
+          <i class="fa-solid fa-angle-right"></i>
+        </i>
       </div>
-      
+      <hr class="hr"></hr>
     </div>
 
   </section>
   <section class="contactMe">
+    <div class="contactblock">
       <h1 class="contactTxt">Contact me</h1>
       <p 
         class="Contact_body_text">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it 
@@ -292,6 +298,8 @@
         </div>
         
       </form>
+      
+    </div>
       
     </section>
 
