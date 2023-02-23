@@ -12,6 +12,9 @@ body {
   right: 0;
   border-radius: 0 0 0 75px;
   background: #fff;
+  background-image: url(./asset/images/headershape.svg);
+  background-position: 0 95px;
+  background-repeat: no-repeat;
 }
 
 #appBar {
@@ -87,7 +90,7 @@ body {
   background-color: #6070ff;
 }
 
-.header-shape {
+.headershape {
   position: absolute;
   width: 375px;
   height: 587.15px;
@@ -617,8 +620,9 @@ button {
 
 .normalButtnAbout {
   display: flex;
+  flex-direction: row;
   width: 175px;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
   justify-content: center;
   letter-spacing: 0.03em;
@@ -627,7 +631,8 @@ button {
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  margin: 12px;
+  left: 12px;
+  margin: 8px;
   cursor: pointer;
   background-color: #fff;
 }
@@ -762,4 +767,81 @@ hr {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.contactMe {
+  position: absolute;
+  width: 375px;
+  height: 759px;
+  top: 4720px;
+  border-radius: 75px 0 0 0;
+  background: #6070ff;
+  background-image: url(./asset/Contact/contactimg.svg);
+  background-position: 153px;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.contactTxt {
+  position: absolute;
+  align-items: center;
+  width: 375px;
+  height: 56px;
+  left: 3px;
+  top: 80px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+}
+
+.Contact_body_text {
+  position: absolute;
+  align-items: center;
+  width: 325px;
+  height: 102px;
+  left: 20px;
+  top: 170px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+  color: #ebebff;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 362px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+#name {
+  border-radius: 8px;
+  border: 1px #cfd8dc solid;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 15px 35px;
+}
+
+#mail {
+  border-radius: 8px;
+  border: 1px #cfd8dc solid;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 15px 35px;
+}
+
+#textarea {
+  border-radius: 8px;
+  border: 1px #cfd8dc solid;
+  background-color: #fff;
+  width: 77%;
+  padding: 10px 35px;
+  margin-bottom: 15px;
+  color: #b3bac5;
 }
