@@ -120,7 +120,7 @@
     width: 55%;
     height: 268px;
     left: 260px;
-    margin-top: 170px;
+    margin-top: 220px;
     flex: 0;
     flex-grow: 0;
   }
@@ -129,9 +129,10 @@
     display: flex;
     align-items: center;
     letter-spacing: 0.37px;
-    width: 52%;
+    width: 55%;
     height: 98px;
     order: 0;
+    color: #091e42;
   }
   
   .headerbodytext {
