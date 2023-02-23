@@ -145,12 +145,27 @@
     position: absolute;
     width: 170.17px;
     height: 20px;
-    margin-top: 280px;
-    gap: 2px;
+    margin-top: 155px;
   }
 
   .fa-twitter {
     left: 0;
+  }
+
+  .fa-github {
+    left: 92px;
+  }
+  
+  .fa-linkedin-in {
+    left: 30px;
+  }
+
+  .fa-medium {
+    left: 60px;
+  }
+  
+  .fa-angellist {
+    left: 120px;
   }
 
   #works {
