@@ -1,4 +1,4 @@
-@media  (min-width: 768px){
+@media (min-width: 768px) {
   body {
     position: relative;
     width: 100%;
@@ -48,7 +48,7 @@
   ul li {
     list-style-type: none;
   }
-  
+
   #menu {
     display: flex;
     flex-direction: row;
@@ -64,7 +64,7 @@
   .Portfolio {
     width: 63px;
     height: 20px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -80,7 +80,7 @@
   .About {
     width: 63px;
     height: 20px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -94,10 +94,10 @@
     flex-grow: 0;
   }
 
-  .Contact{
+  .Contact {
     width: 63px;
     height: 20px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -136,7 +136,7 @@
     order: 0;
     color: #091e42;
   }
-  
+
   .headerbodytext {
     width: 100%;
     height: 98px;
@@ -157,7 +157,7 @@
   .fa-github {
     left: 92px;
   }
-  
+
   .fa-linkedin-in {
     left: 30px;
   }
@@ -165,7 +165,7 @@
   .fa-medium {
     left: 60px;
   }
-  
+
   .fa-angellist {
     left: 120px;
   }
@@ -194,7 +194,7 @@
     flex-grow: 0;
   }
 
-  .snapshot  {
+  .snapshot {
     align-items: flex-start;
     padding: 12px;
     gap: 16px;
@@ -251,18 +251,16 @@
     gap: 16px;
     width: 45%;
     height: 390px;
-    top: 125px;
     flex: 50%;
     top: calc(35% - 225px / 2);
   }
 
-  .available  {
+  .available {
     align-items: flex-start;
     padding: 12px;
     gap: 16px;
     width: 45%;
     height: 390px;
-    top: 125px;
     flex: 50%;
     top: calc(35% - 225px / 2);
     order: 2;
@@ -282,19 +280,6 @@
   .multipleTxt {
     width: 100%;
     height: 46px;
-  }
-
-  .frame {
-    width: 60%;
-    height: 40px;
-  }
-
-  .bodyText {
-    width: 100%;
-    height: 50px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
   }
 
   .left_professional {
@@ -325,7 +310,6 @@
     gap: 16px;
     width: 45%;
     height: 390px;
-    top: 125px;
     flex: 50%;
     top: calc(85% - 270px / 2);
   }
@@ -336,14 +320,12 @@
     gap: 16px;
     width: 45%;
     height: 390px;
-    top: 125px;
     flex: 50%;
     top: calc(35% - 225px / 2);
     order: 2;
   }
 
-  /* About me Section*/  
-
+  /* About me Section */
   .aboutMyself {
     display: flex;
     flex-direction: row;
@@ -386,10 +368,6 @@
     order: 2;
   }
 
-  .icons {
-    top: 130px;
-  }
-
   .normalButnAbout {
     display: flex;
     flex-direction: row;
@@ -408,12 +386,12 @@
     cursor: pointer;
     background-color: #fff;
   }
-  
+
   .normalButnAbout:hover {
     background: #6070ff;
     color: #fff;
   }
-  
+
   .normalButnAbout:active {
     background: #2230d2;
     color: #fff;
@@ -542,7 +520,7 @@
     flex-grow: 0;
   }
 
-  .body-text  {
+  .body-text {
     margin-left: 105px;
     justify-content: center;
     align-content: center;
@@ -560,7 +538,7 @@
     margin-left: 24px;
     margin-right: 24px;
   }
-  
+
   #name {
     border-radius: 8px;
     border: 1px #cfd8dc solid;
@@ -571,7 +549,7 @@
     padding: 10px 50px;
     width: auto;
   }
-  
+
   #mail {
     border-radius: 8px;
     border: 1px #cfd8dc solid;
@@ -582,7 +560,7 @@
     padding: 10px 50px;
     width: auto;
   }
-  
+
   #textarea {
     border-radius: 8px;
     border: 1px #cfd8dc solid;
@@ -608,12 +586,12 @@
     cursor: pointer;
     background-color: #fff;
   }
-  
+
   .normalButtnAbout:hover {
     background: #6070ff;
     color: #fff;
   }
-  
+
   .normalButtnAbout:active {
     background: #2230d2;
     color: #fff;
