@@ -319,16 +319,12 @@
     flex-grow: 3;
   }
 
-
-
-  
-
-  /* about me*/  
+  /* About me Section*/  
 
   .aboutMyself {
     width: 96.4%;
     height: 624px;
-    top: 3599px;
+    top: 3299px;
     bottom: 200px;
     border-radius: 0 90px 0 0;
     background: #fff;
