@@ -439,6 +439,8 @@
     background-color: #fff;
     margin-left: 150px;
     margin-right: 150px;
-    
+    margin-bottom: 15px;
+    padding: 10px 50px;
+    width: auto;
   }
 }
