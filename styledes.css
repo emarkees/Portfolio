@@ -384,11 +384,10 @@
     width: 100%;
     height: auto;
     left: 0;
-    top: 100px;
+    top: 80px;
     flex: 0;
     order: 1;
     flex-grow: 0;
-    background: #000;
   }
 
   .body-text  {
@@ -398,7 +397,6 @@
     width: 70%;
     top: 0;
     height: fit-content;
-    background: gold;
   }
 
   .form {
