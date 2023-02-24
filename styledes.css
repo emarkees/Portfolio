@@ -345,6 +345,8 @@
   /* About me Section*/  
 
   .aboutMyself {
+    display: flex;
+    flex-direction: row;
     width: 96.4%;
     height: 624px;
     top: 3299px;
@@ -427,9 +429,10 @@
     height: 360px;
     left: 614px;
     top: 153px;
-    flex: none;
+    flex: 50%;
     order: 0;
     flex-grow: 0;
+    background: #000;
   }
 
   .dropdown_container {
