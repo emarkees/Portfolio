@@ -2,12 +2,13 @@
   body {
     position: relative;
     width: 100%;
-    height: 5125px;
+    height: 4900px;
     margin: 0;
     background: #f4f5f7;
   }
 
   .header-bg {
+    display: grid;
     position: absolute;
     width: 100%;
     height: 916px;
@@ -111,17 +112,17 @@
   }
 
   .headline {
-    display: flex;
+    display: flexbox;
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
-    gap: 5px;
+    gap: 12px;
     position: absolute;
     width: 55%;
     height: 268px;
-    left: 260px;
+    left: 20%;
     margin-top: 220px;
-    flex: 0;
+    flex: 50%;
     flex-grow: 0;
   }
 
@@ -129,8 +130,9 @@
     display: flex;
     align-items: center;
     letter-spacing: 0.37px;
-    width: 55%;
+    width: 60%;
     height: 98px;
+    flex: 35%;
     order: 0;
     color: #091e42;
   }
@@ -184,39 +186,33 @@
 
   .card {
     display: flex;
-    flex-direction: column;
-    columns: 2;
+    flex-direction: row;
     width: 100%;
     height: 450px;
-    flex: none;
+    flex: 50%;
     order: 0;
     flex-grow: 0;
   }
 
-  .snapshot {
-    display: flex;
-    position: absolute;
-    width: auto;
-    height: 300px;
-    left: 149px;
-    top: 146px;
-    background-image: url(./asset/images/avocado.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+  .snapshot  {
+    align-items: flex-start;
+    padding: 12px;
+    gap: 16px;
+    width: 45%;
+    height: 390px;
+    top: 125px;
+    flex: 50%;
   }
 
   .left {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: flex-start;
     padding: 12px;
-    gap: 24px;
-    position: absolute;
-    width: 35%;
+    gap: 16px;
+    width: 45%;
     height: 390px;
-    left: 695px;
     top: 125px;
-    flex-grow: 3;
+    flex: 50%;
   }
 
   .pryText {
@@ -249,23 +245,33 @@
   }
 
   .multipleLeft {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: flex-start;
     padding: 12px;
-    gap: 24px;
-    position: absolute;
-    width: 35%;
+    gap: 16px;
+    width: 45%;
     height: 390px;
-    left: 150px;
+    top: 125px;
+    flex: 50%;
     top: calc(35% - 225px / 2);
-    flex-grow: 3;
+  }
+
+  .available  {
+    align-items: flex-start;
+    padding: 12px;
+    gap: 16px;
+    width: 45%;
+    height: 390px;
+    top: 125px;
+    flex: 50%;
+    top: calc(35% - 225px / 2);
+    order: 2;
   }
 
   .multiplePryText {
     align-items: flex-start;
     padding: 0;
-    gap: 12px;
+    gap: 18px;
     width: 100%;
     height: 98px;
     flex: none;
@@ -292,31 +298,48 @@
   }
 
   .left_professional {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: flex-start;
     padding: 12px;
-    gap: 24px;
-    position: absolute;
-    width: 35%;
+    gap: 16px;
+    width: 45%;
     height: 390px;
-    left: 695px;
-    top: calc(60% - 245px / 2);
-    flex-grow: 3;
+    top: 125px;
+    flex: 50%;
+  }
+
+  .professional {
+    align-items: flex-start;
+    padding: 12px;
+    gap: 16px;
+    width: 45%;
+    height: 390px;
+    top: 125px;
+    flex: 50%;
   }
 
   .Left_yoga {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: flex-start;
     padding: 12px;
-    gap: 24px;
-    position: absolute;
-    width: 35%;
+    gap: 16px;
+    width: 45%;
     height: 390px;
-    left: 150px;
+    top: 125px;
+    flex: 50%;
     top: calc(85% - 270px / 2);
-    flex-grow: 3;
+  }
+
+  .yoga {
+    align-items: flex-start;
+    padding: 12px;
+    gap: 16px;
+    width: 45%;
+    height: 390px;
+    top: 125px;
+    flex: 50%;
+    top: calc(35% - 225px / 2);
+    order: 2;
   }
 
   /* About me Section*/  
@@ -473,7 +496,7 @@
     width: 100%;
     height: 846px;
     left: 0;
-    top: 4325px;
+    top: 4110px;
     background-image: url(./asset/Contact/contactdesk.svg);
     background-repeat: no-repeat;
     background-size: 95% 95%;
