@@ -380,21 +380,33 @@
   }
 
   .Contact_body_text {
-    width: 70%;
-    margin-left: 110px;
-    height: 102px;
-    top: 70px;
-    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 100px;
     flex: 0;
     order: 1;
     flex-grow: 0;
+    background: #000;
+  }
+
+  .body-text  {
+    margin-left: 105px;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+    top: 0;
+    height: fit-content;
+    background: gold;
   }
 
   .form {
     display: flex;
     flex-direction: column;
     margin-top: 250px;
-    width: 60%;
+    width: 100%;
+    height: auto;
     margin-left: 24px;
     margin-right: 24px;
   }
@@ -404,6 +416,8 @@
     border: 1px #cfd8dc solid;
     background-color: #fff;
     margin-bottom: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
     padding: 10px 50px;
     width: auto;
   }
@@ -412,6 +426,8 @@
     border-radius: 8px;
     border: 1px #cfd8dc solid;
     background-color: #fff;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-bottom: 15px;
     padding: 10px 50px;
     width: auto;
@@ -421,8 +437,8 @@
     border-radius: 8px;
     border: 1px #cfd8dc solid;
     background-color: #fff;
-    width: 91%;
-    padding: 7px 20px 5px 15px;
-    margin-bottom: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    
   }
 }

@@ -284,15 +284,18 @@
   <section class="contactMe">
     <div class="contactblock">
       <h1 class="contactTxt">Contact me</h1>
-      <p 
-        class="Contact_body_text">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it 
-      </p>
+      <div class="Contact_body_text">
+        <p 
+          class="body-text">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it 
+        </p>
+      </div>
+      
       <form class="	form" action="https://formspree.io/f/xnqrezql" method="post" >
         <input type="text" id="name" name="user_name" placeholder="FullName"  required maxlength="30"/>
         <input type="email" id="mail" name="user_email" placeholder="Email Address"  pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-])*$/" required />
-        <div class="conter">
+       
           <textarea id="textarea" cols="30" rows="10" placeholder="Write your message here" name="user_message" required maxlength="500"></textarea>
-        </div>
+       
         <div id="actin">
           <button type="submit" class="normalButtnAbout" onclick=""> Get in Touch</button>
         </div>
