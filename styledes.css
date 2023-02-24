@@ -170,13 +170,13 @@
 
   #works {
     display: grid;
-    grid-template-columns: 50%;
-    grid-template-rows: 20% 28% 20% 28%;
+    grid-template-columns: 100%;
+    grid-template-rows: 18% 28% 18% 20%;
     align-items: center;
-    padding: 142px;
+    padding: 132px;
     grid-gap: 8px;
     position: absolute;
-    width: 60.95%;
+    width: 80%;
     height: 2500px;
     left: 0;
     top: 918px;
@@ -184,8 +184,8 @@
   }
 
   .card {
-    width: 200%;
-    height: 480px;
+    width: 100%;
+    height: 400px;
     flex: none;
   }
 
