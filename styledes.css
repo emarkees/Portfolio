@@ -365,6 +365,35 @@
     top: 130px;
   }
 
+  .normalButnAbout {
+    display: flex;
+    flex-direction: row;
+    width: 175px;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    color: #396df2;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    left: 12px;
+    margin: 8px;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  
+  .normalButnAbout:hover {
+    background: #6070ff;
+    color: #fff;
+  }
+  
+  .normalButnAbout:active {
+    background: #2230d2;
+    color: #fff;
+  }
+
   .skillList {
     display: flex;
     flex-direction: column;
