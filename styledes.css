@@ -539,5 +539,28 @@
     width: auto;
   }
 
+  .normalButtnAbout {
+    display: flex;
+    width: 175px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #396df2;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    left: 300px;
+    cursor: pointer;
+    background-color: #fff;
+  }
   
+  .normalButtnAbout:hover {
+    background: #6070ff;
+    color: #fff;
+  }
+  
+  .normalButtnAbout:active {
+    background: #2230d2;
+    color: #fff;
+  }
 }
