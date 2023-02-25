@@ -129,6 +129,15 @@ body {
   order: 0;
   flex-grow: 0;
   margin-top: 0;
+  animation-name: animation-header;
+  animation-duration: 4s;
+}
+
+@keyframes animation-header {
+  0%   {background-color: #396df2;}
+  25%  {background-color: #2230d2;}
+  50%  {background-color: #344563;}
+  100% {background-color: #6070ff;}
 }
 
 .headerbodytext {
@@ -188,6 +197,10 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.icons:hover {
+  background-color: #2230d2;
 }
 
 .icons * {
