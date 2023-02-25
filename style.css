@@ -1,19 +1,17 @@
 body {
-  width: 375px;
-  height: 5147px;
+  width: auto;
+  height: auto;
   background: #f7f7f9;
 }
 
 .header-bg {
   position: relative;
   height: 718px;
-  width: 375px;
+  width: 100%;
   left: 0;
   right: 0;
   border-radius: 0 0 0 75px;
   background: #fff;
-  background-image: url(./asset/images/headershape.svg);
-  background-position: 0 95px;
   background-repeat: no-repeat;
 }
 
@@ -23,7 +21,7 @@ body {
 
 #appBar {
   position: absolute;
-  width: 375px;
+  width: 100%;
   height: 92px;
   top: 0;
   left: 0;
@@ -96,7 +94,7 @@ body {
 
 .headershape {
   position: absolute;
-  width: 375px;
+  width: 100%;
   height: 587.15px;
   left: 0;
   top: 104px;
@@ -111,13 +109,13 @@ body {
   padding: 114px 24px;
   gap: 10px;
   position: absolute;
-  width: 375px;
+  width: auto;
   height: 604px;
   top: 92px;
 }
 
 .headerText {
-  width: 327px;
+  width: auto;
   height: 150px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -134,8 +132,8 @@ body {
 }
 
 .headerbodytext {
-  width: 89%;
-  height: 146px;
+  width: auto;
+  height: auto;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -143,46 +141,61 @@ body {
   line-height: 24px;
   color: #334563;
   flex: none;
-  order: 1;
+  /* order: 1; */
   flex-grow: 0;
   margin-top: -25px;
 }
 
 .social {
-  width: 120px;
-  height: 24px;
+  width: auto;
+  height: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   flex: none;
-  order: 1;
+  /* order: 1; */
+  justify-self: stretch;
   flex-grow: 0;
   margin-top: 0;
 }
 
+.sociaIcons {
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
 .connect {
-  width: 120px;
-  height: 24px;
+  width: auto;
+  height: auto;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  margin: 0;
+  margin-top: 0;
+  padding: 0;
   color: #7f8cff;
-  flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .icons {
   display: flex;
-  width: 170.2px;
+  flex-direction: row;
+  width: auto;
+  justify-items: stretch;
   height: 20px;
-  flex: none;
-  order: 3;
   flex-grow: 0;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icons * {
+  justify-items: stretch;
+  text-align: justify;
+  margin: 0 4px 0 4px;
 }
 
 ul li a {
@@ -191,6 +204,7 @@ ul li a {
   margin: 0;
 }
 
+/* 
 .fa-twitter {
   position: absolute;
   left: 6.4%;
@@ -219,53 +233,54 @@ ul li a {
   position: absolute;
   left: 41%;
   color: #505f79;
-}
+} */
 
 #works {
   display: grid;
-  grid-template-columns: 20%;
-  grid-template-rows: 20% 28% 20% 28%;
+  grid-template-columns: 100%;
+  grid-template-rows: 0.0fr 0.28fr 0.20fr 0.28fr ;
   align-items: center;
-  padding: 114px 24px;
   gap: 8px;
   position: absolute;
-  width: 325px;
-  height: 2788px;
-  left: 5px;
-  top: 718px;
+  width: 100%;
+  height: 100%;
+  top: 730px;
+  background: #000;
 }
 
 .card {
-  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px;
-  gap: 12px;
-  width: 327px;
-  height: 552px;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    flex: 100%;
+    order: 0;
+    flex-grow: 0;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   background: #fff;
+  vertical-align: green;
 }
 
 .snapshot {
-  width: 295px;
-  height: 220px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  border-radius: 8px;
+  width: 100%;
+  height: 35vh;
+  padding: 0;
+  margin: 0;
+  flex: 50%;
+  order: 1;
+  background-image: url(./asset/images/avocado.svg);
+  background-repeat: no-repeat;
 }
 
-.avocado {
-  width: 295px;
+/* .avocado {
+  width: auto;
   height: 220px;
   flex: none;
   order: 0;
   flex-grow: 0;
   border-radius: 8px;
-}
+} */
 
 .left {
   display: flex;
@@ -273,10 +288,10 @@ ul li a {
   align-items: flex-start;
   padding: 0;
   gap: 12px;
-  width: 295px;
+  width: 100%;
   height: 288px;
   flex: none;
-  order: 1;
+  order: 2;
   flex-grow: 0;
 }
 
@@ -284,11 +299,10 @@ ul li a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0;
-  gap: 12px;
+  
+  padding-bottom: 150px;
   width: 295px;
   height: 288px;
-  flex: none;
   order: 1;
   flex-grow: 0;
 }
@@ -313,7 +327,7 @@ ul li a {
   align-items: flex-start;
   padding: 0;
   gap: 12px;
-  width: 295px;
+  width: auto;
   height: 80px;
   flex: none;
   order: 0;
@@ -327,7 +341,7 @@ ul li a {
   font-weight: 700;
   line-height: 44px;
   margin: 0;
-  width: 295px;
+  width: auto;
   height: 36px;
   color: #172b4d;
   flex: none;
@@ -341,7 +355,7 @@ ul li a {
   align-items: center;
   padding: 0;
   gap: 8px;
-  width: 237px;
+  width: auto;
   height: px;
   flex: none;
   order: 1;
@@ -797,13 +811,13 @@ hr {
 
 .contactMe {
   position: absolute;
-  width: 375px;
+  width: 100%;
   height: 759px;
   top: 4720px;
   border-radius: 75px 0 0 0;
   background: #6070ff;
   background-image: url(./asset/Contact/contactimg.svg);
-  background-position: 153px;
+  background-position: 100%;
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -811,9 +825,8 @@ hr {
 .contactTxt {
   position: absolute;
   align-items: center;
-  width: 375px;
+  width: 100%;
   height: 56px;
-  left: 3px;
   top: 80px;
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
@@ -825,9 +838,8 @@ hr {
 .Contact_body_text {
   position: absolute;
   align-items: center;
-  width: 325px;
+  width: 100%;
   height: 102px;
-  left: 20px;
   top: 170px;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
@@ -866,7 +878,7 @@ hr {
   border-radius: 8px;
   border: 1px #cfd8dc solid;
   background-color: #fff;
-  width: 77%;
+  width: auto;
   padding: 10px 35px;
   margin-bottom: 15px;
   color: #b3bac5;
