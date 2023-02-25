@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   body {
     position: relative;
     width: 100%;
@@ -116,7 +116,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
-    gap: 0px;
+    gap: 0;
     position: absolute;
     width: 55%;
     height: auto;
@@ -156,11 +156,6 @@
     gap: 8px;
     height: 24px;
     width: fit-content;
-
-  }
-
- /* .fa-twitter {
-    left: 0;
   }
 
   .fa-github {
@@ -177,7 +172,7 @@
 
   .fa-angellist {
     left: 120px;
-  } */
+  }
 
   #works {
     display: grid;
