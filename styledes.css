@@ -7,7 +7,7 @@
     background: #f4f5f7;
   }
 
-  .header-g {
+  .header-bg {
     display: grid;
     position: absolute;
     width: 100%;
@@ -19,7 +19,8 @@
     align-items: center;
     align-content: center;
     background-image: url(./asset/images/header.svg);
-    background-size: 95%;
+    background-size: auto;
+    align-self: stretch;
   }
 
   #appBar {
@@ -56,13 +57,13 @@
     float: right;
     padding: 0;
     gap: 30px;
-    right: 125px;
-    width: 100%;
+    width: 30%;
     height: 55px;
+    background: #000;
   }
 
   .Portfolio {
-    width: 63px;
+    width: fit-content;
     height: 20px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -78,7 +79,7 @@
   }
 
   .About {
-    width: 63px;
+    width: fit-content;
     height: 20px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -89,13 +90,12 @@
     align-items: center;
     text-align: center;
     color: #344563;
-    flex: none;
     order: 0;
     flex-grow: 0;
   }
 
   .Contact {
-    width: 63px;
+    width: fit-content;
     height: 20px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -116,12 +116,13 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
-    gap: 12px;
+    gap: 0px;
     position: absolute;
     width: 55%;
-    height: 268px;
+    height: auto;
     left: 20%;
-    margin-top: 220px;
+    margin: 0;
+    margin-top: 150px;
     flex: 50%;
     flex-grow: 0;
   }
@@ -129,9 +130,9 @@
   .headerText {
     display: flex;
     align-items: center;
-    letter-spacing: 0.37px;
-    width: 60%;
-    height: 98px;
+    letter-spacing: 0.35px;
+    width: 45%;
+    height: auto;
     flex: 35%;
     order: 0;
     color: #091e42;
@@ -139,15 +140,14 @@
 
   .headerbodytext {
     width: 100%;
-    height: 98px;
-    order: 1;
+    height: auto;
   }
 
   .icons {
     position: absolute;
-    width: 170.17px;
+    width: auto;
     height: 20px;
-    margin-top: 155px;
+    margin-top: 15px;
   }
 
   .tag {
@@ -159,7 +159,7 @@
 
   }
 
-  .fa-twitter {
+ /* .fa-twitter {
     left: 0;
   }
 
@@ -177,7 +177,7 @@
 
   .fa-angellist {
     left: 120px;
-  }
+  } */
 
   #works {
     display: grid;
@@ -339,7 +339,7 @@
   .aboutMyself {
     display: flex;
     flex-direction: row;
-    width: 96.4%;
+    width: 100%;
     height: 624px;
     top: 3299px;
     bottom: 200px;
@@ -354,11 +354,11 @@
     padding: 0;
     position: absolute;
     width: 32.2%;
-    height: 392px;
-    left: 142px;
-    top: 153px;
+    height: auto;
+    left: 102px;
+    margin-top: 10px;
     flex: none;
-    order: 0;
+    order: 1;
     flex-grow: 0;
   }
 
@@ -369,7 +369,7 @@
 
   .about_body_text {
     width: 100%;
-    height: 114px;
+    height: auto;
   }
 
   .frame2 {
@@ -420,7 +420,6 @@
     flex: 50%;
     order: 0;
     flex-grow: 0;
-    background: #000;
   }
 
   .dropdown_container {
@@ -462,9 +461,9 @@
 
   .drp_txt {
     position: relative;
-    width: 98px;
-    height: 24px;
-    left: 8px;
+    width: fit-content;
+    height: fit-content;
+    right: 80px;
     top: 50px;
   }
 
@@ -592,7 +591,7 @@
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    left: 200px;
+    left: 300px;
     cursor: pointer;
     background-color: #fff;
   }

@@ -141,7 +141,6 @@ body {
   line-height: 24px;
   color: #334563;
   flex: none;
-  /* order: 1; */
   flex-grow: 0;
   margin-top: -25px;
 }
@@ -153,7 +152,6 @@ body {
   flex-direction: row;
   align-items: flex-start;
   flex: none;
-  /* order: 1; */
   justify-self: stretch;
   flex-grow: 0;
   margin-top: 0;
@@ -204,94 +202,105 @@ ul li a {
   margin: 0;
 }
 
-/* 
-.fa-twitter {
-  position: absolute;
-  left: 6.4%;
-  color: #505f79;
-}
-
-.fa-linkedin-in {
-  position: absolute;
-  left: 15.4%;
-  color: #505f79;
-}
-
-.fa-medium {
-  position: absolute;
-  left: 23.4%;
-  color: #505f79;
-}
-
-.fa-github {
-  position: absolute;
-  left: 32.4%;
-  color: #505f79;
-}
-
-.fa-angellist {
-  position: absolute;
-  left: 41%;
-  color: #505f79;
-} */
-
 #works {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 0.0fr 0.28fr 0.20fr 0.28fr ;
+  grid-template-rows: 1fr;
   align-items: center;
-  gap: 8px;
+  justify-items: center;
+  gap: 62px;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 730px;
-  background: #000;
+  width: 97%;
+  height: auto;
+  margin-top: 90px;
 }
 
 .card {
   display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    flex: 100%;
-    order: 0;
-    flex-grow: 0;
+  flex-direction: column;
+  columns: 2;
+  width: 90%;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+  flex: 50%;
+  order: 0;
+  flex-grow: 0;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   background: #fff;
-  vertical-align: green;
 }
 
 .snapshot {
-  width: 100%;
-  height: 35vh;
-  padding: 0;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
   margin: 0;
-  flex: 50%;
-  order: 1;
-  background-image: url(./asset/images/avocado.svg);
-  background-repeat: no-repeat;
+  height: auto;
 }
 
-/* .avocado {
-  width: auto;
-  height: 220px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  border-radius: 8px;
-} */
+.avocado {
+  display: flex;
+  padding: 4px;
+  margin: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex: 50%;
+  order: 1;
+}
+
+.available {
+  display: flex;
+  padding: 4px;
+  margin: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex: 50%;
+  order: 1;
+}
 
 .left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  gap: 12px;
-  width: 100%;
-  height: 288px;
-  flex: none;
+  gap: 10px;
+  width: 95%;
+  height: auto;
+  flex: 50%;
   order: 2;
+  flex-grow: 0;
+}
+
+.pryText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 8px;
+  width: 80%;
+  height: auto;
+  order: 0;
+  flex-grow: 0;
+}
+
+.tonicTxt {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  color: #172b4d;
+  flex: none;
+  order: 0;
   flex-grow: 0;
 }
 
@@ -299,10 +308,8 @@ ul li a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
-  padding-bottom: 150px;
-  width: 295px;
-  height: 288px;
+  width: auto;
+  height: auto;
   order: 1;
   flex-grow: 0;
 }
@@ -318,35 +325,6 @@ ul li a {
   flex: none;
   order: 1;
   flex-grow: 0;
-  background: #000;
-}
-
-.pryText {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0;
-  gap: 12px;
-  width: auto;
-  height: 80px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.tonicTxt {
-  font-family: 'Poppins', sans-serif;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 44px;
-  margin: 0;
-  width: auto;
-  height: 36px;
-  color: #172b4d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .frame {
@@ -355,7 +333,7 @@ ul li a {
   align-items: center;
   padding: 0;
   gap: 8px;
-  width: auto;
+  width: 100%;
   height: px;
   flex: none;
   order: 1;
@@ -416,8 +394,8 @@ ul li a {
 }
 
 .bodyText {
-  width: 295px;
-  height: 76px;
+  width: 100%;
+  height: 100%;
   font-size: 15px;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
@@ -542,12 +520,11 @@ button {
   align-items: flex-start;
   padding: 0;
   gap: 12px;
-  width: 295px;
-  height: 100px;
+  width: 100%;
+  height: 80px;
   flex: none;
   order: 0;
   flex-grow: 0;
-  list-style-type: none;
 }
 
 .multipleTxt {
@@ -570,11 +547,11 @@ button {
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  gap: 12px;
-  width: 295px;
-  height: 250px;
-  flex: none;
-  order: 1;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+  flex: 50%;
+  order: 2;
   flex-grow: 0;
 }
 
@@ -582,14 +559,13 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 114px 24px;
   position: absolute;
   gap: 24px;
   width: 100%;
-  height: 1125.15px;
+  height: auto;
   background: #fff;
   border-radius: 0  75px 0 0;
-  top: 3506px;
+  top: 3406px;
 }
 
 .top {
@@ -598,9 +574,9 @@ button {
   align-items: flex-start;
   padding: 0;
   gap: 12px;
-  width: 327px;
+  width: auto;
   height: 409px;
-  flex: none;
+  margin-top: 120px;
   order: 0;
   flex-grow: 0;
 }
@@ -609,8 +585,8 @@ button {
   margin: 0;
   display: flex;
   align-items: center;
-  width: 327px;
-  height: 101px;
+  width: 50%;
+  height: auto;
   font-size: 40px;
   font-weight: 700;
   font-style: normal;
@@ -624,8 +600,8 @@ button {
 
 .about_body_text {
   margin: 0;
-  width: 327px;
-  height: 144px;
+  width: 100%;
+  height: auto;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -638,8 +614,10 @@ button {
 }
 
 .socialMedia {
-  flex: none;
+  display: flex;
+  flex-direction: column;
   order: 2;
+  gap: 12px;
   flex-grow: 0;
 }
 
@@ -661,7 +639,8 @@ button {
 .normalButnAbout {
   display: flex;
   flex-direction: row;
-  width: 175px;
+  width: fit-content;
+  height: auto;
   align-items: flex-start;
   text-align: center;
   justify-content: center;
@@ -671,8 +650,8 @@ button {
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  left: 12px;
-  margin: 8px;
+  left: 0;
+  margin-top: 24px;
   cursor: pointer;
   background-color: #fff;
 }
@@ -692,29 +671,49 @@ button {
   flex-direction: column;
   align-items: center;
   padding: 0;
-  width: 327px;
+  width: 100%;
   height: 464.15px;
-  flex: none;
   order: 1;
-  flex-grow: 0;
 }
 
 .dropdown_container {
+  display: flex;
   align-items: flex-start;
+  flex-direction: column;
   padding: 0;
-  width: 327px;
-  height: 320.2px;
-  flex: none;
+  width: 100%;
+  height: auto;
   order: 0;
   flex-grow: 0;
 }
 
 #dropdown_header {
-  width: 327px;
+  width: 100%;
   height: 72px;
-  flex: none;
   order: 0;
   flex-grow: 0;
+  background: purple;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px;
+  gap: 12px;
+  width: 100%;
+  order: 1;
+  flex-grow: 0;
+}
+
+#java_dropdown {
+  display: grid;
+  width: 80%;
+  height: 66.72px;
+  order: 0;
+  flex-grow: 0;
+  background: #f7f7f9;
+  border-radius: 8px;
 }
 
 .drp_text {
@@ -722,7 +721,7 @@ button {
   align-items: center;
   position: absolute;
   height: 24px;
-  width: 227px;
+  width: 50%;
   left: 45px;
   font-size: 20px;
   line-height: 24px;
@@ -735,11 +734,11 @@ button {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 8px;
+  padding: 10px;
   position: relative;
-  width: 20px;
-  height: 20px;
-  border-radius: 8px;
+  width: max-content;
+  height: max-content;
+  border-radius: 6px;
   float: right;
   right: 20px;
   top: 15px;
@@ -747,34 +746,6 @@ button {
 
 .fa-angle-down {
   position: relative;
-  left: 21.67%;
-  right: 25.33%;
-  top: 15%;
-  bottom: 25%;
-}
-
-.dropdown {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 12px;
-  gap: 12px;
-  width: 303px;
-  height: 235.15px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-#java_dropdown {
-  display: grid;
-  width: 303px;
-  height: 66.72px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  background: #f7f7f9;
-  border-radius: 8px;
 }
 
 .image {
@@ -787,22 +758,21 @@ button {
 }
 
 .drp_txt {
+  display: flex;
   position: absolute;
   width: 80px;
   height: 24px;
-  left: 110px;
-  right: 15px;
+  margin-left: 90px;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
   font-family: 'Poppins', sans-serif;
-  display: flex;
   align-items: center;
   color: #253858;
 }
 
 hr {
-  position: relative;
+  position: absolute;
   height: 1;
   left: 0;
   right: 0;
@@ -813,7 +783,7 @@ hr {
   position: absolute;
   width: 100%;
   height: 759px;
-  top: 4720px;
+  top: 4550px;
   border-radius: 75px 0 0 0;
   background: #6070ff;
   background-image: url(./asset/Contact/contactimg.svg);
