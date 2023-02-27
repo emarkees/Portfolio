@@ -1,37 +1,26 @@
 @media only screen and (min-width: 768px) {
   body {
-    position: relative;
-    width: 100%;
-    height: 4900px;
+    width: auto;
+    height: auto;
     margin: 0;
     background: #f4f5f7;
   }
 
-  .header-bg {
-    display: grid;
-    position: absolute;
+  .header-backgroun-image {
     width: 100%;
-    height: 916px;
-    left: 0;
-    top: 0;
+    height: 85vh;
+    padding-top: 1vh;
     background-repeat: no-repeat;
-    background-position: 20% 40%;
-    align-items: center;
-    align-content: center;
     background-image: url(./asset/images/header.svg);
-    background-size: auto;
-    align-self: stretch;
   }
 
-  #appBar {
+  .Nav-bar {
     width: 100%;
-    height: 72px;
-    top: 0;
-    left: 0;
+    height: 15vh;
     list-style-type: none;
   }
 
-  #toolsBar {
+  #tools-bar {
     display: none;
   }
 
@@ -59,10 +48,9 @@
     gap: 30px;
     width: 30%;
     height: 55px;
-    background: #000;
   }
 
-  .Portfolio {
+  .Menu-portfolio {
     width: fit-content;
     height: 20px;
     font-family: 'Poppins', sans-serif;
@@ -78,7 +66,7 @@
     flex-grow: 0;
   }
 
-  .About {
+  .Menu-about {
     width: fit-content;
     height: 20px;
     font-family: 'Poppins', sans-serif;
@@ -94,7 +82,7 @@
     flex-grow: 0;
   }
 
-  .Contact {
+  .Menu-contact {
     width: fit-content;
     height: 20px;
     font-family: 'Poppins', sans-serif;
@@ -111,7 +99,7 @@
     flex-grow: 0;
   }
 
-  .headline {
+  .Headline-section {
     display: flexbox;
     flex-direction: column;
     align-items: flex-start;
@@ -127,7 +115,7 @@
     flex-grow: 0;
   }
 
-  .headerText {
+  .Headline-section-title {
     display: flex;
     align-items: center;
     letter-spacing: 0.35px;
@@ -138,7 +126,7 @@
     color: #091e42;
   }
 
-  .headerbodytext {
+  .Headline-section-body {
     width: 100%;
     height: auto;
   }
@@ -150,103 +138,99 @@
     margin-top: 15px;
   }
 
-  .tag {
+  .card-primary-tag {
     display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: row;
+    width: auto;
     gap: 8px;
-    height: 24px;
-    width: fit-content;
+    height: auto;
+    order: 3;
   }
 
-  .fa-github {
-    left: 92px;
-  }
-
-  .fa-linkedin-in {
-    left: 30px;
-  }
-
-  .fa-medium {
-    left: 60px;
-  }
-
-  .fa-angellist {
-    left: 120px;
-  }
-
-  #works {
+  .work-section {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 35% 20% 35%;
+    grid-template-columns: 80%;
+    grid-template-rows: 1.5fr 0.5fr 1.5fr auto;
     align-items: center;
-    padding: 132px;
-    grid-gap: 4px;
-    position: absolute;
-    width: 80%;
-    height: 2050px;
-    left: 0;
-    top: 918px;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    height: auto;
   }
 
-  .card {
+  .card-section {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     width: 100%;
-    height: 450px;
+    height: auto;
     flex: 50%;
+    background: #fff;
     order: 0;
-    flex-grow: 0;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
   }
 
-  .snapshot {
+  .card-background-image {
     align-items: flex-start;
-    padding: 12px;
-    gap: 16px;
-    width: 45%;
-    height: 390px;
-    top: 125px;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+    height: auto;
     flex: 50%;
   }
 
-  .left {
-    display: flex;
+  .card-text-section {
     align-items: flex-start;
-    padding: 12px;
-    gap: 8px;
-    width: 45%;
-    height: 390px;
-    top: 125px;
+    padding: 10px;
+    margin-top: 20px;
+    gap: 5px;
+    width: 40%;
+    height: auto;
     flex: 50%;
   }
 
-  .pryText {
+  .card-primary-text {
     align-items: flex-start;
     padding: 0;
-    gap: 12px;
+    gap: 5px;
     width: 100%;
-    height: 98px;
+    height: auto;
     flex: none;
     order: 0;
     flex-grow: 0;
   }
 
-  .tonicTxt {
+  .primary-title {
     width: 100%;
-    height: 46px;
+    height: auto;
   }
 
-  .frame {
+  .card-primary-text-frame {
     display: flex;
     width: 60%;
-    height: 40px;
+    height: auto;
   }
 
-  .bodyText {
+  .card-primary-body-text {
     width: 100%;
-    height: 50px;
+    height: auto;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .card-primary-text-right {
+    display: grid;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    order: 2;
   }
 
   .multipleLeft {
@@ -257,6 +241,7 @@
     width: 45%;
     height: 390px;
     flex: 50%;
+    order: 1;
     top: calc(35% - 225px / 2);
   }
 
@@ -267,11 +252,12 @@
     width: 45%;
     height: 390px;
     flex: 50%;
+    float: right;
     top: calc(35% - 225px / 2);
     order: 2;
   }
 
-  .multiplePryText {
+  .multiplePryTex {
     align-items: flex-start;
     padding: 0;
     gap: 18px;
@@ -331,43 +317,40 @@
   }
 
   /* About me Section */
-  .aboutMyself {
+  .about-myself-section {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 624px;
-    top: 3299px;
-    bottom: 200px;
+    align-items: center;
+    height: 10%;
     border-radius: 0 90px 0 0;
     background: #fff;
+    margin-top: 150px;
+    background: green;
   }
 
-  .top {
+  .About-top {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0;
-    position: absolute;
-    width: 32.2%;
+    width: 32.45%;
     height: auto;
-    left: 102px;
-    margin-top: 10px;
-    flex: none;
+    margin-left: 102px;
+    margin: 0;
     order: 1;
-    flex-grow: 0;
+    backface-visibility: gold;
   }
 
   .about_header_text {
     width: 100%;
-    height: 114px;
+    height: auto;
   }
 
   .about_body_text {
     width: 100%;
-    height: auto;
+    height: 50%;
   }
 
-  .frame2 {
+  .card-primary-text-frame2 {
     width: 120%;
     height: 40px;
     order: 2;
@@ -405,15 +388,13 @@
   .skillList {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     padding: 0;
-    position: absolute;
-    width: 43%;
+    width: 50%;
     height: 360px;
-    left: 614px;
-    top: 153px;
+    margin-top: 153px;
     flex: 50%;
-    order: 0;
+    order: 2;
     flex-grow: 0;
   }
 
@@ -454,16 +435,13 @@
     order: 0;
   }
 
-  .drp_txt {
-    position: relative;
+  .drp_text {
+    display: flex;
     width: fit-content;
     height: fit-content;
-    right: 80px;
-    top: 50px;
   }
 
   .separate {
-    position: absolute;
     height: 1;
     left: 0;
     right: 0;
@@ -471,7 +449,6 @@
   }
 
   .hr {
-    position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
@@ -479,9 +456,10 @@
 
   .contactMe {
     width: 100%;
-    height: 846px;
-    left: 0;
-    top: 4110px;
+    height: auto;
+    order: 10;
+    margin-top: 150px;
+    background: #6070ff;
     background-image: url(./asset/Contact/contactdesk.svg);
     background-repeat: no-repeat;
     background-size: 95% 95%;
@@ -492,24 +470,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
     padding: 0;
     gap: 20px;
-    position: absolute;
-    width: 57%;
+    width: 50%;
     height: 577px;
-    margin-top: 125px;
+    margin-top: 150px;
     margin-left: 320px;
+    background: purple;
   }
 
   .contactTxt {
     width: 100%;
-    height: 56px;
-    position: absolute;
-    margin-top: -55px;
     text-align: center;
-    flex: 0;
-    order: 0;
     flex-grow: 0;
   }
 
@@ -517,11 +489,8 @@
     align-content: center;
     width: 100%;
     height: auto;
-    left: 0;
     top: 80px;
-    flex: 0;
     order: 1;
-    flex-grow: 0;
   }
 
   .body-text {

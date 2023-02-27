@@ -4,7 +4,7 @@ body {
   background: #f7f7f9;
 }
 
-.header-bg {
+.header-background-image {
   position: relative;
   height: 718px;
   width: 100%;
@@ -19,7 +19,7 @@ body {
   display: none;
 }
 
-#appBar {
+#Nav-bar {
   position: absolute;
   width: 100%;
   height: 92px;
@@ -27,7 +27,7 @@ body {
   left: 0;
 }
 
-#toolsBar {
+#tools-bar {
   position: absolute;
   top: 44px;
   left: 0;
@@ -102,7 +102,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.headline {
+.Headline-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -114,9 +114,9 @@ body {
   top: 92px;
 }
 
-.headerText {
+.Headline-section-title {
   width: auto;
-  height: 150px;
+  height: auto;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -131,7 +131,7 @@ body {
   margin-top: 0;
 }
 
-.headerbodytext {
+.Headline-section-body {
   width: auto;
   height: auto;
   font-family: 'Poppins', sans-serif;
@@ -145,7 +145,7 @@ body {
   margin-top: -25px;
 }
 
-.social {
+.social-section {
   width: auto;
   height: auto;
   display: flex;
@@ -163,7 +163,7 @@ body {
   padding: 0;
 }
 
-.connect {
+.social-connect-section {
   width: auto;
   height: auto;
   font-family: 'Poppins', sans-serif;
@@ -202,25 +202,23 @@ ul li a {
   margin: 0;
 }
 
-#works {
+.work-section {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1.5fr 0.5fr 1.5fr 0.5fr;
   align-items: center;
   justify-items: center;
-  gap: 62px;
-  position: absolute;
-  width: 97%;
+  gap: 6px;
+  width: auto;
   height: auto;
-  margin-top: 90px;
 }
 
-.card {
+.card-section {
   display: flex;
   flex-direction: column;
   columns: 2;
   width: 90%;
-  height: fit-content;
+  height: auto;
   align-items: center;
   justify-content: space-between;
   flex: 50%;
@@ -231,7 +229,7 @@ ul li a {
   background: #fff;
 }
 
-.snapshot {
+.card-background-image {
   display: flex;
   flex-direction: row;
   width: 90%;
@@ -239,7 +237,7 @@ ul li a {
   height: auto;
 }
 
-.avocado {
+.card-section-background-image {
   display: flex;
   padding: 4px;
   margin: 8px;
@@ -263,7 +261,7 @@ ul li a {
   order: 1;
 }
 
-.left {
+.card-text-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -276,7 +274,7 @@ ul li a {
   flex-grow: 0;
 }
 
-.pryText {
+.card-primary-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -288,7 +286,7 @@ ul li a {
   flex-grow: 0;
 }
 
-.tonicTxt {
+.primary-title {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-style: normal;
@@ -304,30 +302,8 @@ ul li a {
   flex-grow: 0;
 }
 
-.left_professional {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: auto;
-  height: auto;
-  order: 1;
-  flex-grow: 0;
-}
 
-.left_yoga {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0;
-  gap: 12px;
-  width: 295px;
-  height: 28px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.frame {
+.card-primary-text-frame {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -393,7 +369,7 @@ ul li a {
   flex-grow: 0;
 }
 
-.bodyText {
+.card-primary-body-text {
   width: 100%;
   height: 100%;
   font-size: 15px;
@@ -408,7 +384,7 @@ ul li a {
   flex-grow: 0;
 }
 
-.tag {
+.card-primary-tag {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -468,7 +444,7 @@ ul li a {
 }
 
 #action {
-  width: 295px;
+  width: 100%;
   height: 72px;
   flex: none;
   order: 3;
@@ -514,7 +490,7 @@ button {
   color: #fff;
 }
 
-.multiplePryText {
+.multiplePryTex {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -555,29 +531,28 @@ button {
   flex-grow: 0;
 }
 
-.aboutMyself {
+.about-myself-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  gap: 24px;
+  gap: 120px;
   width: 100%;
   height: auto;
   background: #fff;
   border-radius: 0  75px 0 0;
-  top: 3406px;
+  margin-top: 40px;
 }
 
-.top {
+.About-top {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
   gap: 12px;
-  width: auto;
-  height: 409px;
-  margin-top: 120px;
+  width: 90%;
+  height: auto;
   order: 0;
+  margin-top: 130px;
   flex-grow: 0;
 }
 
@@ -650,10 +625,13 @@ button {
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  left: 0;
   margin-top: 24px;
   cursor: pointer;
   background-color: #fff;
+}
+
+.actin {
+  width: 100%;
 }
 
 .normalButnAbout:hover {
@@ -671,7 +649,7 @@ button {
   flex-direction: column;
   align-items: center;
   padding: 0;
-  width: 100%;
+  width: 90%;
   height: 464.15px;
   order: 1;
 }
@@ -692,7 +670,6 @@ button {
   height: 72px;
   order: 0;
   flex-grow: 0;
-  background: purple;
 }
 
 .dropdown {
@@ -782,8 +759,7 @@ hr {
 .contactMe {
   position: absolute;
   width: 100%;
-  height: 759px;
-  top: 4550px;
+  height: auto;
   border-radius: 75px 0 0 0;
   background: #6070ff;
   background-image: url(./asset/Contact/contactimg.svg);
