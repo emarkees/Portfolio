@@ -97,8 +97,6 @@ body {
   height: 587.15px;
   left: 0;
   top: 104px;
-  background-image: url(./asset/images/headershape.svg);
-  background-repeat: no-repeat;
 }
 
 .Headline-section {
@@ -111,6 +109,8 @@ body {
   width: auto;
   height: 604px;
   top: 92px;
+  background-image: url(./asset/images/headershape.svg);
+  background-repeat: no-repeat;
 }
 
 .Headline-section-title {
@@ -769,15 +769,14 @@ hr {
   background: #6070ff;
   background-image: url(./asset/Contact/contactimg.svg);
   background-repeat: no-repeat;
-  background-position: 100%;
-  background-position-y: 100%;
+  background-position: right;
+  padding-top: 1rem;
+
 }
 
 .contactTxt {
-  align-items: center;
-  width: 100%;
-  height: auto;
-  margin-top: 100px;
+  margin-top: 19%;
+  max-width: 100%;
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-weight: 700;
@@ -789,7 +788,7 @@ hr {
   margin: 0;
   align-items: center;
   justify-items: center;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
@@ -797,6 +796,8 @@ hr {
   font-style: normal;
   line-height: 28px;
   color: #ebebff;
+  padding: 0 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .form {
