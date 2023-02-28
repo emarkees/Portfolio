@@ -8,66 +8,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" integrity="sha512-XJ3ntWHl40opEiE+6dGhfK9NAKOCELrpjiBRQKtu6uJf9Pli8XY+Hikp7rlFzY4ElLSFtzjx9GGgHql7PLSeog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styledes.css">
   <title>Document</title>
 </head>
 <body>
-   <main class="header-bg">
+  <section class="header-background-image">
     <header>
-      <nav id="appBar">
-        <div id="toolsBar">
-          <div class="logoPlaceHolder">
-            <a href="#" class="logo"> My Logo</a>
-          </div>
+      <nav class="Nav-bar">
+        <div class="logoPlaceHolder">
+          <a href="#" class="logo"> My Logo</a>
+        </div>
+        <ul id="menu">
+          <li class="Menu-portfolio"><a href="#">Portfolio</a></li>
+          <li class="Menu-about"><a href="#About">About</a></li>
+          <li class="Menu-contact"><a href="#Contact">Contact</a></li>
+        </ul>
+        <div id="tools-bar">
           <div id="Hamburger">
             <div class="union">
               <span class="bar"></span>
               <span class="bar"></span>
               <span class="bar"></span>
             </div>
-          
           </div>
-  
         </div>
       </nav>
     </header>
-    
-    <section class="body-shae">
-      <div class="headline">
-        <h1 
-          class="headerText">
-          I'm Adeyemi Glad to see you!
-        </h1>
+    <div class="Headline-section">
+      <h1 class="Headline-section-title">
+        I'm Adeyemi Glad to see you!
+      </h1>
+      <p class="Headline-section-body">I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+    </p>
+    <div class="social-section">
+      <h2 class="social-connect-section">LET'S CONNECT</h2>
+    </div>
+    <div class="social-section-icon"> <!-- review-->
+      <ul class="icons">
+        <li><a href="twitter.com/Mc_Emarkees" class="fa-brands fa-twitter"></a></li>
+        <li><a href="github.com/emarkees" class="fa-brands fa-github"></a></li>
+        <li><a href="linkedin.com" class="fa-brands fa-linkedin-in"></a></li>
+        <li><a href="medium.com" class="fa-brands fa-medium"></a></li>
+        <li><a href="angellist.com" class="fa-brands fa-angellist"></a></li>
+      </ul>
+    </div>
+  </section>
 
-        <p 
-          class="headerbodytext">I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-        </p>
-       
-        <div class="social">
-          <h2 class="connect">LET'S CONNECT</h2>
-        </div>
-        <ul class="icons">
-          <li><a href="twitter.com/Mc_Emarkees" class="fa-brands fa-twitter"></a></li>
-          <li><a href="github.com/emarkees" class="fa-brands fa-github"></a></li>
-          <li><a href="linkedin.com" class="fa-brands fa-linkedin-in"></a></li>
-          <li><a href="medium.com" class="fa-brands fa-medium"></a></li>
-          <li><a href="angellist.com" class="fa-brands fa-angellist"></a></li>
-        </ul>
-          
+
+  <!-- Work Section-->
+
+  <section class="work-section">
+    <div class="card-section">
+      <div class="card-section-background-image">
+        <img src="./asset/images/avocado.svg" alt="" class="card-background-image">
       </div>
-      
-    </section>
-    
-    <span class="header-shpe"></span>
-  </main>
-  <section id="works">
-    <div class="card">
-      <div class="snapshot">
-        <img src="./asset/images/avocado.svg" alt="">
-      </div>
-      <div class="left block">
-        <div class="pryText">
-          <h1 class="tonicTxt">Tonic</h1>
-          <ul class="frame">
+      <div class="card-text-section">
+        <div class="card-primary-text">
+          <h1 class="primary-title">Tonic</h1>
+          <ul class="card-primary-text-frame">
             <li><h1 class="client">CANOPY</h1></li>
             <span class="span"></span>
             <li><h1 class="role">Back End Dev</h1></li>
@@ -75,10 +73,9 @@
             <li><h1 class="year">2015</h1></li>
           </ul>             
         </div>
-        <h5 
-        class="bodyText">A daily selection of privately personalized reads; no accounts or sign-ups required.
-       </h5> 
-       <ul class="tag">
+        <h5 class="card-primary-body-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
+        </h5> 
+        <ul class="card-primary-tag">
           <li class="tags">
             <h2 class="html">html</h2>
           </li>
@@ -90,64 +87,28 @@
           </li>
         </ul>
         <div id="action">
-          <button class="normalButtn"> See project</button>
+          <button type="button" class="normalButtn"> See project</button>
         </div>
       </div>
     </div>
-    <div class="cardMutiple">
-      <div class="snapshot">
-        <img src="./asset/images/available.svg" alt="" cl>
+    <div class="card-section">
+      <div class="card-section-background-image">
+        <img src="./asset/images/available.svg" alt="" class="card-background-image">
       </div>
-      <div class="multipleLeft block">
-        <div class="multiplePryText">
-          <h1 class="multipleTxt">Multi-Post
-            Stories</h1>
-            <ul class="frame">
-              <li><h1 class="client">CANOPY</h1></li>
-              <span class="span"></span>
-              <li><h1 class="role">Back End Dev</h1></li>
-              <span class="span"></span>
-              <li><h1 class="year">2015</h1></li>
-            </ul>           
-        </div>
-        <h5 
-          class="bodyText">A daily selection of privately personalized reads; no accounts or sign-ups required.
-       </h5> 
-        <ul class="tag">
-          <li class="tags">
-            <h2 class="html">html</h2>
-          </li>
-          <li class="tags">
-            <h2 class="html">css</h2>
-          </li>
-          <li class="java">
-            <h2 class="html">javaScript</h2>
-          </li>
-        </ul>
-        <div id="action">
-          <button class="normalButtn"> See project</button>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="snapshot">
-        <img src="./asset/images/professional.svg" alt="" cl>
-      </div>
-      <div class="left block">
-        <div class="pryText">
-          <h1 class="tonicTxt">Tonic</h1>
-          <ul class="frame">
+      <div class="card-text-section">
+        <div class="card-primary-text">
+          <h1 class="primary-title">Multi-post Stories</h1>
+          <ul class="card-primary-text-frame">
             <li><h1 class="client">CANOPY</h1></li>
             <span class="span"></span>
             <li><h1 class="role">Back End Dev</h1></li>
             <span class="span"></span>
             <li><h1 class="year">2015</h1></li>
-          </ul>           
+          </ul>             
         </div>
-        <h5 
-          class="bodyText">A daily selection of privately personalized reads; no accounts or sign-ups required.
-       </h5> 
-        <ul class="tag">
+        <h5 class="card-primary-body-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
+        </h5> 
+        <ul class="card-primary-tag">
           <li class="tags">
             <h2 class="html">html</h2>
           </li>
@@ -159,33 +120,30 @@
           </li>
         </ul>
         <div id="action">
-          <button class="normalButtn"> See project</button>
+          <button type="button" class="normalButtn"> See project</button>
         </div>
       </div>
     </div>
-    <div class="cardMutiple">
-      <div class="snapshot">
-        <img src="./asset/images/yoga.svg" alt="" cl>
+    <div class="card-section">
+      <div class="card-section-background-image">
+        <img src="./asset/images/professional.svg" alt="" class="card-background-image">
       </div>
-      <div class="multipleLeft block">
-        <div class="multiplePryText">
-          <h1 class="multipleTxt">Multi-Post
-            Stories
-          </h1>
-          <ul class="frame">
+      <div class="card-text-section">
+        <div class="card-primary-text">
+          <h1 class="primary-title">Tonic</h1>
+          <ul class="card-primary-text-frame">
             <li><h1 class="client">CANOPY</h1></li>
             <span class="span"></span>
             <li><h1 class="role">Back End Dev</h1></li>
             <span class="span"></span>
             <li><h1 class="year">2015</h1></li>
-          </ul>            
+          </ul>             
         </div>
-        <h5 
-          class="bodyText">A daily selection of privately personalized reads; no accounts or sign-ups required.
-       </h5> 
-       <ul class="tag">
+        <h5 class="card-primary-body-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
+        </h5> 
+        <ul class="card-primary-tag">
           <li class="tags">
-          <h2 class="html">html</h2>
+            <h2 class="html">html</h2>
           </li>
           <li class="tags">
             <h2 class="html">css</h2>
@@ -195,16 +153,49 @@
           </li>
         </ul>
         <div id="action">
-          <button class="normalButtn"> See project</button>
+          <button type="button" class="normalButtn"> See project</button>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="aboutMyself">
-    <div class="top">
+    <div class="card-section">
+      <div class="card-section-background-image">
+        <img src="./asset/images/yoga.svg" alt="" class="card-background-image">
+      </div>
+      <div class="card-text-section">
+        <div class="card-primary-text">
+          <h1 class="primary-title">Multi-post Stories</h1>
+          <ul class="card-primary-text-frame">
+            <li><h1 class="client">CANOPY</h1></li>
+            <span class="span"></span>
+            <li><h1 class="role">Back End Dev</h1></li>
+            <span class="span"></span>
+            <li><h1 class="year">2015</h1></li>
+          </ul>             
+        </div>
+        <h5 class="card-primary-body-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
+        </h5> 
+        <ul class="card-primary-tag">
+          <li class="tags">
+            <h2 class="html">html</h2>
+          </li>
+          <li class="tags">
+            <h2 class="html">css</h2>
+          </li>
+          <li class="java">
+            <h2 class="html">javaScript</h2>
+          </li>
+        </ul>
+        <div id="action">
+          <button type="button" class="normalButtn"> See project</button>
+        </div>
+      </div>
+    </div>
+  </section> 
+  
+  <section class="about-myself-section">
+    <div class="About-top">
       <h1 class="about_header_text">
-        About <br> Myself
+        About  Myself
       </h1>
       <p 
         class="about_body_text">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
@@ -223,10 +214,9 @@
           </ul>
         </div>
         <div id="action">
-          <button class="normalButtnAbout"> Get my resume</button>
+          <button class="normalButnAbout"> Get my resume</button>
         </div>
       </div>
-      
     </div>
 
     <div class="skillList">
@@ -237,7 +227,7 @@
             <i class="fa-solid fa-angle-down"></i>
           </i>
         </div>
-        <section class="dropdown">
+        <div class="dropdown">
           <div id="java_dropdown">
             <img src="./asset/About/javaScript.svg" alt="" class="image">
             <h4 class="drp_txt">JavaScript</h4>
@@ -250,51 +240,52 @@
             <img src="./asset/About/Css.svg" alt="" class="image">
             <h4 class="drp_txt">CSS</h4>
           </div>        
-        </section>         
+        </div>         
       </div>
-     
-      <div class="">
-        <div id="dropdown_header">
-          <h3 class="drp_text">Frameworks</h3>
-          <i class="dropdown_hamburger">
-            <i class="fa-solid fa-angle-right"></i>
-          </i>
-        </div>
+      <div id="dropdown_header">
+        <h3 class="drp_text">Frameworks</h3>
+        <i class="dropdown_hamburger">
+          <i class="fa-solid fa-angle-right"></i>
+        </i>
       </div>
-      
-      <div class="">
-        <hr class="separate"></hr>
-        <div id="dropdown_header">
-          <h3 class="drp_text">Skills</h3>
-          <i class="dropdown_hamburger">
-            <i class="fa-solid fa-angle-right"></i>
-          </i>
-        </div>
-        <hr class="separate"></hr>
+
+      <hr class="hr"></hr>
+      <div id="dropdown_header">
+        <h3 class="drp_text">Skills</h3>
+        <i class="dropdown_hamburger">
+          <i class="fa-solid fa-angle-right"></i>
+        </i>
       </div>
+      <hr class="hr"></hr>
       
     </div>
-
   </section>
-  <section class="contactMe">
-      <h1 class="contactTxt">Contact me</h1>
-      <p 
-        class="Contact_body_text">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it 
-      </p>
-      <form class="	form" action="https://formspree.io/f/xnqrezql" method="post" >
-        <input type="text" id="name" name="user_name" placeholder="FullName"  required maxlength="30"/>
-        <input type="email" id="mail" name="user_email" placeholder="Email Address"  pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-])*$/" required />
-        <div class="conter">
-          <textarea id="textarea" cols="30" rows="10" placeholder="Write your message here" name="user_message" required maxlength="500"></textarea>
-        </div>
-        <div id="actin">
-          <button type="submit" class="normalButtnAbout" onclick=""> Get in Touch</button>
+  <section class="contact-section">
+    <div class="contactMe">
+      <div class="contactblock">
+        <h1 class="contactTxt">Contact me</h1>
+        <div class="Contact_body_text">
+          <p 
+            class="body-text">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it 
+          </p>
         </div>
         
-      </form>
+        <form class="	form" action="https://formspree.io/f/xnqrezql" method="post" >
+          <input type="text" id="name" name="user_name" placeholder="FullName"  required maxlength="30"/>
+          <input type="email" id="mail" name="user_email" placeholder="Email Address"  pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-])*$/" required />
+         
+            <textarea id="textarea" cols="30" rows="10" placeholder="Write your message here" name="user_message" required maxlength="500"></textarea>
+         
+          <div id="action">
+            <button type="submit" class="normalButtnAbout" onclick=""> Get in Touch</button>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+    
       
-    </section>
-
+  </section>
 
 </body>
 </html>
