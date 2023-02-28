@@ -386,13 +386,12 @@ ul li a {
 
 .card-primary-tag {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  position: relative;
+  float: right;
   padding: 0;
   gap: 8px;
   width: 215px;
   height: 24px;
-  flex: none;
   order: 2;
   flex-grow: 0;
   margin: 0;
