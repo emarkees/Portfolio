@@ -1,31 +1,33 @@
 body {
-  width: 375px;
-  height: 5147px;
+  width: auto;
+  height: auto;
   background: #f7f7f9;
 }
 
-.header-bg {
+.header-background-image {
   position: relative;
   height: 718px;
-  width: 375px;
+  width: 100%;
   left: 0;
   right: 0;
   border-radius: 0 0 0 75px;
   background: #fff;
-  background-image: url(./asset/images/headershape.svg);
-  background-position: 0 95px;
   background-repeat: no-repeat;
 }
 
-#appBar {
+#menu {
+  display: none;
+}
+
+#Nav-bar {
   position: absolute;
-  width: 375px;
+  width: 100%;
   height: 92px;
   top: 0;
   left: 0;
 }
 
-#toolsBar {
+#tools-bar {
   position: absolute;
   top: 44px;
   left: 0;
@@ -43,7 +45,7 @@ body {
   padding: 10px 15px;
   width: 100px;
   height: 15px;
-  top: 6px;
+  top: 50px;
   left: 12px;
   justify-items: center;
 }
@@ -92,7 +94,7 @@ body {
 
 .headershape {
   position: absolute;
-  width: 375px;
+  width: 100%;
   height: 587.15px;
   left: 0;
   top: 104px;
@@ -100,21 +102,21 @@ body {
   background-repeat: no-repeat;
 }
 
-.headline {
+.Headline-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 114px 24px;
   gap: 10px;
   position: absolute;
-  width: 375px;
+  width: auto;
   height: 604px;
   top: 92px;
 }
 
-.headerText {
-  width: 327px;
-  height: 150px;
+.Headline-section-title {
+  width: auto;
+  height: auto;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -129,9 +131,9 @@ body {
   margin-top: 0;
 }
 
-.headerbodytext {
-  width: 89%;
-  height: 146px;
+.Headline-section-body {
+  width: auto;
+  height: auto;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -139,46 +141,59 @@ body {
   line-height: 24px;
   color: #334563;
   flex: none;
-  order: 1;
   flex-grow: 0;
   margin-top: -25px;
 }
 
-.social {
-  width: 120px;
-  height: 24px;
+.social-section {
+  width: auto;
+  height: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   flex: none;
-  order: 1;
+  justify-self: stretch;
   flex-grow: 0;
   margin-top: 0;
 }
 
-.connect {
-  width: 120px;
-  height: 24px;
+.sociaIcons {
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+.social-connect-section {
+  width: auto;
+  height: auto;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  margin: 0;
+  margin-top: 0;
+  padding: 0;
   color: #7f8cff;
-  flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .icons {
   display: flex;
-  width: 170.2px;
+  flex-direction: row;
+  width: auto;
+  justify-items: stretch;
   height: 20px;
-  flex: none;
-  order: 3;
   flex-grow: 0;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icons * {
+  justify-items: stretch;
+  text-align: justify;
+  margin: 0 4px 0 4px;
 }
 
 ul li a {
@@ -187,122 +202,115 @@ ul li a {
   margin: 0;
 }
 
-.fa-twitter {
-  position: absolute;
-  left: 6.4%;
-  color: #505f79;
-}
-
-.fa-linkedin-in {
-  position: absolute;
-  left: 15.4%;
-  color: #505f79;
-}
-
-.fa-medium {
-  position: absolute;
-  left: 23.4%;
-  color: #505f79;
-}
-
-.fa-github {
-  position: absolute;
-  left: 32.4%;
-  color: #505f79;
-}
-
-.fa-angellist {
-  position: absolute;
-  left: 41%;
-  color: #505f79;
-}
-
-#works {
+.work-section {
   display: grid;
-  grid-template-columns: 20%;
-  grid-template-rows: 20% 28% 20% 28%;
+  grid-template-columns: 100%;
+  grid-template-rows: 1.5fr 0.5fr 1.5fr 0.5fr;
   align-items: center;
-  padding: 114px 24px;
-  gap: 8px;
-  position: absolute;
-  width: 325px;
-  height: 2788px;
-  left: 5px;
-  top: 718px;
+  justify-items: center;
+  gap: 6px;
+  width: auto;
+  height: auto;
 }
 
-.card {
-  box-sizing: border-box;
+.card-section {
   display: flex;
   flex-direction: column;
+  columns: 2;
+  width: 90%;
+  height: auto;
   align-items: center;
-  padding: 16px;
-  gap: 12px;
-  width: 327px;
-  height: 552px;
+  justify-content: space-between;
+  flex: 50%;
+  order: 0;
+  flex-grow: 0;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   background: #fff;
 }
 
-.snapshot {
-  width: 295px;
-  height: 220px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  border-radius: 8px;
+.card-background-image {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0;
+  height: auto;
 }
 
-.left {
+.card-section-background-image {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0;
-  gap: 12px;
-  width: 295px;
-  height: 288px;
-  flex: none;
+  padding: 4px;
+  margin: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex: 50%;
   order: 1;
-  flex-grow: 0;
 }
 
-.pryText {
+.available {
+  display: flex;
+  padding: 4px;
+  margin: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex: 50%;
+  order: 1;
+}
+
+.card-text-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  gap: 12px;
-  width: 295px;
-  height: 80px;
-  flex: none;
+  gap: 10px;
+  width: 95%;
+  height: auto;
+  flex: 50%;
+  order: 2;
+  flex-grow: 0;
+}
+
+.card-primary-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 8px;
+  width: 80%;
+  height: auto;
   order: 0;
   flex-grow: 0;
 }
 
-.tonicTxt {
+.primary-title {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: 44px;
+  line-height: 40px;
   margin: 0;
-  width: 295px;
-  height: 36px;
+  padding: 0;
+  width: 100%;
+  height: auto;
   color: #172b4d;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
-.frame {
+
+.card-primary-text-frame {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0;
   gap: 8px;
-  width: 237px;
-  height: 32px;
+  width: 100%;
+  height: px;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -361,9 +369,9 @@ ul li a {
   flex-grow: 0;
 }
 
-.bodyText {
-  width: 295px;
-  height: 76px;
+.card-primary-body-text {
+  width: 100%;
+  height: 100%;
   font-size: 15px;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
@@ -376,7 +384,7 @@ ul li a {
   flex-grow: 0;
 }
 
-.tag {
+.card-primary-tag {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -436,7 +444,7 @@ ul li a {
 }
 
 #action {
-  width: 295px;
+  width: 100%;
   height: 72px;
   flex: none;
   order: 3;
@@ -482,32 +490,17 @@ button {
   color: #fff;
 }
 
-.cardMutiple {
-  box-sizing: border-box;
-  display: grid;
-  grid-column: 25px 25px 25px;
-  align-items: center;
-  padding: 16px;
-  gap: 12px;
-  width: 327px;
-  height: 596px;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  background: #fff;
-}
-
-.multiplePryText {
+.multiplePryTex {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
   gap: 12px;
-  width: 295px;
-  height: 124px;
+  width: 100%;
+  height: 80px;
   flex: none;
   order: 0;
   flex-grow: 0;
-  list-style-type: none;
 }
 
 .multipleTxt {
@@ -515,10 +508,10 @@ button {
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: 44px;
+  line-height: 35px;
   margin: 0;
   width: 290px;
-  height: 80px;
+  height: 70px;
   color: #172b4d;
   flex: none;
   order: 0;
@@ -530,38 +523,36 @@ button {
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  gap: 12px;
-  width: 295px;
-  height: 332px;
-  flex: none;
-  order: 1;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+  flex: 50%;
+  order: 2;
   flex-grow: 0;
 }
 
-.aboutMyself {
+.about-myself-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 114px 24px;
-  position: absolute;
-  gap: 24px;
-  width: 327px;
-  height: 1125.15px;
+  gap: 120px;
+  width: 100%;
+  height: auto;
   background: #fff;
   border-radius: 0  75px 0 0;
-  top: 3506px;
+  margin-top: 40px;
 }
 
-.top {
+.About-top {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
   gap: 12px;
-  width: 327px;
-  height: 409px;
-  flex: none;
+  width: 90%;
+  height: auto;
   order: 0;
+  margin-top: 130px;
   flex-grow: 0;
 }
 
@@ -569,8 +560,8 @@ button {
   margin: 0;
   display: flex;
   align-items: center;
-  width: 327px;
-  height: 101px;
+  width: 50%;
+  height: auto;
   font-size: 40px;
   font-weight: 700;
   font-style: normal;
@@ -584,8 +575,8 @@ button {
 
 .about_body_text {
   margin: 0;
-  width: 327px;
-  height: 144px;
+  width: 100%;
+  height: auto;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -598,8 +589,10 @@ button {
 }
 
 .socialMedia {
-  flex: none;
+  display: flex;
+  flex-direction: column;
   order: 2;
+  gap: 12px;
   flex-grow: 0;
 }
 
@@ -618,10 +611,11 @@ button {
   flex-grow: 0;
 }
 
-.normalButtnAbout {
+.normalButnAbout {
   display: flex;
   flex-direction: row;
-  width: 175px;
+  width: fit-content;
+  height: auto;
   align-items: flex-start;
   text-align: center;
   justify-content: center;
@@ -631,18 +625,21 @@ button {
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  left: 12px;
-  margin: 8px;
+  margin-top: 24px;
   cursor: pointer;
   background-color: #fff;
 }
 
-.normalButtnAbout:hover {
+.actin {
+  width: 100%;
+}
+
+.normalButnAbout:hover {
   background: #6070ff;
   color: #fff;
 }
 
-.normalButtnAbout:active {
+.normalButnAbout:active {
   background: #2230d2;
   color: #fff;
 }
@@ -652,29 +649,48 @@ button {
   flex-direction: column;
   align-items: center;
   padding: 0;
-  width: 327px;
+  width: 90%;
   height: 464.15px;
-  flex: none;
   order: 1;
-  flex-grow: 0;
 }
 
 .dropdown_container {
+  display: flex;
   align-items: flex-start;
+  flex-direction: column;
   padding: 0;
-  width: 327px;
-  height: 320.2px;
-  flex: none;
+  width: 100%;
+  height: auto;
   order: 0;
   flex-grow: 0;
 }
 
 #dropdown_header {
-  width: 327px;
+  width: 100%;
   height: 72px;
-  flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px;
+  gap: 12px;
+  width: 100%;
+  order: 1;
+  flex-grow: 0;
+}
+
+#java_dropdown {
+  display: grid;
+  width: 80%;
+  height: 66.72px;
+  order: 0;
+  flex-grow: 0;
+  background: #f7f7f9;
+  border-radius: 8px;
 }
 
 .drp_text {
@@ -682,7 +698,7 @@ button {
   align-items: center;
   position: absolute;
   height: 24px;
-  width: 227px;
+  width: 50%;
   left: 45px;
   font-size: 20px;
   line-height: 24px;
@@ -695,11 +711,11 @@ button {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 8px;
+  padding: 10px;
   position: relative;
-  width: 20px;
-  height: 20px;
-  border-radius: 8px;
+  width: max-content;
+  height: max-content;
+  border-radius: 6px;
   float: right;
   right: 20px;
   top: 15px;
@@ -707,34 +723,6 @@ button {
 
 .fa-angle-down {
   position: relative;
-  left: 21.67%;
-  right: 25.33%;
-  top: 15%;
-  bottom: 25%;
-}
-
-.dropdown {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 12px;
-  gap: 12px;
-  width: 303px;
-  height: 235.15px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-#java_dropdown {
-  display: grid;
-  width: 303px;
-  height: 66.72px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  background: #f7f7f9;
-  border-radius: 8px;
 }
 
 .image {
@@ -747,22 +735,21 @@ button {
 }
 
 .drp_txt {
+  display: flex;
   position: absolute;
   width: 80px;
   height: 24px;
-  left: 110px;
-  right: 15px;
+  margin-left: 90px;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
   font-family: 'Poppins', sans-serif;
-  display: flex;
   align-items: center;
   color: #253858;
 }
 
 hr {
-  position: relative;
+  position: absolute;
   height: 1;
   left: 0;
   right: 0;
@@ -771,13 +758,12 @@ hr {
 
 .contactMe {
   position: absolute;
-  width: 375px;
-  height: 759px;
-  top: 4720px;
+  width: 100%;
+  height: auto;
   border-radius: 75px 0 0 0;
   background: #6070ff;
   background-image: url(./asset/Contact/contactimg.svg);
-  background-position: 153px;
+  background-position: 100%;
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -785,9 +771,8 @@ hr {
 .contactTxt {
   position: absolute;
   align-items: center;
-  width: 375px;
+  width: 100%;
   height: 56px;
-  left: 3px;
   top: 80px;
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
@@ -799,9 +784,8 @@ hr {
 .Contact_body_text {
   position: absolute;
   align-items: center;
-  width: 325px;
+  width: 100%;
   height: 102px;
-  left: 20px;
   top: 170px;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
@@ -840,8 +824,37 @@ hr {
   border-radius: 8px;
   border: 1px #cfd8dc solid;
   background-color: #fff;
-  width: 77%;
+  width: auto;
   padding: 10px 35px;
   margin-bottom: 15px;
   color: #b3bac5;
+}
+
+.normalButtnAbout {
+  display: flex;
+  flex-direction: row;
+  width: 175px;
+  align-items: flex-start;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  left: 12px;
+  margin: 8px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.normalButtnAbout:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.normalButtnAbout:active {
+  background: #2230d2;
+  color: #fff;
 }
