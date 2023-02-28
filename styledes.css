@@ -404,7 +404,7 @@
     align-items: center;
     padding: 0;
     width: 100%;
-    height: 216px;
+    height: auto;
   }
 
   #dropdown_header {
@@ -427,8 +427,10 @@
   }
 
   #java_dropdown {
-    width: 122px;
-    height: 120px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 80%;
     background: #f7f7f9;
     border-radius: 8px;
     flex: none;
@@ -448,10 +450,9 @@
     bottom: 0;
   }
 
-  .hr {
-    left: 0;
-    right: 0;
-    bottom: 0;
+  hr {
+    display: flex;
+    
   }
 
   .contactMe {

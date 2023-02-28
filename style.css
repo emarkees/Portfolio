@@ -652,6 +652,7 @@ button {
   width: 90%;
   height: 464.15px;
   order: 1;
+  background: gold;
 }
 
 .dropdown_container {
@@ -663,6 +664,7 @@ button {
   height: auto;
   order: 0;
   flex-grow: 0;
+  background: purple;
 }
 
 #dropdown_header {
@@ -686,7 +688,7 @@ button {
 #java_dropdown {
   display: grid;
   width: 80%;
-  height: 66.72px;
+  height: 50%;
   order: 0;
   flex-grow: 0;
   background: #f7f7f9;
@@ -749,11 +751,8 @@ button {
 }
 
 hr {
-  position: absolute;
-  height: 1;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  display: flex;
+  width: 100%;
 }
 
 .contactMe {
