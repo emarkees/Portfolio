@@ -205,10 +205,10 @@ ul li a {
 .work-section {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 1.5fr 0.5fr 1.5fr 0.5fr;
+  grid-template-rows: 1.2fr 0.1fr 1.2fr 0.5fr;
   align-items: center;
   justify-items: center;
-  gap: 6px;
+  gap: 1px;
   width: auto;
   height: auto;
 }
@@ -267,7 +267,7 @@ ul li a {
   align-items: flex-start;
   padding: 0;
   gap: 10px;
-  width: 95%;
+  width: 90%;
   height: auto;
   flex: 50%;
   order: 2;
@@ -759,7 +759,7 @@ hr {
 .contactMe {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 275px;
   border-radius: 75px 0 0 0;
   background: #6070ff;
   background-image: url(./asset/Contact/contactimg.svg);
