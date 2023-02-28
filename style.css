@@ -1,5 +1,5 @@
 body {
-  width: auto;
+  width: 100%;
   height: auto;
   background: #f7f7f9;
 }
@@ -756,14 +756,15 @@ hr {
 
 .contactMe {
   position: absolute;
-  width: 100%;
-  height: 275px;
+  width: 96%;
+  height: auto;
   border-radius: 75px 0 0 0;
+  text-align: center;
   background: #6070ff;
   background-image: url(./asset/Contact/contactimg.svg);
   background-position: 100%;
+  background-position-y: 10%;
   background-repeat: no-repeat;
-  text-align: center;
 }
 
 .contactTxt {
