@@ -118,7 +118,7 @@
     display: flex;
     align-items: center;
     letter-spacing: 0.35px;
-    width: 45%;
+    width: 60%;
     height: auto;
     flex: 35%;
     order: 0;
@@ -183,8 +183,8 @@
 
   .card-text-section {
     align-items: flex-start;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 8px;
+    margin-top: px;
     gap: 5px;
     width: 40%;
     height: auto;
@@ -243,19 +243,7 @@
     order: 1;
     top: calc(35% - 225px / 2);
   }
-
-  .available {
-    align-items: flex-start;
-    padding: 12px;
-    gap: 16px;
-    width: 45%;
-    height: 390px;
-    flex: 50%;
-    float: right;
-    top: calc(35% - 225px / 2);
-    order: 2;
-  }
-
+  
   .multiplePryTex {
     align-items: flex-start;
     padding: 0;
@@ -291,28 +279,6 @@
     height: 390px;
     top: 125px;
     flex: 50%;
-  }
-
-  .Left_yoga {
-    display: grid;
-    align-items: flex-start;
-    padding: 12px;
-    gap: 16px;
-    width: 45%;
-    height: 390px;
-    flex: 50%;
-    top: calc(85% - 270px / 2);
-  }
-
-  .yoga {
-    align-items: flex-start;
-    padding: 12px;
-    gap: 16px;
-    width: 45%;
-    height: 390px;
-    flex: 50%;
-    top: calc(35% - 225px / 2);
-    order: 2;
   }
 
   /* About me Section */
