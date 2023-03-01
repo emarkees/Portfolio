@@ -472,18 +472,17 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    gap: 20px;
-    width: 50%;
+    width: 80%;
     height: auto;
-    margin-top: 150px;
-    background: purple;
+    margin-top: 120px;
   }
 
-  .contactt {
+  .contactTxt {
     width: 100%;
+    height: auto;
     text-align: center;
-    flex-grow: 0;
     order: 0;
+    margin-top: 0;
   }
 
   .Contact_body_text {
@@ -492,57 +491,54 @@
     width: 50%;
     height: auto;
     order: 1;
-    background: green;
   }
 
   .body-text {
     justify-content: center;
     align-content: center;
     height: auto;
-    background: #000;
   }
 
   .form {
     display: flex;
-    flex-direction: column;
-    margin-top: 250px;
-    width: 100%;
+    margin-top: 0px;
+    width: 70%;
+    align-items: center;
+    order: 3;
     height: auto;
-    margin-left: 24px;
-    margin-right: 24px;
   }
 
   #name {
+    align-items: center;
     border-radius: 8px;
     border: 1px #cfd8dc solid;
     background-color: #fff;
     margin-bottom: 20px;
-    margin-left: 150px;
-    margin-right: 150px;
-    padding: 10px 50px;
-    width: auto;
+    width: 50%;
   }
 
   #mail {
+    align-items: center;
     border-radius: 8px;
     border: 1px #cfd8dc solid;
     background-color: #fff;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 15px;
-    padding: 10px 50px;
-    width: auto;
+    width: 50%;
   }
 
   #textarea {
     border-radius: 8px;
     border: 1px #cfd8dc solid;
     background-color: #fff;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 15px;
-    padding: 10px 50px;
-    width: auto;
+    
+    width: 60%;
+  }
+
+  #action {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    background: green;
   }
 
   .normalButtnAbout {
@@ -555,7 +551,6 @@
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    left: 300px;
     cursor: pointer;
     background-color: #fff;
   }

@@ -752,10 +752,14 @@ hr {
   width: 100%;
 }
 
-.contact-section {
+.contactblock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
   width: 100%;
-  margin-top: 20%;
   height: auto;
+  margin-top: 120px;
 }
 
 .contactMe {
@@ -787,6 +791,7 @@ hr {
 
 .Contact_body_text {
   margin: 0;
+  display: flex;
   align-items: center;
   justify-items: center;
   width: 100%;
@@ -799,11 +804,17 @@ hr {
   color: #ebebff;
 }
 
+.body-text {
+  justify-content: center;
+  align-content: center;
+  height: auto;
+}
+
 .form {
   display: flex;
   flex-direction: column;
-  margin-left: 24px;
-  margin-right: 24px;
+  width: 100%;
+  align-items: center;
 }
 
 #name {
@@ -818,16 +829,14 @@ hr {
   border-radius: 8px;
   border: 1px #cfd8dc solid;
   background-color: #fff;
-  margin-bottom: 20px;
   padding: 15px 35px;
+  margin-bottom: 15px;
 }
 
 #textarea {
   border-radius: 8px;
   border: 1px #cfd8dc solid;
   background-color: #fff;
-  width: auto;
-  padding: 10px 35px;
   margin-bottom: 15px;
   color: #b3bac5;
 }
