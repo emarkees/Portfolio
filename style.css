@@ -1,5 +1,4 @@
 body {
-  width: auto;
   height: auto;
   background: #f7f7f9;
 }
@@ -205,10 +204,10 @@ ul li a {
 .work-section {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 1.5fr 0.5fr 1.5fr 0.5fr;
+  grid-template-rows: 1.2fr 0.1fr 1.2fr 0.5fr;
   align-items: center;
   justify-items: center;
-  gap: 6px;
+  gap: 1px;
   width: auto;
   height: auto;
 }
@@ -267,7 +266,7 @@ ul li a {
   align-items: flex-start;
   padding: 0;
   gap: 10px;
-  width: 95%;
+  width: 90%;
   height: auto;
   flex: 50%;
   order: 2;
@@ -301,7 +300,6 @@ ul li a {
   order: 0;
   flex-grow: 0;
 }
-
 
 .card-primary-text-frame {
   display: flex;
@@ -548,7 +546,7 @@ button {
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  gap: 12px;
+  gap: 8px;
   width: 90%;
   height: auto;
   order: 0;
@@ -652,7 +650,6 @@ button {
   width: 90%;
   height: 464.15px;
   order: 1;
-  background: gold;
 }
 
 .dropdown_container {
@@ -664,7 +661,6 @@ button {
   height: auto;
   order: 0;
   flex-grow: 0;
-  background: purple;
 }
 
 #dropdown_header {
@@ -688,7 +684,7 @@ button {
 #java_dropdown {
   display: grid;
   width: 80%;
-  height: 50%;
+  height: 66.72px;
   order: 0;
   flex-grow: 0;
   background: #f7f7f9;
@@ -751,28 +747,37 @@ button {
 }
 
 hr {
-  display: flex;
+  position: relative;
+  height: 1;
   width: 100%;
+}
+
+.contact-section {
+  width: 100%;
+  margin-top: 20%;
+  height: auto;
 }
 
 .contactMe {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: auto;
   border-radius: 75px 0 0 0;
+  text-align: center;
   background: #6070ff;
   background-image: url(./asset/Contact/contactimg.svg);
-  background-position: 100%;
   background-repeat: no-repeat;
-  text-align: center;
+  background-position: 100%;
+  background-position-y: 100%;
 }
 
 .contactTxt {
-  position: absolute;
   align-items: center;
   width: 100%;
-  height: 56px;
-  top: 80px;
+  height: auto;
+  margin-top: 100px;
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-weight: 700;
@@ -781,24 +786,22 @@ hr {
 }
 
 .Contact_body_text {
-  position: absolute;
+  margin: 0;
   align-items: center;
+  justify-items: center;
   width: 100%;
-  height: 102px;
-  top: 170px;
+  height: auto;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
   line-height: 28px;
   color: #ebebff;
-  text-align: center;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  margin-top: 362px;
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -842,8 +845,7 @@ hr {
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  left: 12px;
-  margin: 8px;
+  left: 30px;
   cursor: pointer;
   background-color: #fff;
 }
