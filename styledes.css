@@ -7,6 +7,7 @@
   }
 
   .header-backgroun-image {
+    display: flex;
     width: 100%;
     height: 85vh;
     background-repeat: no-repeat;
@@ -14,24 +15,28 @@
   }
 
   .Nav-bar {
+    display: flex;
+    align-items: center;
     max-width: 100%;
     height: 10vh;
     list-style-type: none;
-    background: #000;
+    background: green;
   }
 
-  #tools-bar {
+  #Hamburger {
     display: none;
   }
 
   .logoPlaceHolder {
     display: flex;
-    flex-direction: column;
     align-items: center;
     margin-left: 120px;
     align-content: center;
-    top: 16px;
     background: #fff;
+  }
+
+  .logo {
+    align-items: center;
   }
 
   ul li {
@@ -42,8 +47,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    float: right;
-    padding-right: 10%;
+    float: left;
+    padding-right: 0;
     gap: 30px;
     width: fit-content;
     height: auto;
@@ -99,7 +104,7 @@
   }
 
   .Headline-section {
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
@@ -111,16 +116,15 @@
     margin: 0;
     margin-top: 150px;
     flex: 50%;
-    flex-grow: 0;
   }
 
   .Headline-section-title {
     display: flex;
     align-items: center;
     letter-spacing: 0.35px;
-    width: 60%;
+    width: 49%;
     height: auto;
-    flex: 35%;
+    flex: 50%;
     order: 0;
     color: #091e42;
   }
@@ -164,7 +168,7 @@
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    height: auto;
+    height: max-content;
     flex: 50%;
     background: #fff;
     order: 0;
@@ -175,34 +179,34 @@
   .card-background-image {
     align-items: flex-start;
     padding: 10px;
-    gap: 10px;
-    width: 100%;
+    width: 50%;
     height: auto;
     flex: 50%;
   }
 
   .card-text-section {
+    display: flex;
     align-items: flex-start;
-    padding: 8px;
-    margin-top: px;
-    gap: 5px;
+    padding: 10px;
+    gap: 20px;
+    margin-top: 100px;
+    margin: 10px;
     width: 40%;
     height: auto;
     flex: 50%;
+    flex-grow: 0;
   }
 
   .card-primary-text {
     align-items: flex-start;
-    padding: 0;
-    gap: 5px;
-    width: 100%;
-    height: auto;
-    flex: none;
+    gap: 10px;
+    width: 80%;
+    height: 40%;
     order: 0;
-    flex-grow: 0;
   }
 
   .primary-title {
+    align-items: flex-start;
     width: 100%;
     height: auto;
   }
@@ -222,63 +226,14 @@
   }
 
   .card-primary-text-right {
-    display: grid;
     align-items: flex-start;
     padding: 10px;
     gap: 10px;
     width: 100%;
     height: auto;
+    margin: 10px;
     flex: 50%;
-    order: 2;
-  }
-
-  .multipleLeft {
-    display: grid;
-    align-items: flex-start;
-    padding: 12px;
-    gap: 16px;
-    width: 45%;
-    height: 390px;
-    flex: 50%;
-    order: 1;
-    top: calc(35% - 225px / 2);
-  }
-  
-  .multiplePryTex {
-    align-items: flex-start;
-    padding: 0;
-    gap: 18px;
-    width: 100%;
-    height: 98px;
-    flex: none;
     order: 0;
-    flex-grow: 0;
-  }
-
-  .multipleTxt {
-    width: 100%;
-    height: 46px;
-  }
-
-  .left_professional {
-    display: grid;
-    align-items: flex-start;
-    padding: 12px;
-    gap: 16px;
-    width: 45%;
-    height: 390px;
-    top: 125px;
-    flex: 50%;
-  }
-
-  .professional {
-    align-items: flex-start;
-    padding: 12px;
-    gap: 16px;
-    width: 45%;
-    height: 390px;
-    top: 125px;
-    flex: 50%;
   }
 
   /* About me Section */
@@ -286,7 +241,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 10%;
+    height: 40%;
     border-radius: 0 90px 0 0;
     background: #fff;
     margin-top: 150px;
@@ -296,17 +251,16 @@
   .About-top {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 32.45%;
+    align-items: flex-s;
+    width: auto;
+    margin-left: 50px;
+    flex: 29%;
     height: auto;
-    margin-left: 102px;
-    margin: 0;
-    order: 1;
-    backface-visibility: gold;
+    background: yellowgreen;
   }
 
   .about_header_text {
-    width: 100%;
+    width: 50%;
     height: auto;
   }
 
@@ -319,6 +273,18 @@
     width: 120%;
     height: 40px;
     order: 2;
+  }
+
+  .socialMedia {
+    align-items: flex-start;
+    flex-direction: column;
+    order: 2;
+    width: 100%;
+    background: #000;
+  }
+
+  .frame2 {
+
   }
 
   .normalButnAbout {
@@ -353,14 +319,13 @@
   .skillList {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding: 0;
     width: 50%;
     height: 360px;
     margin-top: 153px;
+    left: 0px;
     flex: 50%;
     order: 2;
-    flex-grow: 0;
+    background: gold;
   }
 
   .dropdown_container {
@@ -368,14 +333,14 @@
     flex-direction: column;
     align-items: center;
     padding: 0;
-    width: 100%;
+    width: 50%;
     height: auto;
   }
 
   #dropdown_header {
+    display: flex;
     width: 100%;
     height: 72px;
-    flex: none;
     order: 0;
     flex-grow: 0;
   }
@@ -394,8 +359,8 @@
   #java_dropdown {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 80%;
+    width: 25%;
+    height: 100%;
     background: #f7f7f9;
     border-radius: 8px;
     flex: none;
@@ -502,9 +467,7 @@
   #action {
     display: flex;
     width: 100%;
-    align-items: center;
-    align-content: center;
-    background: green;
+    align-items: flex-start;
   }
 
   .normalButtnAbout {
