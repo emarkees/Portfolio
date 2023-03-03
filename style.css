@@ -4,14 +4,14 @@ body {
 }
 
 .header-background-image {
-  position: relative;
   height: 718px;
   width: 100%;
-  left: 0;
-  right: 0;
   border-radius: 0 0 0 75px;
   background: #fff;
+  background-image: url(./asset/images/headershape.svg);
   background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position-x: 25px 30px;
 }
 
 .menu {
@@ -20,18 +20,20 @@ body {
 
 .Nav-bar {
   display: flex;
+  align-items: center;
   flex-direction: row;
+  justify-content: space-between;
   width: 100%;
-  height: auto;
+  height: 44px;
 }
 
 .logoPlaceHolder {
   display: flex;
   align-items: center;
-  height: auto;
+  height: 100%;
   left: 50px;
   justify-items: center;
-  background: green;
+  margin-left: 2rem;
 }
 
 .logo {
@@ -51,12 +53,11 @@ body {
 
 #Hamburger {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  float: right;
   width: auto;
   height: 30px;
-  float: right;
   border-radius: 2px;
+  margin-right: 2rem;
 }
 
 .bar {
@@ -67,17 +68,6 @@ body {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background: #6070ff;
-  ;
-}
-
-.headershape {
-  position: absolute;
-  width: 100%;
-  height: 587.15px;
-  left: 0;
-  top: 104px;
-  background-image: url(./asset/images/headershape.svg);
-  background-repeat: no-repeat;
 }
 
 .Headline-section {
@@ -86,10 +76,9 @@ body {
   align-items: flex-start;
   padding: 114px 24px;
   gap: 10px;
-  position: absolute;
   width: auto;
   height: 604px;
-  top: 92px;
+  top: 80px;
 }
 
 .Headline-section-title {
@@ -105,8 +94,7 @@ body {
   color: #172b4d;
   flex: none;
   order: 0;
-  flex-grow: 0;
-  margin-top: 0;
+  margin-top: 1rem;
 }
 
 .Headline-section-body {
@@ -227,23 +215,12 @@ ul li a {
   order: 1;
 }
 
-.available {
-  display: flex;
-  padding: 4px;
-  margin: 8px;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  flex: 50%;
-  order: 1;
-}
-
 .card-text-section {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  gap: 10px;
+  gap: 6px;
   width: 90%;
   height: auto;
   flex: 50%;
@@ -267,8 +244,8 @@ ul li a {
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  gap: 8px;
-  width: 80%;
+  gap: 6px;
+  width: 90%;
   height: auto;
   order: 2;
   flex-grow: 0;
@@ -431,7 +408,7 @@ ul li a {
 }
 
 #action {
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   height: 72px;
   flex: none;
@@ -523,9 +500,9 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 120px;
+  gap: 30px;
   width: 100%;
-  height: auto;
+  height: 1018px;
   background: #fff;
   border-radius: 0  75px 0 0;
   margin-top: 40px;
@@ -535,13 +512,12 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0;
-  gap: 8px;
+  padding: 0px;
+  gap: 6px;
   width: 90%;
   height: auto;
   order: 0;
-  margin-top: 130px;
-  flex-grow: 0;
+  margin-top: 90px;
 }
 
 .about_header_text {
@@ -638,7 +614,7 @@ button {
   align-items: center;
   padding: 0;
   width: 90%;
-  height: 464.15px;
+  height: auto;
   order: 1;
 }
 
@@ -654,39 +630,20 @@ button {
 }
 
 #dropdown_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 72px;
   order: 0;
   flex-grow: 0;
 }
 
-.dropdown {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2px;
-  gap: 12px;
-  width: 100%;
-  order: 1;
-  flex-grow: 0;
-}
-
-#java_dropdown {
-  display: grid;
-  width: 80%;
-  height: 66.72px;
-  order: 0;
-  flex-grow: 0;
-  background: #f7f7f9;
-  border-radius: 8px;
-}
-
 .drp_text {
   display: flex;
   align-items: center;
-  position: absolute;
   height: 24px;
-  width: 50%;
+  width: 100%;
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
@@ -696,36 +653,52 @@ button {
 
 .dropdown_hamburger {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 10px;
-  width: max-content;
-  height: max-content;
+  margin : 1rem 1rem 1rem 0;
   border-radius: 6px;
   float: right;
-  right: 20px;
-  top: 15px;
 }
 
 .fa-angle-down {
   position: relative;
 }
 
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2px;
+  gap: 12px;
+  width: 100%;
+  order: 1;
+  flex-grow: 0;
+}
+
+#java_dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  height: 66.72px;
+  gap: 1px;
+  order: 0;
+  background: #f7f7f9;
+  border-radius: 8px;
+}
+
 .image {
-  position: absolute;
-  width: 48px;
+  width: auto;
   height: 48px;
-  margin-top: 9px;
   margin-left: 8px;
   border-radius: 1px solid #fff;
 }
 
 .drp_txt {
   display: flex;
-  position: absolute;
-  width: 80px;
-  height: 24px;
-  margin-left: 90px;
+  align-self: flex-start;
+  width: auto;
+  height: auto;
+  margin-left: 8px;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
@@ -738,6 +711,7 @@ hr {
   position: relative;
   height: 1;
   width: 100%;
+  margin: 0;
 }
 
 .contactblock {
@@ -747,41 +721,42 @@ hr {
   justify-items: center;
   width: 100%;
   height: auto;
-  margin-top: 120px;
+  margin-top: 8rem;
 }
 
 .contactMe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-items: center;
   width: 100%;
-  height: auto;
+  height: 49rem;
   border-radius: 75px 0 0 0;
   text-align: center;
   background: #6070ff;
   background-image: url(./asset/Contact/contactimg.svg);
   background-repeat: no-repeat;
-  background-position: 100%;
-  background-position-y: 100%;
+  background-size: 90% 90%;
+  background-position-y: 2rem;
+  background-position-x: 5.5rem;
 }
 
 .contactTxt {
   align-items: center;
   width: 100%;
   height: auto;
-  margin-top: 100px;
+  margin-top: 0;
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-weight: 700;
+  line-height: 52px;
   font-style: normal;
   color: #fff;
+  order: 0;
 }
 
 .Contact_body_text {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-items: center;
+  margin-top: 0;
   width: 100%;
   height: auto;
   font-family: 'Poppins', sans-serif;
@@ -789,13 +764,17 @@ hr {
   font-weight: 400;
   font-style: normal;
   line-height: 28px;
+  margin-left: 2rem;
   color: #ebebff;
+  order: 1;
 }
 
 .body-text {
   justify-content: center;
   align-content: center;
+  width: 90%;
   height: auto;
+  margin: 0;
 }
 
 .form {
@@ -803,6 +782,8 @@ hr {
   flex-direction: column;
   width: 100%;
   align-items: center;
+  margin-top: 1rem;
+  order: 2;
 }
 
 #name {
@@ -810,14 +791,17 @@ hr {
   border: 1px #cfd8dc solid;
   background-color: #fff;
   margin-bottom: 20px;
-  padding: 15px 35px;
+  padding: 15px 25px;
+  width: 70%;
+  order: 0;
 }
 
 #mail {
   border-radius: 8px;
   border: 1px #cfd8dc solid;
   background-color: #fff;
-  padding: 15px 35px;
+  padding: 15px 25px;
+  width: 70%;
   margin-bottom: 15px;
 }
 
@@ -825,6 +809,8 @@ hr {
   border-radius: 8px;
   border: 1px #cfd8dc solid;
   background-color: #fff;
+  padding: 15px 25px;
+  width: 70%;
   margin-bottom: 15px;
   color: #b3bac5;
 }

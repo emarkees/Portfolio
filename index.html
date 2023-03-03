@@ -214,10 +214,11 @@
             <li><a href="angellist.com" class="fa-brands fa-angellist"></a></li>
           </ul>
         </div>
-        <div id="action">
-          <button class="normalButnAbout"> Get my resume</button>
-        </div>
       </div>
+      <div id="action">
+        <button class="normalButnAbout"> Get my resume</button>
+      </div>
+      
     </div>
 
     <div class="skillList">
@@ -243,21 +244,25 @@
           </div>        
         </div>         
       </div>
-      <hr class="hr"></hr>
-      <div id="dropdown_header">
-        <h3 class="drp_text">Frameworks</h3>
-        <i class="dropdown_hamburger">
-          <i class="fa-solid fa-angle-right"></i>
-        </i>
+      
+      <div class="dropdown_container">
+        <div id="dropdown_header">
+          <h3 class="drp_text">Frameworks</h3>
+          <i class="dropdown_hamburger">
+            <i class="fa-solid fa-angle-right"></i>
+          </i>
+        </div>
       </div>
-
       <hr class="hr"></hr>
-      <div id="dropdown_header">
-        <h3 class="drp_text">Skills</h3>
-        <i class="dropdown_hamburger">
-          <i class="fa-solid fa-angle-right"></i>
-        </i>
+      <div class="dropdown_container">
+        <div id="dropdown_header">
+          <h3 class="drp_text">Skills</h3>
+          <i class="dropdown_hamburger">
+            <i class="fa-solid fa-angle-right"></i>
+          </i>
+        </div>
       </div>
+      <hr class="hr"></hr>
       
     </div>
   </section>
@@ -278,7 +283,7 @@
         <input type="text" id="name" name="user_name" placeholder="FullName"  required maxlength="30"/>
         <input type="email" id="mail" name="user_email" placeholder="Email Address"  pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-])*$/" required />
        
-          <textarea id="textarea" cols="30" rows="10" placeholder="Write your message here" name="user_message" required maxlength="500"></textarea>
+        <textarea id="textarea" cols="30" rows="10" placeholder="Write your message here" name="user_message" required maxlength="500"></textarea>
        
         <div id="action">
           <button type="submit" class="normalButtnAbout" onclick=""> Get in Touch</button>

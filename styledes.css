@@ -6,21 +6,26 @@
     background: #f4f5f7;
   }
 
-  .header-backgroun-image {
-    display: flex;
+  .header-background-image {
+    height: 918px;
     width: 100%;
-    height: 85vh;
-    background-repeat: no-repeat;
+    border-radius: 0 0 0 75px;
+    background: #fff;
     background-image: url(./asset/images/header.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 75% ;
+    background-position-x: 20px 60px;
+    background-position-y: 0px;
   }
 
   .Nav-bar {
     display: flex;
     align-items: center;
-    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
     height: 10vh;
+    width: 100%;
     list-style-type: none;
-    background: green;
   }
 
   #Hamburger {
@@ -45,13 +50,13 @@
 
   .menu {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    float: left;
+    align-items: flex-start;
+    float: right;
     padding-right: 0;
     gap: 30px;
     width: fit-content;
     height: auto;
+    margin-right: 7rem;
   }
 
   .Menu-portfolio {
@@ -113,18 +118,17 @@
     width: 55%;
     height: auto;
     left: 20%;
-    margin: 0;
-    margin-top: 150px;
+    margin-top: 12rem;
     flex: 50%;
   }
 
   .Headline-section-title {
     display: flex;
     align-items: center;
-    letter-spacing: 0.35px;
+    letter-spacing: 0.30px;
     width: 49%;
     height: auto;
-    flex: 50%;
+    flex: 45%;
     order: 0;
     color: #091e42;
   }
@@ -135,7 +139,6 @@
   }
 
   .icons {
-    position: absolute;
     width: auto;
     height: 20px;
     margin-top: 15px;
@@ -241,26 +244,25 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 40%;
+    width: 100%;
+    height: 575px;
     border-radius: 0 90px 0 0;
     background: #fff;
     margin-top: 150px;
-    background: green;
   }
 
   .About-top {
-    display: flex;
     flex-direction: column;
-    align-items: flex-s;
-    width: auto;
-    margin-left: 50px;
-    flex: 29%;
+    align-items: flex-start;
+    width: 100%;
+    flex: 36%;
+    gap: 10px;
     height: auto;
-    background: yellowgreen;
+    padding-left: 6rem;
   }
 
   .about_header_text {
-    width: 50%;
+    width: 40%;
     height: auto;
   }
 
@@ -269,27 +271,15 @@
     height: 50%;
   }
 
-  .card-primary-text-frame2 {
-    width: 120%;
-    height: 40px;
-    order: 2;
-  }
-
   .socialMedia {
-    align-items: flex-start;
-    flex-direction: column;
-    order: 2;
-    width: 100%;
-    background: #000;
-  }
-
-  .frame2 {
-
+    display: flex;
+    gap: 1px;
+    width: auto;
+    height: auto;
   }
 
   .normalButnAbout {
     display: flex;
-    flex-direction: row;
     width: 175px;
     align-items: flex-start;
     text-align: center;
@@ -300,89 +290,101 @@
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    left: 12px;
-    margin: 8px;
+    margin: 2px;
     cursor: pointer;
     background-color: #fff;
-  }
-
-  .normalButnAbout:hover {
-    background: #6070ff;
-    color: #fff;
-  }
-
-  .normalButnAbout:active {
-    background: #2230d2;
-    color: #fff;
   }
 
   .skillList {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding-right: 6rem;
     width: 50%;
-    height: 360px;
-    margin-top: 153px;
-    left: 0px;
-    flex: 50%;
-    order: 2;
-    background: gold;
+    height: auto;
+    margin-top: 5.5rem;
+  } 
+
+  .drp_text {
+    display: flex;
+    align-items: flex-start;
+    width: fit-content;
+    margin-left: 10px;
   }
 
   .dropdown_container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0;
-    width: 50%;
+    padding: 0.1rem;
+    margin: 0;
+    width: 100%;
     height: auto;
   }
 
   #dropdown_header {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
     width: 100%;
-    height: 72px;
+    height: 70px;
     order: 0;
-    flex-grow: 0;
+  }
+
+  .dropdown_hamburger {
+    display: flex;
+    padding: 10px;
+    margin : 1rem 1rem 1rem 0;
+    border-radius: 6px;
+    float: right;
+  }
+
+  .fa-angle-down {
+    display: flex;
+    align-items: flex-end;
   }
 
   .dropdown {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 12px;
-    left: 0;
     gap: 12px;
-    width: 75%;
-    height: 120px;
+    width: 100%;
+    height: 110px;
   }
 
   #java_dropdown {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
-    width: 25%;
+    width: 19%;
     height: 100%;
     background: #f7f7f9;
     border-radius: 8px;
-    flex: none;
     order: 0;
   }
 
-  .drp_text {
-    display: flex;
-    width: fit-content;
-    height: fit-content;
+  .image {
+    width: auto;
+    height: 48px;
+    margin-top: 8px;
+    border-radius: 1px solid #fff;
   }
 
-  .separate {
-    height: 1;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  .drp_txt {
+    display: flex;
+    align-self: flex-start;
+    width: auto;
+    height: auto;
+    margin-left: 8.5px;
   }
+
 
   hr {
-    display: flex;
-    
+    gap: 0;
+    height: 1;
+    margin: 0;
   }
 
   .contactMe {
@@ -467,6 +469,8 @@
   #action {
     display: flex;
     width: 100%;
+    height: 60px;
+    margin-top: 2px;
     align-items: flex-start;
   }
 
