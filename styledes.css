@@ -405,18 +405,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
     width: 50%;
     height: auto;
     margin-top: 170px;
   }
 
   .contactTxt {
+    align-items: center;
     width: 100%;
     height: auto;
     text-align: center;
     order: 0;
-    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .Contact_body_text {
@@ -424,10 +424,13 @@
     align-content: center;
     width: 80%;
     height: auto;
+    margin-top: 0;
     order: 1;
   }
 
   .body-text {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     width: 100%;
@@ -436,7 +439,6 @@
 
   .form {
     display: flex;
-    margin-top: 2rem;
     width: 65%;
     align-items: center;
     order: 3;
@@ -477,6 +479,7 @@
 
   .normalButtnAbout {
     display: flex;
+    justify-self: center;
     align-items: center;
     width: 175px;
     text-align: center;
@@ -487,7 +490,6 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     cursor: pointer;
-    margin-left: 8rem;
     background-color: #fff;
   }
 
