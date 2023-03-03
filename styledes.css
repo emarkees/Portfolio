@@ -473,11 +473,11 @@
     height: 60px;
     margin-top: 2px;
     align-items: center;
-    background: #000;
   }
 
   .normalButtnAbout {
     display: flex;
+    align-items: center;
     width: 175px;
     text-align: center;
     letter-spacing: 0.03em;
@@ -487,6 +487,7 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     cursor: pointer;
+    margin-left: 8rem;
     background-color: #fff;
   }
 
