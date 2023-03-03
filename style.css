@@ -408,13 +408,11 @@ ul li a {
 }
 
 #action {
-  align-items: flex-start;
-  width: 100%;
-  height: 72px;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
+  display: flex;
+  width: 85%;
+  height: 70px;
   align-items: center;
+  order: 3;
 }
 
 button {
@@ -432,7 +430,7 @@ button {
 
 .normalButtn {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
   letter-spacing: 0.03em;
   color: #396df2;
@@ -440,7 +438,6 @@ button {
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  margin: 12px;
   cursor: pointer;
   background-color: #fff;
 }
@@ -589,13 +586,8 @@ button {
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  margin-top: 24px;
   cursor: pointer;
   background-color: #fff;
-}
-
-.actin {
-  width: 100%;
 }
 
 .normalButnAbout:hover {
@@ -729,7 +721,7 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  width: 100%;
+  max-width: 100%;
   height: 49rem;
   border-radius: 75px 0 0 0;
   text-align: center;
@@ -817,7 +809,6 @@ hr {
 
 .normalButtnAbout {
   display: flex;
-  flex-direction: row;
   width: 175px;
   align-items: flex-start;
   text-align: center;
@@ -828,7 +819,6 @@ hr {
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  left: 30px;
   cursor: pointer;
   background-color: #fff;
 }

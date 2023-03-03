@@ -7,15 +7,15 @@
   }
 
   .header-background-image {
-    height: 918px;
+    height: 748px;
     width: 100%;
     border-radius: 0 0 0 75px;
     background: #fff;
     background-image: url(./asset/images/header.svg);
     background-repeat: no-repeat;
-    background-size: 100% 75% ;
-    background-position-x: 20px 60px;
-    background-position-y: 0px;
+    background-size: 93% 90% ;
+    background-position-x: 5rem;
+    background-position-y: 5rem;
   }
 
   .Nav-bar {
@@ -35,7 +35,7 @@
   .logoPlaceHolder {
     display: flex;
     align-items: center;
-    margin-left: 120px;
+    margin-left: 12rem;
     align-content: center;
     background: #fff;
   }
@@ -115,9 +115,9 @@
     padding: 0;
     gap: 0;
     position: absolute;
-    width: 55%;
+    width: 58%;
     height: auto;
-    left: 20%;
+    left: 20rem;
     margin-top: 12rem;
     flex: 50%;
   }
@@ -134,7 +134,7 @@
   }
 
   .Headline-section-body {
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 
@@ -390,14 +390,15 @@
   .contactMe {
     display: flex;
     width: 100%;
-    height: auto;
+    height: 50rem;
     margin-top: 150px;
     align-items: center;
     background: #6070ff;
     background-image: url(./asset/Contact/contactdesk.svg);
     background-repeat: no-repeat;
-    background-size: 95% 95%;
-    background-position: 90% 80%;
+    background-size: 85% 90% ;
+    background-position-x: 5rem;
+    background-position-y: 4rem;
   }
 
   .contactblock {
@@ -405,9 +406,9 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    width: 80%;
+    width: 50%;
     height: auto;
-    margin-top: 120px;
+    margin-top: 170px;
   }
 
   .contactTxt {
@@ -421,7 +422,7 @@
   .Contact_body_text {
     display: flex;
     align-content: center;
-    width: 50%;
+    width: 80%;
     height: auto;
     order: 1;
   }
@@ -429,13 +430,14 @@
   .body-text {
     justify-content: center;
     align-content: center;
+    width: 100%;
     height: auto;
   }
 
   .form {
     display: flex;
-    margin-top: 0px;
-    width: 70%;
+    margin-top: 2rem;
+    width: 65%;
     align-items: center;
     order: 3;
     height: auto;
@@ -447,7 +449,7 @@
     border: 1px #cfd8dc solid;
     background-color: #fff;
     margin-bottom: 20px;
-    width: 50%;
+    width: 90%;
   }
 
   #mail {
@@ -455,15 +457,14 @@
     border-radius: 8px;
     border: 1px #cfd8dc solid;
     background-color: #fff;
-    width: 50%;
+    width: 90%;
   }
 
   #textarea {
     border-radius: 8px;
     border: 1px #cfd8dc solid;
     background-color: #fff;
-    
-    width: 60%;
+    width: 90%;
   }
 
   #action {
@@ -471,7 +472,8 @@
     width: 100%;
     height: 60px;
     margin-top: 2px;
-    align-items: flex-start;
+    align-items: center;
+    background: #000;
   }
 
   .normalButtnAbout {
