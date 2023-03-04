@@ -13,7 +13,7 @@
     background: #fff;
     background-image: url(./asset/images/header.svg);
     background-repeat: no-repeat;
-    background-size: 93% 90% ;
+    background-size: 93% 90%;
     background-position-x: 5rem;
     background-position-y: 5rem;
   }
@@ -125,7 +125,7 @@
   .Headline-section-title {
     display: flex;
     align-items: center;
-    letter-spacing: 0.30px;
+    letter-spacing: 0.3px;
     width: 49%;
     height: auto;
     flex: 45%;
@@ -303,8 +303,8 @@
     height: auto;
     margin-top: 5.5rem;
   }
-  
-  .drp_text {
+
+ .drp_text {
     display: flex;
     align-items: flex-start;
     width: fit-content;
