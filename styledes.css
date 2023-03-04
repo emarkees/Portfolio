@@ -475,10 +475,15 @@
     align-items: center;
   }
 
-  .normalButtnAbout {
+  #action_contact {
     display: flex;
-    justify-self: center;
+    width: 100%;
+    height: 60px;
     align-items: center;
+    background: #000;
+  }
+
+  .normalButtnAbout {
     width: 175px;
     text-align: center;
     letter-spacing: 0.03em;

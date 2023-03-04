@@ -162,6 +162,10 @@ body {
   margin: 0 4px 0 4px;
 }
 
+.fa-brands {
+  color: #505F79;
+}
+
 ul li a {
   list-style-type: none;
   text-decoration: none;
@@ -808,7 +812,6 @@ hr {
 }
 
 .normalButtnAbout {
-  display: flex;
   width: 175px;
   align-items: flex-start;
   text-align: center;
@@ -831,4 +834,12 @@ hr {
 .normalButtnAbout:active {
   background: #2230d2;
   color: #fff;
+}
+
+#action_contact {
+  display: flex;
+  width: 85%;
+  height: 70px;
+  align-items: center;
+  order: 3;
 }
