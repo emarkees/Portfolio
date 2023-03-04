@@ -254,19 +254,21 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    flex: 36%;
+    flex: 50%;
     gap: 10px;
     height: auto;
     padding-left: 6rem;
+    margin-top: 6.5rem;
   }
 
   .about_header_text {
-    width: 40%;
+    width: 45%;
     height: auto;
   }
 
   .about_body_text {
-    width: 100%;
+    flex-wrap: wrap;
+    width: 80%;
     height: 50%;
   }
 
