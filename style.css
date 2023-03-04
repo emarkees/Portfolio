@@ -783,7 +783,7 @@ hr {
 }
 
 #name {
-  border-radius: 8px;
+  border-radius: 2px;
   border: 1px #cfd8dc solid;
   background-color: #fff;
   margin-bottom: 20px;
@@ -793,7 +793,7 @@ hr {
 }
 
 #mail {
-  border-radius: 8px;
+  border-radius: 2px;
   border: 1px #cfd8dc solid;
   background-color: #fff;
   padding: 15px 25px;
@@ -802,7 +802,7 @@ hr {
 }
 
 #textarea {
-  border-radius: 8px;
+  border-radius: 2px;
   border: 1px #cfd8dc solid;
   background-color: #fff;
   padding: 15px 25px;
