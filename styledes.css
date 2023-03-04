@@ -41,7 +41,12 @@
   }
 
   .logo {
-    align-items: center;
+    align-items: center;    
+  }
+
+  .logo:hover {
+    -webkit-animation: spin 5s infinite;
+    animation: spin 5s infinite;
   }
 
   ul li {
