@@ -447,7 +447,7 @@
 
   #name {
     align-items: center;
-    border-radius: 8px;
+    border-radius: 2px;
     border: 1px #cfd8dc solid;
     background-color: #fff;
     margin-bottom: 20px;
@@ -456,14 +456,14 @@
 
   #mail {
     align-items: center;
-    border-radius: 8px;
+    border-radius: 2px;
     border: 1px #cfd8dc solid;
     background-color: #fff;
     width: 90%;
   }
 
   #textarea {
-    border-radius: 8px;
+    border-radius: 2px;
     border: 1px #cfd8dc solid;
     background-color: #fff;
     width: 90%;
