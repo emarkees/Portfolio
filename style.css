@@ -49,7 +49,6 @@ body {
   text-align: center;
   color: #6070ff;
   text-decoration: none;
-  align-items: center;
   -webkit-animation: spin 5s infinite;
   animation: spin 5s infinite;
 }
@@ -58,6 +57,7 @@ body {
   from {
     -webkit-transform: rotateY(0deg);
   }
+
   to {
     -webkit-transform: rotateY(-360deg);
   }
@@ -69,7 +69,7 @@ body {
     -ms-transform: rotateY(0deg);
     transform: rotateY(0deg);
   }
-  
+
   to {
     -moz-transform: rotateY(-360deg);
     -ms-transform: rotateY(-360deg);
