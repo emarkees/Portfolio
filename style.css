@@ -4,81 +4,60 @@ body {
 }
 
 .header-background-image {
-  position: relative;
   height: 718px;
   width: 100%;
-  left: 0;
-  right: 0;
   border-radius: 0 0 0 75px;
   background: #fff;
+  background-image: url(./asset/images/headershape.svg);
   background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position-x: 25px 30px;
 }
 
-#menu {
+.menu {
   display: none;
 }
 
-#Nav-bar {
-  position: absolute;
+.Nav-bar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
-  height: 92px;
-  top: 0;
-  left: 0;
-}
-
-#tools-bar {
-  position: absolute;
-  top: 44px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  align-content: center;
-  justify-content: center;
+  height: 44px;
 }
 
 .logoPlaceHolder {
-  position: absolute;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 10px 15px;
-  width: 100px;
-  height: 15px;
-  top: 50px;
-  left: 12px;
+  height: 100%;
+  left: 50px;
   justify-items: center;
+  margin-left: 2rem;
 }
 
 .logo {
-  width: 76px;
+  width: 100%;
   height: 20px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 20px;
   display: flex;
   align-items: center;
   text-align: center;
   color: #6070ff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   text-decoration: none;
 }
 
 #Hamburger {
-  position: absolute;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 4px;
-  width: 30px;
+  float: right;
+  width: auto;
   height: 30px;
-  right: 24px;
-  top: 6px;
-  border-radius: 8px;
+  border-radius: 2px;
+  margin-right: 2rem;
 }
 
 .bar {
@@ -88,15 +67,7 @@ body {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #6070ff;
-}
-
-.headershape {
-  position: absolute;
-  width: 100%;
-  height: 587.15px;
-  left: 0;
-  top: 104px;
+  background: #6070ff;
 }
 
 .Headline-section {
@@ -105,12 +76,9 @@ body {
   align-items: flex-start;
   padding: 114px 24px;
   gap: 10px;
-  position: absolute;
   width: auto;
   height: 604px;
-  top: 92px;
-  background-image: url(./asset/images/headershape.svg);
-  background-repeat: no-repeat;
+  top: 80px;
 }
 
 .Headline-section-title {
@@ -126,8 +94,7 @@ body {
   color: #172b4d;
   flex: none;
   order: 0;
-  flex-grow: 0;
-  margin-top: 0;
+  margin-top: 1rem;
 }
 
 .Headline-section-body {
@@ -195,6 +162,10 @@ body {
   margin: 0 4px 0 4px;
 }
 
+.fa-brands {
+  color: #505f79;
+}
+
 ul li a {
   list-style-type: none;
   text-decoration: none;
@@ -248,29 +219,16 @@ ul li a {
   order: 1;
 }
 
-.available {
-  display: flex;
-  padding: 4px;
-  margin: 8px;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  flex: 50%;
-  order: 1;
-}
-
 .card-text-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  gap: 10px;
+  gap: 6px;
   width: 90%;
   height: auto;
   flex: 50%;
   order: 2;
-  flex-grow: 0;
 }
 
 .card-primary-text {
@@ -282,6 +240,18 @@ ul li a {
   width: 80%;
   height: auto;
   order: 0;
+  flex-grow: 0;
+}
+
+.card-primary-text-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 6px;
+  width: 90%;
+  height: auto;
+  order: 2;
   flex-grow: 0;
 }
 
@@ -442,12 +412,11 @@ ul li a {
 }
 
 #action {
-  width: 100%;
-  height: 72px;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
+  display: flex;
+  width: 85%;
+  height: 70px;
   align-items: center;
+  order: 3;
 }
 
 button {
@@ -465,7 +434,7 @@ button {
 
 .normalButtn {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
   letter-spacing: 0.03em;
   color: #396df2;
@@ -473,7 +442,6 @@ button {
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  margin: 12px;
   cursor: pointer;
   background-color: #fff;
 }
@@ -533,9 +501,9 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 120px;
+  gap: 30px;
   width: 100%;
-  height: auto;
+  height: 1018px;
   background: #fff;
   border-radius: 0  75px 0 0;
   margin-top: 40px;
@@ -546,12 +514,11 @@ button {
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  gap: 8px;
+  gap: 6px;
   width: 90%;
   height: auto;
   order: 0;
-  margin-top: 130px;
-  flex-grow: 0;
+  margin-top: 90px;
 }
 
 .about_header_text {
@@ -623,13 +590,8 @@ button {
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  margin-top: 24px;
   cursor: pointer;
   background-color: #fff;
-}
-
-.actin {
-  width: 100%;
 }
 
 .normalButnAbout:hover {
@@ -648,7 +610,7 @@ button {
   align-items: center;
   padding: 0;
   width: 90%;
-  height: 464.15px;
+  height: auto;
   order: 1;
 }
 
@@ -664,40 +626,20 @@ button {
 }
 
 #dropdown_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 72px;
   order: 0;
   flex-grow: 0;
 }
 
-.dropdown {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2px;
-  gap: 12px;
-  width: 100%;
-  order: 1;
-  flex-grow: 0;
-}
-
-#java_dropdown {
-  display: grid;
-  width: 80%;
-  height: 66.72px;
-  order: 0;
-  flex-grow: 0;
-  background: #f7f7f9;
-  border-radius: 8px;
-}
-
 .drp_text {
   display: flex;
   align-items: center;
-  position: absolute;
   height: 24px;
-  width: 50%;
-  left: 45px;
+  width: 100%;
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
@@ -707,37 +649,52 @@ button {
 
 .dropdown_hamburger {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 10px;
-  position: relative;
-  width: max-content;
-  height: max-content;
+  margin: 1rem 1rem 1rem 0;
   border-radius: 6px;
   float: right;
-  right: 20px;
-  top: 15px;
 }
 
 .fa-angle-down {
   position: relative;
 }
 
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2px;
+  gap: 12px;
+  width: 100%;
+  order: 1;
+  flex-grow: 0;
+}
+
+#java_dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  height: 66.72px;
+  gap: 1px;
+  order: 0;
+  background: #f7f7f9;
+  border-radius: 8px;
+}
+
 .image {
-  position: absolute;
-  width: 48px;
+  width: auto;
   height: 48px;
-  margin-top: 9px;
   margin-left: 8px;
   border-radius: 1px solid #fff;
 }
 
 .drp_txt {
   display: flex;
-  position: absolute;
-  width: 80px;
-  height: 24px;
-  margin-left: 90px;
+  align-self: flex-start;
+  width: auto;
+  height: auto;
+  margin-left: 8px;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
@@ -750,91 +707,111 @@ hr {
   position: relative;
   height: 1;
   width: 100%;
+  margin: 0;
 }
 
-.contact-section {
+.contactblock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
   width: 100%;
-  margin-top: 20%;
   height: auto;
+  margin-top: 8rem;
 }
 
 .contactMe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  height: auto;
+  justify-items: center;
+  max-width: 100%;
+  height: 49rem;
   border-radius: 75px 0 0 0;
   text-align: center;
   background: #6070ff;
   background-image: url(./asset/Contact/contactimg.svg);
   background-repeat: no-repeat;
-  background-position: right;
-  padding-top: 1rem;
+  background-size: 90% 90%;
+  background-position-y: 2rem;
+  background-position-x: 5.5rem;
 }
 
 .contactTxt {
-  margin-top: 19%;
-  max-width: 100%;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 0;
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-weight: 700;
+  line-height: 52px;
   font-style: normal;
   color: #fff;
+  order: 0;
 }
 
 .Contact_body_text {
-  margin: 0;
-  align-items: center;
-  justify-items: center;
-  max-width: 100%;
+  margin-top: 0;
+  width: 100%;
   height: auto;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
   line-height: 28px;
+  margin-left: 2rem;
   color: #ebebff;
-  padding: 0 1.5rem;
-  margin-bottom: 2.5rem;
+  order: 1;
+}
+
+.body-text {
+  justify-content: center;
+  align-content: center;
+  width: 90%;
+  height: auto;
+  margin: 0;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  margin-left: 24px;
-  margin-right: 24px;
+  width: 100%;
+  align-items: center;
+  margin-top: 1rem;
+  order: 2;
 }
 
 #name {
-  border-radius: 8px;
+  border-radius: 2px;
   border: 1px #cfd8dc solid;
   background-color: #fff;
   margin-bottom: 20px;
-  padding: 15px 35px;
+  padding: 15px 25px;
+  width: 70%;
+  order: 0;
 }
 
 #mail {
-  border-radius: 8px;
+  border-radius: 2px;
   border: 1px #cfd8dc solid;
   background-color: #fff;
-  margin-bottom: 20px;
-  padding: 15px 35px;
+  padding: 15px 25px;
+  width: 70%;
+  margin-bottom: 15px;
 }
 
 #textarea {
-  border-radius: 8px;
+  border-radius: 2px;
   border: 1px #cfd8dc solid;
   background-color: #fff;
-  width: auto;
-  padding: 10px 35px;
+  padding: 15px 25px;
+  width: 70%;
   margin-bottom: 15px;
   color: #b3bac5;
 }
 
 .normalButtnAbout {
-  display: flex;
-  flex-direction: row;
   width: 175px;
   align-items: flex-start;
   text-align: center;
@@ -845,7 +822,6 @@ hr {
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  left: 30px;
   cursor: pointer;
   background-color: #fff;
 }
@@ -858,4 +834,12 @@ hr {
 .normalButtnAbout:active {
   background: #2230d2;
   color: #fff;
+}
+
+#action_contact {
+  display: flex;
+  width: 85%;
+  height: 70px;
+  align-items: center;
+  order: 3;
 }
