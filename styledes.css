@@ -41,15 +41,12 @@
   }
 
   .logo {
-    align-items: center;    
-  }
-
-  .logo:hover {
+    align-items: center;
     -webkit-animation: spin 5s infinite;
     animation: spin 5s infinite;
   }
 
-  @-webkit-keyframes spin{
+  @-webkit-keyframes spin {
     from {
       -webkit-transform: rotateY(0deg);
     }
@@ -58,7 +55,7 @@
     }
   }
 
-  @keyframes spin{
+  @keyframes spin {
     from {
       -moz-transform: rotateY(0deg);
       -ms-transform: rotateY(0deg);
