@@ -50,6 +50,7 @@
     from {
       -webkit-transform: rotateY(0deg);
     }
+
     to {
       -webkit-transform: rotateY(-360deg);
     }
@@ -61,7 +62,7 @@
       -ms-transform: rotateY(0deg);
       transform: rotateY(0deg);
     }
-    
+
     to {
       -moz-transform: rotateY(-360deg);
       -ms-transform: rotateY(-360deg);
