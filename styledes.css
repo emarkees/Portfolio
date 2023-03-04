@@ -126,7 +126,7 @@
     display: flex;
     align-items: center;
     letter-spacing: 0.3px;
-    width: 49%;
+    width: 45%;
     height: auto;
     flex: 45%;
     order: 0;
@@ -134,7 +134,7 @@
   }
 
   .Headline-section-body {
-    width: 80%;
+    width: 95%;
     height: auto;
   }
 
