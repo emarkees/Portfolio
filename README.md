@@ -16,7 +16,7 @@
 - [📝 License](#license)
 
 
-# 📖 [My Portfolio ] <a name="about-project"></a>
+# 📖 [Portfolio ] <a name="about-project"></a>
 
 **[Portfolio]** is a project built as a student of Microverse, this websiteis where share projects and information about myself.
 
@@ -33,11 +33,10 @@ This project was made with:
 
 - **[header-background-mobile]**
 - **[Headline]**
-- **[About_Me]**
 - **[Contact_Me]**
 
 ### 🚀 Live Demo  <a name="Live Demo"></a>
-[https://emarkees.github.io/Portfolio/]
+[Link to Live demo] Coming soon!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
