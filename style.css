@@ -814,8 +814,13 @@ hr {
   background-color: #fff;
   margin-bottom: 20px;
   padding: 15px 25px;
-  width: 70%;
+  width: 75%;
   order: 0;
+}
+
+.name {
+  width: 100%;
+  height: fit-content;
 }
 
 #mail {
@@ -823,7 +828,7 @@ hr {
   border: 1px #cfd8dc solid;
   background-color: #fff;
   padding: 15px 25px;
-  width: 70%;
+  width: 75%;
   margin-bottom: 15px;
 }
 
@@ -832,7 +837,7 @@ hr {
   border: 1px #cfd8dc solid;
   background-color: #fff;
   padding: 15px 25px;
-  width: 70%;
+  width: 75%;
   margin-bottom: 15px;
   color: #b3bac5;
 }
