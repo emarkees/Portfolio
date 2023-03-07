@@ -31,9 +31,14 @@ This project was made with:
 
 ### Key Features <a name="key-features"></a>
 
-- **[header-background-mobile]**
-- **[Headline]**
-- **[Contact_Me]**
+- **Response and Accessible website**
+- **Contact Project Information**
+
+### Future Features <a name="Future-features"></a>
+
+- **Improve animation**
+- **Refactor the code to improve code quality**
+- **Add link to future projects**
 
 ### 🚀 Live Demo  <a name="Live Demo"></a>
 [Link to Live demo] Coming soon!
@@ -57,12 +62,16 @@ cd my-folder [https://github.com/emarkees/Portfolio.git]
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Author1** Adeyemi Olusola
-👤 **Author2** Federica Ulzurrun
 
 - GitHub: [@emarkees](https://github.com/emarkees)
 - Twitter: [@McEmarkees](https://twitter.com/McEmarkees)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/)
 
+👤 **Author2** Federica Ulzurrun
+
+👤 **Author3** Glauber Bannwart
+
+- GitHub: [@cancelei](https://github.com/cancelei)
 
 ## 🤝 Contributing <a name="contributing"></a>
 
