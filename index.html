@@ -44,7 +44,7 @@
       </div>
       <div class="social-section-icon"> <!-- review-->
         <ul class="icons">
-          <li><a href="twitter.com/Mc_Emarkees" class="fa-brands fa-twitter"></a></li>
+          <li><a href="twitter.com/Mc_Emarkees" class="fa-brands fa-twitter">""</a></li>
           <li><a href="github.com/emarkees" class="fa-brands fa-github"></a></li>
           <li><a href="linkedin.com" class="fa-brands fa-linkedin-in"></a></li>
           <li><a href="medium.com" class="fa-brands fa-medium"></a></li>
@@ -283,11 +283,11 @@
       <label for="text" class="name">
         <input type="text" id="name" name="user_name" placeholder="FullName *"  required maxlength="30"/>
       </label>
-      <label class="name">
+      <label  for="text" class="name">
         <input type="email" id="mail" name="user_email" placeholder="Email Address *"  pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-])*$/" required />
       </label>
-        <label class="name">
-        <textarea id="textarea" cols="30" rows="10" placeholder="Write your message here *" name="user_message" required maxlength="500"></textarea>
+        <label  for="text" class="name">
+        <textarea id="textarea" cols="30" rows="10" aria-label="text" placeholder="Write your message here *" name="user_message" required maxlength="500"></textarea>
       </label>
         <div id="action_contact">
           <button type="submit" class="normalButtnAbout" onclick=""> Get in Touch</button>
