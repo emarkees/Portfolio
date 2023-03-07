@@ -469,6 +469,7 @@
     align-items: center;
     order: 3;
     height: auto;
+    overflow: hidden;
   }
 
   #name {
