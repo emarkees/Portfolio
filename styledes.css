@@ -477,7 +477,7 @@
     border: 1px #cfd8dc solid;
     background-color: #fff;
     margin-bottom: 20px;
-    width: 80%;
+    width: 85%;
   }
 
   #mail {
@@ -485,14 +485,14 @@
     border-radius: 2px;
     border: 1px #cfd8dc solid;
     background-color: #fff;
-    width: 80%;
+    width: 85%;
   }
 
   #textarea {
     border-radius: 2px;
     border: 1px #cfd8dc solid;
     background-color: #fff;
-    width: 90%;
+    width: 100%;
   }
 
   #action {
