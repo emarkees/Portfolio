@@ -8,6 +8,7 @@
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
+  - [Deployment](#Deployment)
 - [👥 Authors](#authors)
 - 🔭 Future Features
 - [🤝 Contributing](#contributing)
@@ -41,7 +42,8 @@ This project was made with:
 - **Add link to future projects**
 
 ### 🚀 Live Demo  <a name="Live Demo"></a>
-[Link to Live demo] Coming soon!
+
+[https://emarkees.github.io/Portfolio]
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -58,6 +60,10 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 cd my-folder [https://github.com/emarkees/Portfolio.git]
+
+### Deployment
+
+Deploy with githup Pages
 
 ## 👥 Authors <a name="authors"></a>
 
