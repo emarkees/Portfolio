@@ -36,7 +36,7 @@ This project was made with:
 - **[Contact_Me]**
 
 ### 🚀 Live Demo  <a name="Live Demo"></a>
-[Link to Live demo] Coming soon!
+[Live demo](https://emarkees.github.io/Portfolio/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
