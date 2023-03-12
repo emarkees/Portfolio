@@ -42,8 +42,7 @@ This project was made with:
 - **Add link to future projects**
 
 ### 🚀 Live Demo  <a name="Live Demo"></a>
-
-[https://emarkees.github.io/Portfolio]
+[Live demo](https://emarkees.github.io/Portfolio/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
