@@ -28,7 +28,7 @@
     list-style-type: none;
   }
 
-  #Hamburger {
+  .hamburger {
     display: none;
   }
 
@@ -77,12 +77,19 @@
   .menu {
     display: flex;
     align-items: flex-start;
-    float: right;
-    padding-right: 0;
+    flex-direction: row;
     gap: 30px;
-    width: fit-content;
+    width: auto;
     height: auto;
     margin-right: 10rem;
+  }
+
+  .mobile-menu {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    width: 100%;
+    gap: 35px;
   }
 
   .Menu-portfolio {
