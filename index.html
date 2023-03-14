@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" integrity="sha512-XJ3ntWHl40opEiE+6dGhfK9NAKOCELrpjiBRQKtu6uJf9Pli8XY+Hikp7rlFzY4ElLSFtzjx9GGgHql7PLSeog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link  type="text/javascript" src="Script.js">
     <link rel="stylesheet" href="styledes.css">
   <title>Document</title>
 </head>
@@ -18,21 +19,25 @@
         <div class="logoPlaceHolder">
           <a href="#" class="logo"> My Logo</a>
         </div>
-        <ul class="menu">
-          <li class="Menu-portfolio"><a href="#">Portfolio</a></li>
-          <li class="Menu-about"><a href="#About">About</a></li>
-          <li class="Menu-contact"><a href="#Contact">Contact</a></li>
-        </ul>
-        <div id="Hamburger">
-          <div class="union">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
+       
+        <nav class="menu">
+         <ul class="mobile-menu">
+            <li class="Menu-portfolio mobile-font"><a href="#"  class="bgcolor">Portfolio</a></li>
+            <li class="Menu-portfolio mobile-font"><a href="#About"  class="bgcolor">About</a></li>
+            <li class="Menu-portfolio mobile-font"><a href="#Contact" class="bgcolor">Contact</a></li>
+          </ul>
+        </nav>  
         
       </nav>
     </header>
+
+    <!--Headline Section-->
+
     <div class="Headline-section">
       <h1 class="Headline-section-title">
         I'm Adeyemi Glad to see you!
@@ -91,7 +96,7 @@
         </div>
       </div>
     </div>
-    <div class="card-section">
+   <div class="card-section">
       <div class="card-section-background-image">
         <img src="./asset/images/available.svg" alt="Available" class="card-background-image">
       </div>
@@ -294,6 +299,57 @@
     </div>
       
   </section>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+    <div class="card-primary-text">
+      <div>
+        <h1 class="primary-title">Tonic</h1>
+        <span class="close_hamburger"> &times; </span>
+      </div>
+     
+      <ul class="card-primary-text-frame">
+        <li><h1 class="client">CANOPY</h1></li>
+        <span class="span"></span>
+        <li><h1 class="role">Back End Dev</h1></li>
+        <span class="span"></span>
+        <li><h1 class="year">2015</h1></li>
+      </ul>             
+    </div>
+    
+    <img src="./asset/images/avocado.svg" alt="Avocado" class="card-background-image">
+    <div class="right-left-block-in-row">
+		  <div class="left-block">
+		    <p class="details-modal">
+		     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+		    </p>
+		  </div>
+		  <div class="right-block">
+		    <ul class="technologie-label">
+		      <li> html </li>
+		      <li> css </li>
+		      <li> javaScript </li>
+		    </ul>
+			<ul class="technologie-label" id="other-tech">
+		      <li> github </li>
+		      <li> ruby </li>
+		      <li> bootstrap </li>
+		    </ul>
+		    <div class="button-in-row">
+		      <a href="" class="link-live">
+			    <button class="see-project-modal-live" type="button"> See Live 
+		          <img src="./image/icon-live.png" alt="Live icon">
+		        </button>
+			  </a>
+		      <a href="" class="link-git">
+			    <button class="see-project-modal-git" type="button" id="icon-gitModal"> See Source 
+		          <img src="./image/vector-git.png" alt="Github icon">
+		        </button>
+			  </a>
+		    </div>
+		  </div>
+		</div>
+  </div>
 
 </body>
 </html>
