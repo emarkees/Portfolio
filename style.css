@@ -601,7 +601,7 @@ button {
   flex-grow: 0;
 }
 
-.about-myself-section {
+#about {
   display: flex;
   flex-direction: column;
   align-items: center;
