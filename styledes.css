@@ -384,7 +384,8 @@
     width: auto;
     height: 48px;
     margin-top: 8px;
-    border-radius: 1px solid #fff;
+    border: 1px solid #fff;
+    border-radius: 1px;
   }
 
   .drp_txt {
@@ -397,7 +398,6 @@
 
   hr {
     gap: 0;
-    height: 1;
     margin: 0;
   }
 
@@ -531,7 +531,6 @@
     background-image: url(./asset/images/headershape.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-position-x: 25px 30px;
     background-position-y: 80px;
   }
 
