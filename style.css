@@ -824,7 +824,7 @@ hr {
   margin-top: 8rem;
 }
 
-.contactMe {
+#contactMe {
   display: flex;
   flex-direction: column;
   align-items: center;
