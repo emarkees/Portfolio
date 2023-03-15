@@ -277,7 +277,7 @@ ul li a {
   margin: 0;
 }
 
-.work-section {
+#work-section {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 1.2fr 0.1fr 1.2fr 0.5fr;
