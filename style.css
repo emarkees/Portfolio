@@ -75,6 +75,7 @@ body {
 
 .hamburger {
   display: block;
+  position: relative;
   float: right;
   width: fit-content;
   height: 30px;
@@ -94,12 +95,10 @@ body {
   background: #6070ff;
 }
 
-.bar .menu:after {
-  color: #ad2e2e;
+.bar .menu ::after {
   content: "";
   display: block;
-  z-index: -1;
-  color: #fff;
+  z-index: 1;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -108,22 +107,12 @@ body {
 
 .hamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
+  background: #fff;
 }
 
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
-} 
-
-.nav-menu {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  position: absolute;
-  width: 80%;
-  height: 718px;
-  top: 0;
-  z-index: 1;
+  background: #fff;
 }
 
 body.blur .menu::after {
@@ -135,10 +124,6 @@ body.blur .menu::after {
   mix-blend-mode: multiply;
 }
 
-.blur {
-  opacity: 1;
-}
-
 .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -146,6 +131,7 @@ body.blur .menu::after {
   width: 80%;
   height: 184px;
   justify-content: space-around;
+  content: normal;
 }
 
 .menu {
@@ -157,11 +143,12 @@ body.blur .menu::after {
   top: 0;
   list-style: none;
   background: #6070ff;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
+  background-blend-mode: multiply;
+  opacity: 25;
   width: 100%;
   height: 718px;
-  mix-blend-mode: multiply;
 }
 
 .menu.active {
@@ -180,12 +167,9 @@ body.blur .menu::after {
 
 .Menu-portfolio {
   display: flex;
-  align-items: flex-start;
   width: 80%;
   height: 40px;
-  display: flex;
   align-items: center;
-  color: #fff;
 }
 
 .bgcolor {
@@ -219,7 +203,7 @@ body.blur .menu::after {
   margin: 0;
 }
 
-.Headline-section-body { 
+.Headline-section-body {
   width: auto;
   height: auto;
   font-family: 'Poppins', sans-serif;
@@ -998,10 +982,12 @@ hr {
 }
 
 .close_hamburger {
-
-  left: 10%;
-  width: fit-content;
-  height: fit-content;
+  display: flex;
+  position: absolute;
+  float: left;
+  margin-right: rem;
+  z-index: 1001;
+  cursor: pointer;
   font-size: 2rem;
-  background: #000;
+  color: #fff;
 }
