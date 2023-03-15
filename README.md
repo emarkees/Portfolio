@@ -9,8 +9,8 @@
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
   - [Deployment](#Deployment)
-- [👥 Authors](#authors)
-- 🔭 Future Features
+- 👥 Authors](#authors)
+- [🔭 Future Features
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -40,9 +40,10 @@ This project was made with:
 - **Improve animation**
 - **Refactor the code to improve code quality**
 - **Add link to future projects**
+- **Add popup window**
 
 ### 🚀 Live Demo  <a name="Live Demo"></a>
-[Live demo](https://emarkees.github.io/Portfolio/)
+[Live demo] [(https://emarkees.github.io/Portfolio/)]
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
