@@ -11,7 +11,6 @@ body {
   background-image: url(./asset/images/headershape.svg);
   background-repeat: no-repeat;
   background-size: 100% 95%;
-  background-position-x: 25px 30px;
 }
 
 .Nav-bar {
@@ -384,7 +383,6 @@ ul li a {
   padding: 0;
   gap: 8px;
   width: 100%;
-  height: px;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -792,7 +790,8 @@ button {
   width: auto;
   height: 48px;
   margin-left: 8px;
-  border-radius: 1px solid #fff;
+  border: 1px solid #fff;
+  border-radius: 1px;
 }
 
 .drp_txt {
@@ -811,7 +810,6 @@ button {
 
 hr {
   position: relative;
-  height: 1;
   width: 100%;
   margin: 0;
 }
@@ -902,7 +900,7 @@ hr {
 
 .name {
   width: 100%;
-  height: fit-content;
+  gap: 10px;
 }
 
 #mail {
@@ -992,7 +990,6 @@ hr {
   display: flex;
   position: absolute;
   float: left;
-  margin-right: rem;
   z-index: 1001;
   cursor: pointer;
   font-size: 2rem;
