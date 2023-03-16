@@ -97,7 +97,7 @@ document.querySelectorAll('.menuaction')
         <img src="${item.featuredImage}" alt="Avocado" class="card-background-image">
       </div>
       <div class="card-text-section">
-        <div class="card-primary-text">
+        <div class="modal-primary-text">
           <h1 class="primary-title">${item.name}</h1>
           <ul class="card-primary-text-frame">
             <li><h1 class="client">CANOPY</h1></li>

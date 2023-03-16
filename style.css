@@ -523,7 +523,14 @@ mm {
   flex-grow: 0;
   text-decoration: none;
   list-style-type: none;
-  background: #000;
+}
+
+.tag-font {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .html {
@@ -578,6 +585,7 @@ button {
 }
 
 .normalButtn {
+  width: auto;
   display: flex;
   align-items: flex-start;
   text-align: center;
@@ -589,6 +597,7 @@ button {
   font-style: normal;
   cursor: pointer;
   background-color: #fff;
+
 }
 
 .normalButtn:hover {
@@ -999,170 +1008,3 @@ hr {
   order: 3;
 }
 
-/*.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 5rem;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: space-around;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.modal.active {
-  left: 0;
-}
-
-.modal-content.active {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px;
-  gap: 12px;
-  position: absolute;
-  width: 90%;
-  height: 718px;
-  top: 5px;
-  background: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-}
-
-.close_hamburger {
-  display: flex;
-  position: absolute;
-  float: left;
-  z-index: 1001;
-  cursor: pointer;
-  font-size: 2rem;
-  color: #fff;
-}
-*/
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1001;
-  padding-top: 5rem;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  position: absolute;
-  padding: 16px;
-  gap: 12px;
-  width: 90%;
-  height: auto;
-  top: 12px;
-  z-index: 1001;
-  background: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-}
-
-.primary-title-container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.closehamburger {
-  position: relative;
-  display: flex;
-  order: 1;
-  right: 1.5rem;
-  width: 50%;
-  height: fit-content;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-.closehamburger.active {
-  left: 0;
-}
-
-.right-left-block-in-row {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-}
-
-.button-in-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.link-live {
-  display: flex;
-  width: 45%;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  list-style-type: none;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.link-git
-{
-  display: flex;
-  width: 50%;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  list-style-type: none;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.link-live:hover {
-  background: #6070ff;
-  color: #fff;
-}
-
-.link-live:active {
-  background: #2230d2;
-  color: #fff;
-}
-
-.modal-live,
-.modal-git
-{
-  display: flex;
-  width: 100%;
-  line-height: 20px;
-  color: #6070ff;
-  font-size: 15px;
-  font-weight: 500;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  flex-wrap: wrap;
-  text-decoration: none;
-  position: relative;
-}
-
-.tag-font {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  text-align: center;
-}
