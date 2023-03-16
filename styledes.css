@@ -80,8 +80,9 @@
     align-content: center;
     justify-content: space-around;
     height: 10vh;
-    width: 30%;
+    width: 20%;
     float: left;
+    margin-right: 10rem;
     background-color: #fff;
   }
 
@@ -98,7 +99,7 @@
     align-items: center;
     text-align: center;
     height: 5vh;
-    gap: 30px;
+    gap: 10px;
     margin-top: 0.9rem;
   }
 
@@ -114,12 +115,13 @@
     display: flex;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: auto;
     height: 30px;
   }
 
   .bgcolor {
     color: #344563;
+    width: auto;
   }
 
   .Headline-section {

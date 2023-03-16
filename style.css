@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   height: auto;
   background: #f7f7f9;
@@ -97,6 +101,7 @@ body {
 .bar .menu ::after {
   content: "";
   display: block;
+  position: absolute;
   z-index: 1;
 }
 
@@ -138,7 +143,7 @@ body.blur .menu::after {
   display: none;
   align-content: center;
   justify-content: space-around;
-  position: absolute;
+  position: fixed;
   top: 0;
   list-style: none;
   background: #6070ff;
