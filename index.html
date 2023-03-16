@@ -61,8 +61,11 @@
   </section>
 
   <!-- Work Section-->
+  <div class="work-container">
 
-  <section id="work">
+  </div>
+
+ <!-- <section id="work">
     <div class="card-section">
       <div class="card-section-background-image">
         <img src="./asset/images/avocado.svg" alt="Avocado" class="card-background-image">
@@ -195,7 +198,7 @@
         </div>
       </div>
     </div>
-  </section> 
+  </section> -->
   
   <section id="about">
 
@@ -274,15 +277,12 @@
 
   <section id="contactMe">
     <div class="contactblock">
-    
-        <h1 class="contactTxt">Contact me</h1>
-      
+      <h1 class="contactTxt">Contact me</h1>
       <div class="Contact_body_text">
         <p 
           class="body-text">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it 
         </p>
       </div>
-      
       <form class="	form" action="https://formspree.io/f/xnqrezql" method="post" >
       <label for="text" class="name">
         <input type="text" id="name" name="user_name" aria-label="name" placeholder="FullName *"  required maxlength="30"/>
@@ -296,21 +296,17 @@
         <div id="action_contact">
           <button type="submit" class="normalButtnAbout" onclick=""> Get in Touch</button>
         </div>
-        
       </form>
-      
     </div>
-      
   </section>
 
   <section id="myModal" class="modal">
-    <div class="modal-content">
+    <div class="modal-content dropp">
       <div class="card-primary-text">
         <div class="primary-title-container">
           <h1 class="primary-title">Tonic</h1>
-          <span class="closehamburger"> &times; </span>
+          <span class="closehamburger dropp"> &times; </span>
         </div>
-     
         <ul class="card-primary-text-frame">
           <li><h1 class="client">CANOPY</h1></li>
           <span class="span"></span>
@@ -319,8 +315,7 @@
           <li><h1 class="year">2015</h1></li>
         </ul>             
       </div>
-    
-      <img src="./asset/images/avocado.svg" alt="Avocado" class="card-background-image">
+      <img src=".../../asset/images/avocado.svg" alt="Avocado" class="card-background-image">
       <div class="card-text-section">
 		    <div class="left-block">
 		     <p class="card-primary-body-text">
@@ -329,29 +324,29 @@
 		    </div>
 		    
 		    <ul class="card-primary-tag">
-		      <li class="tags"> html </li>
-		      <li class="tags"> css </li>
-		      <li class="java"> javaScript </li>
+		      <li class="tags tag-font"> html </li>
+		      <li class="tags tag-font"> css </li>
+		      <li class="java tag-font"> javaScript </li>
 		    </ul>
 		    <div id="action">
-		      <a href="" class="link-live">
+		      <a href="" class="link-live ">
 			      <button class="modal-live" type="button"> See Live 
 		          <img src="./asset/popup/liveicon.svg" alt="Live icon">
 		        </button>
 			    </a>
 		      <a href="" class="link-git">
-			       <button class="modal-git" type="button" id="icon-gitModal"> See Source 
-		         <img src="./asset/popup/giticon.svg" alt="Github icon">
+			      <button class="modal-git" type="button"> See Source 
+		         <img src="./asset/popup/liveicon.svg" alt="Github icon">
 		        </button>
 			    </a>
         </div>
 		  </div>
 		</div>
-  </section>
+
+  </section>  
+  <script src="script.js">
 
 
-
-  
-  <script src="script.js"></script>
+  </script>
 </body>
 </html>
