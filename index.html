@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" integrity="sha512-XJ3ntWHl40opEiE+6dGhfK9NAKOCELrpjiBRQKtu6uJf9Pli8XY+Hikp7rlFzY4ElLSFtzjx9GGgHql7PLSeog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link  type="text/javascript" src="Script.js">
     <link rel="stylesheet" href="styledes.css">
   <title>Document</title>
 </head>
@@ -18,21 +19,26 @@
         <div class="logoPlaceHolder">
           <a href="#" class="logo"> My Logo</a>
         </div>
-        <ul class="menu">
-          <li class="Menu-portfolio" tabindex=""><a href="#">Portfolio</a></li>
-          <li class="Menu-about"><a href="#About">About</a></li>
-          <li class="Menu-contact"><a href="#Contact">Contact</a></li>
-        </ul>
-        <div id="Hamburger">
-          <div class="union">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
+        <div class="hamburger menuacton" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+
         </div>
+       
+        <nav class="menu" id="menu"> 
+         <ul class="mobile-menu">
+            <li class="Menu-portfolio mobile-font"><a href="#work"  class="bgcolor menuaction">Portfolio</a></li>
+            <li class="Menu-portfolio mobile-font"><a href="#about"  class="bgcolor menuaction">About</a></li>
+            <li class="Menu-portfolio mobile-font"><a href="#contactMe" class="bgcolor menuaction">Contact</a></li>
+          </ul>
+        </nav>  
         
       </nav>
     </header>
+
+    <!--Headline Section-->
+
     <div class="Headline-section">
       <h1 class="Headline-section-title">
         I'm Adeyemi Glad to see you!
@@ -54,10 +60,9 @@
     </div>
   </section>
 
-
   <!-- Work Section-->
 
-  <section class="work-section">
+  <section id="work">
     <div class="card-section">
       <div class="card-section-background-image">
         <img src="./asset/images/avocado.svg" alt="Avocado" class="card-background-image">
@@ -91,7 +96,7 @@
         </div>
       </div>
     </div>
-    <div class="card-section">
+   <div class="card-section">
       <div class="card-section-background-image">
         <img src="./asset/images/available.svg" alt="Available" class="card-background-image">
       </div>
@@ -192,7 +197,7 @@
     </div>
   </section> 
   
-  <section class="about-myself-section">
+  <section id="about">
 
     <div class="About-top">
       <h1 class="about_header_text">
@@ -267,11 +272,10 @@
     </div>
   </section>
 
-  <section class="contactMe">
+  <section id="contactMe">
     <div class="contactblock">
     
         <h1 class="contactTxt">Contact me</h1>
-      
       
       <div class="Contact_body_text">
         <p 
@@ -298,6 +302,7 @@
     </div>
       
   </section>
-
+  
+  <script src="script.js"></script>
 </body>
 </html>

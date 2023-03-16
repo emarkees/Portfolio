@@ -28,7 +28,7 @@
     list-style-type: none;
   }
 
-  #Hamburger {
+  .hamburger {
     display: none;
   }
 
@@ -76,62 +76,52 @@
 
   .menu {
     display: flex;
-    align-items: flex-start;
-    float: right;
-    padding-right: 0;
-    gap: 30px;
-    width: fit-content;
-    height: auto;
+    position: relative;
+    align-content: center;
+    justify-content: space-around;
+    height: 10vh;
+    width: 20%;
+    float: left;
+    margin-right: 10rem;
+    background-color: #fff;
+  }
+
+  .menu.active {
+    display: flex;
+    left: 0;
+    margin: 0;
     margin-right: 10rem;
   }
 
+  .mobile-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    height: 5vh;
+    gap: 10px;
+    margin-top: 0.9rem;
+  }
+
+  .mobile-font {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
   .Menu-portfolio {
-    width: fit-content;
-    height: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
     display: flex;
     align-items: center;
     text-align: center;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    width: auto;
+    height: 30px;
   }
 
-  .Menu-about {
-    width: fit-content;
-    height: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+  .bgcolor {
     color: #344563;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  .Menu-contact {
-    width: fit-content;
-    height: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #344563;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    width: auto;
   }
 
   .Headline-section {
@@ -181,7 +171,7 @@
     order: 3;
   }
 
-  .work-section {
+  #work {
     display: grid;
     grid-template-columns: 80%;
     grid-template-rows: 1.5fr 0.5fr 1.5fr auto;
@@ -265,7 +255,7 @@
   }
 
   /* About me Section */
-  .about-myself-section {
+  #about {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -396,7 +386,8 @@
     width: auto;
     height: 48px;
     margin-top: 8px;
-    border-radius: 1px solid #fff;
+    border: 1px solid #fff;
+    border-radius: 1px;
   }
 
   .drp_txt {
@@ -409,11 +400,10 @@
 
   hr {
     gap: 0;
-    height: 1;
     margin: 0;
   }
 
-  .contactMe {
+  #contactMe {
     display: flex;
     width: 100%;
     height: 50rem;
@@ -533,5 +523,29 @@
   .normalButtnAbout:active {
     background: #2230d2;
     color: #fff;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .header-background-image {
+    height: 718px;
+    width: 100%;
+    background-image: url(./asset/images/headershape.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position-y: 80px;
+  }
+
+  .Headline-section {
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+  }
+
+  .Headline-section-title,
+  .Headline-section-body {
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
   }
 }
