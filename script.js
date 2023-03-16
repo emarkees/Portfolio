@@ -7,7 +7,7 @@ hamburger.addEventListener('click', () => {
 });
 
 document.querySelectorAll('.menuaction')
-.forEach(n => n.addEventListener('click', () => {
-   hamburger.classList.remove('active');
-   navMenu.classList.remove('active');
-}));
+  .forEach((n) => n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+  }));
