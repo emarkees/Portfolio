@@ -493,6 +493,7 @@ mm {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   padding: 0;
   gap: 10px;
   width: auto;
@@ -1128,3 +1129,31 @@ hr {
   text-decoration: none;	
   position: relative;	
 }	
+
+.card-primary-tags {
+  display: none;
+  flex-direction: row;
+  padding: 6px;
+  gap: 8px;
+}
+
+.modal-tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #ebebff;
+  border-radius: 8px;
+  gap: 16px;
+  padding: 0.1rem 0.6rem;
+  height: 20px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  justify-content: space-around;
+  text-align: center;
+  align-content: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
