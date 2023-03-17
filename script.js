@@ -12,19 +12,14 @@ document.querySelectorAll('.menuaction')
     navMenu.classList.remove('active');
   }));
 
+const closef = document.querySelector('.closehamburger');
 
-  const closef = document.querySelector('.closehamburger');
+const theModal = document.querySelector('#myModal');
+const worksSection = document.querySelector('.work-container');
 
-  closef.addEventListener('click', () => { 
-    theModal.style.display = 'none';
-    
-  });
-
-  
-  const theModal = document.querySelector('#myModal');
-  const closehamburger = document.querySelector('.closehamburger');
-  const worksSection = document.querySelector('.work-container');
-  
+closef.addEventListener('click', () => {
+  theModal.style.display = 'none';
+});
 const data = [
   {
     name: 'Tonic',
@@ -36,54 +31,54 @@ const data = [
       odio, in non placeat voluptas provident vitae, quaerat maxime minus amet. Libero nisi 
       maiores molestias repudiandae natus provident.`,
     featuredImage: './asset/images/avocado.svg',
-      technologies: ['html', 'css', 'javaScript'],
-      linkToLive: 'https://alexisjw.github.io/set-up-myFirst-mobile/',
-      linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
-      cardNo: '#first-card',
-    },
-    {
-      name: 'Multi-Post Stories',
-      shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto 
+    technologies: ['html', 'css', 'javaScript'],
+    linkToLive: 'https://alexisjw.github.io/set-up-myFirst-mobile/',
+    linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
+    cardNo: '#first-card',
+  },
+  {
+    name: 'Multi-Post Stories',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto 
       mollitia, earum fugiat possimus expedita! Qui nostrum blanditiis est, cupiditate autem 
       fugiat non consequatur consectetur itaque dolor, quo deserunt sequi.
       Consequuntur placeat, delectus eius nemo veritatis eaque quas. Nulla minima, harum nobis 
       odio, in non placeat voluptas provident vitae, quaerat maxime minus amet. Libero nisi 
       maiores molestias repudiandae natus provident.`,
-      featuredImage: './asset/images/available.svg',
-      technologies: ['html', 'css', 'javaScript'],
-      linkToLive: 'https://alexisjw.github.io/set-up-myFirst-mobile/',
-      linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
-      cardNo: '#second-card',
-    },
-    {
-      name: 'Tonic',
-      shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto 
+    featuredImage: './asset/images/available.svg',
+    technologies: ['html', 'css', 'javaScript'],
+    linkToLive: 'https://alexisjw.github.io/set-up-myFirst-mobile/',
+    linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
+    cardNo: '#second-card',
+  },
+  {
+    name: 'Tonic',
+    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto 
       mollitia, earum fugiat possimus expedita! Qui nostrum blanditiis est, cupiditate autem 
       fugiat non consequatur consectetur itaque dolor, quo deserunt sequi.
       Consequuntur placeat, delectus eius nemo veritatis eaque quas. Nulla minima, harum nobis 
       odio, in non placeat voluptas provident vitae, quaerat maxime minus amet. Libero nisi 
       maiores molestias repudiandae natus provident.`,
     featuredImage: './asset/images/yoga.svg',
-  technologies: ['html', 'css', 'javaScript'],
-  linkToLive: 'https://alexisjw.github.io/set-up-myFirst-mobile/',
-  linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
-  cardNo: '#third-card',
-    },
-    {
-  name: 'Multi-Post Stories',
-  shortDescription: ' daily selection of privately personalized reads; no accounts or sign-ups required.',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    technologies: ['html', 'css', 'javaScript'],
+    linkToLive: 'https://alexisjw.github.io/set-up-myFirst-mobile/',
+    linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
+    cardNo: '#third-card',
+  },
+  {
+    name: 'Multi-Post Stories',
+    shortDescription: ' daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
-   featuredImage: './asset/images/professional.svg',
-   technologies: ['html', 'css', 'javaScript'],
+   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
+    featuredImage: './asset/images/professional.svg',
+    technologies: ['html', 'css', 'javaScript'],
     linkToLive: 'https://alexisjw.github.io/set-up-myFirst-mobile/',
     linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
     cardNo: '#fourth-card',
   },
-  ];
+];
 
 let html = '';
 
@@ -106,7 +101,7 @@ data.forEach((item) => {
         </div>
         <p class="card-primary-body-text">${item.shortDescription}</p> 
         <ul class="card-primary-tag  tag-font">
-        ${item.technologies.map((tech) => `<li class='  modal-tag tag-font' > ${tech}</li>`) .join('')
+        ${item.technologies.map((tech) => `<li class='  modal-tag tag-font' > ${tech}</li>`).join('')
 }
         </ul>
         <div id="action">
@@ -138,5 +133,5 @@ projectButton.forEach((button, index) => {
     linkGit.href = data[index].linkToSource;
 
     modal.style.display = 'block';
-    });
   });
+});
