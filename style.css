@@ -321,21 +321,6 @@ ul li a {
   background: #fff;
 }
 
-mm {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  padding: 16px;
-  gap: 12px;
-  width: 90%;
-  height: auto;
-  top: 12px;
-  background: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-}
-
 .card-background-image {
   display: flex;
   flex-direction: row;
@@ -567,7 +552,6 @@ mm {
   justify-content: space-between;
   align-items: center;
   order: 3;
-  
 }
 
 button {
@@ -599,7 +583,6 @@ button {
   font-style: normal;
   cursor: pointer;
   background-color: #fff;
-
 }
 
 .normalButtn:hover {
@@ -1020,7 +1003,7 @@ hr {
   top: 0;
   z-index: 1001;
   height: 100%;
-  background-color: rgb(0, 0, 0);	
+  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
   overflow: scroll;
 }
@@ -1076,59 +1059,57 @@ hr {
   flex-grow: 0;
 }
 
-.button-in-row {	
-  display: flex;	
-  flex-direction: row;	
+.button-in-row {
+  display: flex;
+  flex-direction: row;
 }
 
-.link-live {	
-  display: flex;	
-  width: 45%;	
-  align-items: center;	
-  text-align: center;	
-  justify-content: center;	
-  list-style-type: none;	
-  cursor: pointer;	
-  text-decoration: none;	
-}	
+.link-live {
+  display: flex;
+  width: 45%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  list-style-type: none;
+  cursor: pointer;
+  text-decoration: none;
+}
 
-.link-git	
-{	
-  display: flex;	
-  width: 50%;	
-  align-items: center;	
-  text-align: center;	
-  justify-content: center;	
-  list-style-type: none;	
-  cursor: pointer;	
-  text-decoration: none;	
-}	
+.link-git {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  list-style-type: none;
+  cursor: pointer;
+  text-decoration: none;
+}
 
-.link-live:hover {	
-  background: #6070ff;	
-  color: #fff;	
-}	
+.link-live:hover {
+  background: #6070ff;
+  color: #fff;
+}
 
-.link-live:active {	
-  background: #2230d2;	
-  color: #fff;	
-}	
+.link-live:active {
+  background: #2230d2;
+  color: #fff;
+}
 
-.modal-live,	
-.modal-git	
-{	
-  display: flex;	
-  width: 100%;	
-  line-height: 20px;	
-  color: #6070ff;	
-  font-size: 15px;	
-  font-weight: 500;	
-  font-family: 'Poppins', sans-serif;	
-  font-style: normal;	
-  flex-wrap: wrap;	
-  text-decoration: none;	
-  position: relative;	
-}	
+.modal-live,
+.modal-git {
+  display: flex;
+  width: 100%;
+  line-height: 20px;
+  color: #6070ff;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  flex-wrap: wrap;
+  text-decoration: none;
+  position: relative;
+}
 
 .card-primary-tags {
   display: none;
