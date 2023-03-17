@@ -101,8 +101,7 @@ data.forEach((item) => {
         </div>
         <p class="card-primary-body-text">${item.shortDescription}</p> 
         <ul class="card-primary-tag  tag-font">
-        ${item.technologies.map((tech) => `<li class='  modal-tag tag-font' > ${tech}</li>`).join('')
-}
+        ${item.technologies.map((tech) => `<li class='  modal-tag tag-font' > ${tech}</li>`).join('')}
         </ul>
         <div id="action">
           <button type="button" class="normalButtn"> See project</button>
