@@ -134,3 +134,61 @@ projectButton.forEach((button, index) => {
     modal.style.display = 'block';
   });
 });
+
+/*e-mail validity*/
+
+const form = document.querySelector('form');
+const email = document.getElementById('mail');
+const emailError  = document.querySelector('#mail + span.error')
+
+email.addEventListener('input', (event) => {
+  if (email.validity.valid) {
+    emailError.textContent = "";
+    emailError.className = 'error';
+  }else showError('');
+});
+
+/* check validity before submission*/
+
+form.addEventListener('submit', (event) => {
+  if (!email.validity.valid) {
+    showError();
+
+    event.preventDefault();
+  }
+});
+
+function showError() {
+  if (email.validity.valueMissing) {
+    emailError.textContent = "Enter you email address";
+  } else if (email.validity.typeMismatch) {
+    emailError.textContent = "Enter the correct format";
+  }else if (email.validity.tooShort) {
+    emailError.textContent = `Email should be at least ${email.minLength} characters; you entered ${email.value.length}.`;
+  }
+  emailError.className = "error active";
+}
+
+/* LOCAL STORAGE */
+
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const y = '__storage_test__';
+    storage.setItem(y, y);
+    storage.removeItem(y);
+    return true;
+  } catch (e) {
+    return (
+      e.instanceof.DOMException && 
+      (e.code === 22 || 
+        e.code === 1014 ||
+        e.name === 'QuotaExceededError' ||
+        e.name === 'NS_ERROR_DOM_QUOTA_REACHED'
+      ) &&
+      storage &&
+      storage.length !==0
+    );
+  }
+}
