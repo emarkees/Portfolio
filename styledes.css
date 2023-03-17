@@ -515,7 +515,8 @@
     background-color: #fff;
   }
 
-  .normalButtnAbout:hover {
+  .normalButtnAbout:hover,
+  .bgcolor:hover {
     background: #6070ff;
     color: #fff;
   }
