@@ -74,12 +74,9 @@ document.querySelectorAll('.menuaction')
     {
       name: 'Multi-Post Stories',
       shortDescription: ' daily selection of privately personalized reads; no accounts or sign-ups required.',
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto 
-      mollitia, earum fugiat possimus expedita! Qui nostrum blanditiis est, cupiditate autem 
-      fugiat non consequatur consectetur itaque dolor, quo deserunt sequi.
-      Consequuntur placeat, delectus eius nemo veritatis eaque quas. Nulla minima, harum nobis 
-      odio, in non placeat voluptas provident vitae, quaerat maxime minus amet. Libero nisi 
-      maiores molestias repudiandae natus provident.`,
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
       featuredImage: './asset/images/professional.svg',
       technologies: ['html', 'css', 'javaScript'],
       linkToLive: 'https://alexisjw.github.io/set-up-myFirst-mobile/',
@@ -128,7 +125,7 @@ document.querySelectorAll('.menuaction')
       const modal = document.querySelector('.modal');
       const title = modal.querySelector('.primary-title');
       const img = modal.querySelector('img.card-background-image');
-      const details = modal.querySelector('.card-primary-body-text ');
+      const details = modal.querySelector('.modal-primary-body-text ');
       const technologie = modal.querySelector('.card-primary-tag');
       const linkLiveDemo = modal.querySelector('a.link-live');
       const linkGit = modal.querySelector('a.link-git');
