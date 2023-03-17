@@ -33,7 +33,7 @@ const data = [
     featuredImage: './asset/images/avocado.svg',
     technologies: ['html', 'css', 'javaScript'],
     linkToLive: 'https://emarkees.github.io/Portfolio/',
-    linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
+    linkToSource: 'https://github.com/emarkees/Portfolio.git',
     cardNo: '#first-card',
   },
   {
@@ -48,7 +48,7 @@ const data = [
     featuredImage: './asset/images/available.svg',
     technologies: ['html', 'css', 'javaScript'],
     linkToLive: 'https://emarkees.github.io/Portfolio/',
-    linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
+    linkToSource: 'https://github.com/emarkees/Portfolio.git',
     cardNo: '#second-card',
   },
   {
@@ -63,7 +63,7 @@ const data = [
     featuredImage: './asset/images/yoga.svg',
     technologies: ['html', 'css', 'javaScript'],
     linkToLive: 'https://emarkees.github.io/Portfolio/',
-    linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
+    linkToSource: 'https://github.com/emarkees/Portfolio.git',
     cardNo: '#third-card',
   },
   {
@@ -75,7 +75,7 @@ const data = [
     featuredImage: './asset/images/professional.svg',
     technologies: ['html', 'css', 'javaScript'],
     linkToLive: 'https://emarkees.github.io/Portfolio/',
-    linkToSource: 'https://github.com/AlexisJW/set-up-myFirst-mobile',
+    linkToSource: 'https://github.com/emarkees/Portfolio.git',
     cardNo: '#fourth-card',
   },
 ];
