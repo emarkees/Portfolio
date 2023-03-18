@@ -516,7 +516,7 @@
   }
 
   .normalButtnAbout:hover,
-  .bgcolor:hover {
+  .Menu-portfolio:hover {
     background: #6070ff;
     color: #fff;
   }
@@ -628,4 +628,16 @@
     gap: 8px;
     margin-top: 0;
   }
+}
+
+.error {
+  width: 100%;
+  padding: 0;
+  color: rgb(212, 31, 31);
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
 }
