@@ -134,3 +134,41 @@ projectButton.forEach((button, index) => {
     modal.style.display = 'block';
   });
 });
+
+/*e-mail validity*/
+
+const emailError = document.querySelector("#mail + span.error");
+const form = document.getElementById('contact-form');
+const email = document.getElementById('mail');
+const error  = document.querySelector('#mail + span.error')
+
+email.addEventListener("input", (event) => {
+  if (email.validity.valid) {
+    emailError.textContent = "";
+    emailError.className = "error";
+  } else {
+    showError();
+  }
+});
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (!email.validity.valid) {
+    showError();
+  } else if (showError()) {
+    form.submit();
+  }
+});
+
+function showError() {
+  emailError.className = "error active";
+  if (email.validity.valueMissing) {
+    emailError.textContent = "You need to enter an email address.";
+  } else if (email.validity.typeMismatch) {
+    emailError.textContent = "Entered value needs to be an email address.";
+  } else if (email.value !== email.value.toLowerCase()) {
+    emailError.textContent = 'E-mail must be in lowercase 😉';
+    return false;
+  }
+  return true;
+}
