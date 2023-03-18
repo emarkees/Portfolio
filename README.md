@@ -65,6 +65,7 @@ This project was made with:
 
 - **Response and Accessible website**
 - **Contact Project Information**
+- **pop-up window screen**
 
 ### 🚀 Live Demo  <a name="Live Demo"></a>
 - [Live demo](https://emarkees.github.io/Portfolio/)
