@@ -135,14 +135,27 @@ projectButton.forEach((button, index) => {
   });
 });
 
-/*e-mail validity*/
+/* e-mail validity */
 
 const emailError = document.querySelector('#mail + span.error');
 const form = document.getElementById('contact-form');
 const email = document.getElementById('mail');
-const error  = document.querySelector('#mail + span.error')
+
+function showError() {
+  emailError.className = 'error active';
+  if (email.validity.valueMissing) {
+    emailError.textContent = 'You need to enter an email address.';
+  } else if (email.validity.typeMismatch) {
+    emailError.textContent = 'Entered value needs to be an email address.';
+  } else if (email.value !== email.value.toLowerCase()) {
+    emailError.textContent = 'E-mail must be in lowercase 😉';
+    return false;
+  }
+  return true;
+}
 
 email.addEventListener('input', (event) => {
+  event.preventDefault();
   if (email.validity.valid) {
     emailError.textContent = '';
     emailError.className = 'error';
@@ -159,16 +172,3 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
-
-function showError() {
-  emailError.className = 'error active';
-  if (email.validity.valueMissing) {
-    emailError.textContent = 'You need to enter an email address.';
-  } else if (email.validity.typeMismatch) {
-    emailError.textContent = 'Entered value needs to be an email address.';
-  } else if (email.value !== email.value.toLowerCase()) {
-    emailError.textContent = 'E-mail must be in lowercase 😉';
-    return false;
-  }
-  return true;
-}
