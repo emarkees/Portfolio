@@ -84,27 +84,27 @@ let html = '';
 
 data.forEach((item) => {
   html += `
-    <div class="card-section" id="${item.cardNo}">
-      <div class="card-section-background-image">
-        <img src="${item.featuredImage}" alt="Avocado" class="card-background-image">
+    <div class='card-section' id='${item.cardNo}'>
+      <div class='card-section-background-image'>
+        <img src='${item.featuredImage}' alt='Avocado' class='card-background-image'>
       </div>
-      <div class="card-text-section">
-        <div class="modal-primary-text">
-          <h1 class="primary-title">${item.name}</h1>
-          <ul class="card-primary-text-frame">
-            <li><h1 class="client">CANOPY</h1></li>
-            <span class="span"></span>
-            <li><h1 class="role">Back End Dev</h1></li>
-            <span class="span"></span>
-            <li><h1 class="year">2015</h1></li>
+      <div class='card-text-section'>
+        <div class='modal-primary-text'>
+          <h1 class='primary-title'>${item.name}</h1>
+          <ul class='card-primary-text-frame'>
+            <li><h1 class='client'>CANOPY</h1></li>
+            <span class='span'></span>
+            <li><h1 class='role'>Back End Dev</h1></li>
+            <span class='span'></span>
+            <li><h1 class='year'>2015</h1></li>
           </ul>
         </div>
-        <p class="card-primary-body-text">${item.shortDescription}</p> 
-        <ul class="card-primary-tag  tag-font">
+        <p class='card-primary-body-text'>${item.shortDescription}</p> 
+        <ul class='card-primary-tag  tag-font'>
         ${item.technologies.map((tech) => `<li class='  modal-tag tag-font' > ${tech}</li>`).join('')}
         </ul>
-        <div id="action">
-          <button type="button" class="normalButtn"> See project</button>
+        <div id='action'>
+          <button type='button' class='normalButtn'> See project</button>
         </div>
       </div>
     </div>
@@ -137,21 +137,21 @@ projectButton.forEach((button, index) => {
 
 /*e-mail validity*/
 
-const emailError = document.querySelector("#mail + span.error");
+const emailError = document.querySelector('#mail + span.error');
 const form = document.getElementById('contact-form');
 const email = document.getElementById('mail');
 const error  = document.querySelector('#mail + span.error')
 
-email.addEventListener("input", (event) => {
+email.addEventListener('input', (event) => {
   if (email.validity.valid) {
-    emailError.textContent = "";
-    emailError.className = "error";
+    emailError.textContent = '';
+    emailError.className = 'error';
   } else {
     showError();
   }
 });
 
-form.addEventListener("submit", (event) => {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
   if (!email.validity.valid) {
     showError();
@@ -161,11 +161,11 @@ form.addEventListener("submit", (event) => {
 });
 
 function showError() {
-  emailError.className = "error active";
+  emailError.className = 'error active';
   if (email.validity.valueMissing) {
-    emailError.textContent = "You need to enter an email address.";
+    emailError.textContent = 'You need to enter an email address.';
   } else if (email.validity.typeMismatch) {
-    emailError.textContent = "Entered value needs to be an email address.";
+    emailError.textContent = 'Entered value needs to be an email address.';
   } else if (email.value !== email.value.toLowerCase()) {
     emailError.textContent = 'E-mail must be in lowercase 😉';
     return false;
