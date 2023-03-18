@@ -172,3 +172,27 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+// Preserve data in browser
+
+const formName = document.getElementById('name');
+const formEmail = document.getElementById('mail');
+const formMessage = document.getElementById('textarea');
+
+const savedData = localStorage.getItem('formData');
+
+if (savedData) {
+  const { name, email, message } = JSON.parse(savedData);
+  formName.value = name;
+  formEmail.value = email;
+  formMessage.value = message;
+}
+
+form.addEventListener('input', () => {
+  const formData = {
+    name: formName.value,
+    email: formEmail.value,
+    message: formMessage.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
