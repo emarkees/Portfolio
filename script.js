@@ -116,7 +116,7 @@ worksSection.innerHTML = html;
 const projectButton = document.querySelectorAll('.normalButtn');
 
 projectButton.forEach((button, index) => {
-  button.addEventListener('click', () => {
+  button.addEventListener('Click', () => {
     const modal = document.querySelector('.modal');
     const title = modal.querySelector('.primary-title');
     const img = modal.querySelector('img.card-background-image');
@@ -154,7 +154,7 @@ function showError() {
   return true;
 }
 
-email.addEventListener('input', (event) => {
+email.addEventListener('Input', (event) => {
   event.preventDefault();
   if (email.validity.valid) {
     emailError.textContent = '';
