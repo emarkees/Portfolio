@@ -4,6 +4,7 @@
     height: auto;
     margin: 0;
     background: #f4f5f7;
+    
   }
 
   .header-background-image {
@@ -20,12 +21,14 @@
 
   .Nav-bar {
     display: flex;
+    position: fixed;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     height: 10vh;
     width: 100%;
     list-style-type: none;
+    background: #fff;
   }
 
   .hamburger {
