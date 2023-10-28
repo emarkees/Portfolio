@@ -20,63 +20,74 @@ const worksSection = document.querySelector('.work-container');
 closef.addEventListener('click', () => {
   theModal.style.display = 'none';
 });
+
+// Get all the dropdown hamburger icons and dropdowns
+const skillList = document.querySelector('.skillList');
+const dropdownHamburgers = document.querySelectorAll('.dropdown_hamburger');
+const dropdowns = document.querySelectorAll('.dropdown');
+
+dropdownHamburgers.forEach((hamburger, index) => {
+  hamburger.addEventListener('click', () => {
+    if (dropdowns[index].style.display === 'flex') {
+      dropdowns[index].style.display = 'none';
+      hamburger.querySelector('.fa-angle-right').classList.remove('rotate');
+    } else {
+      dropdowns[index].style.display = 'flex';
+      hamburger.querySelector('.fa-angle-right').classList.add('rotate');
+    }
+  });
+});
+
 const data = [
   {
-    name: 'Tonic',
-    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto 
-     mollitia, earum fugiat possimus expedita! Qui nostrum blanditiis est, cupiditate autem 
-      fugiat non consequatur consectetur itaque dolor, quo deserunt sequi.
-      Consequuntur placeat, delectus eius nemo veritatis eaque quas. Nulla minima, harum nobis 
-      odio, in non placeat voluptas provident vitae, quaerat maxime minus amet. Libero nisi 
-      maiores molestias repudiandae natus provident.`,
-    featuredImage: './asset/images/avocado.svg',
+    name: 'Creative Summit',
+    short_description: 'A joyful summit where we believe in the value of openness and sharing to create a positive change.',
+    description: `A joyful summit where we believe in the value of openness and sharing to create a positive change with people from over 80 countries is taking place in Octber, in Nigeria.`,
+    featured_image: './asset/images/Conference.png',
     technologies: ['html', 'css', 'javaScript'],
-    linkToLive: 'https://emarkees.github.io/Portfolio/',
-    linkToSource: 'https://github.com/emarkees/Portfolio.git',
-    cardNo: '#first-card',
+    link_to_live: 'https://emarkees.github.io/Conference-page',
+    link_to_source: 'https://github.com/emarkees/Conference-page',
+    card_no: '1',
+  },
+  {
+    name: 'Math Magician',
+    short_description: 'This is a website for all fans of mathematics. To make simple calculations, read a random math-related quote.',
+    description: `Math Magician is a website for all fans of mathematics, Statistic and any other related subject that involve caculation. It is a Single Page App (SPA) that allows users to make simple calculations and also read a random edifying quotes.`,
+    featured_image: './asset/images/Math_img.jpg',
+    technologies: ['html', 'css', 'javaScript'],
+    link_to_live: 'https://mathematical-calculator-06bp.onrender.com',
+    link_to_source: 'https://github.com/emarkees/math-magician',
+    card_no: '2',
+  },
+  {
+    name: 'Stocks',
+    short_description: 'This App shows real time stock quotes base on the price, change percentages and other parameters.',
+    description: 'This App is developed to show real time stock quotes base on the price, change percentages and other parameters. It is design to determine how the market trends moves.',
+    featured_image: './asset/images/stock.jpg',
+    technologies: ['html', 'css', 'javaScript'],
+    link_to_live: 'https://stock-quotes.onrender.com',
+    link_to_source: 'https://github.com/emarkees/stocks.git',
+    card_no: '3',
+  },
+  {
+    name: 'Doctor Appointmnet',
+    short_description: ' daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, of type and scrambled it 1960s. `,
+    featured_image: './asset/images/professional.svg',
+    technologies: ['html', 'css', 'javaScript'],
+    link_to_live: 'https://emarkees.github.io/Portfolio/',
+    link_to_source: 'https://github.com/emarkees/confrence.git',
+    card_no: '4',
   },
   {
     name: 'Multi-Post Stories',
-    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto 
-      mollitia, earum fugiat possimus expedita! Qui nostrum blanditiis est, cupiditate autem 
-      fugiat non consequatur consectetur itaque dolor, quo deserunt sequi.
-      Consequuntur placeat, delectus eius nemo veritatis eaque quas. Nulla minima, harum nobis 
-      odio, in non placeat voluptas provident vitae, quaerat maxime minus amet. Libero nisi 
-      maiores molestias repudiandae natus provident.`,
-    featuredImage: './asset/images/available.svg',
+    short_description: ' daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, type and scrambled it 1960s. `,
+    featured_image: './asset/images/professional.svg',
     technologies: ['html', 'css', 'javaScript'],
-    linkToLive: 'https://emarkees.github.io/Portfolio/',
-    linkToSource: 'https://github.com/emarkees/Portfolio.git',
-    cardNo: '#second-card',
-  },
-  {
-    name: 'Tonic',
-    shortDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto 
-      mollitia, earum fugiat possimus expedita! Qui nostrum blanditiis est, cupiditate autem 
-      fugiat non consequatur consectetur itaque dolor, quo deserunt sequi.
-      Consequuntur placeat, delectus eius nemo veritatis eaque quas. Nulla minima, harum nobis 
-      odio, in non placeat voluptas provident vitae, quaerat maxime minus amet. Libero nisi 
-      maiores molestias repudiandae natus provident.`,
-    featuredImage: './asset/images/yoga.svg',
-    technologies: ['html', 'css', 'javaScript'],
-    linkToLive: 'https://emarkees.github.io/Portfolio/',
-    linkToSource: 'https://github.com/emarkees/Portfolio.git',
-    cardNo: '#third-card',
-  },
-  {
-    name: 'Multi-Post Stories',
-    shortDescription: ' daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-
-   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
-    featuredImage: './asset/images/professional.svg',
-    technologies: ['html', 'css', 'javaScript'],
-    linkToLive: 'https://emarkees.github.io/Portfolio/',
-    linkToSource: 'https://github.com/emarkees/Portfolio.git',
-    cardNo: '#fourth-card',
+    link_to_live: 'https://emarkees.github.io/Portfolio/',
+    link_to_source: 'https://github.com/emarkees/Portfolio.git',
+    card_no: '#fifth-card',
   },
 ];
 
@@ -84,9 +95,9 @@ let html = '';
 
 data.forEach((item) => {
   html += `
-    <div class='card-section' id='${item.cardNo}'>
+    <div class='card-section' id='${item.card_no}'>
       <div class='card-section-background-image'>
-        <img src='${item.featuredImage}' alt='Avocado' class='card-background-image'>
+        <img src='${item.featured_image}' alt='Avocado' class='card-background-image'>
       </div>
       <div class='card-text-section'>
         <div class='modal-primary-text'>
@@ -99,7 +110,7 @@ data.forEach((item) => {
             <li><h1 class='year'>2015</h1></li>
           </ul>
         </div>
-        <p class='card-primary-body-text'>${item.shortDescription}</p> 
+        <p class='card-primary-body-text'>${item.short_description}</p> 
         <ul class='card-primary-tag  tag-font'>
         ${item.technologies.map((tech) => `<li class='  modal-tag tag-font' > ${tech}</li>`).join('')}
         </ul>
@@ -119,19 +130,19 @@ projectButton.forEach((button, index) => {
   button.addEventListener('click', () => {
     const modal = document.querySelector('.modal');
     const title = modal.querySelector('.primary-title');
-    const img = modal.querySelector('img.card-background-image');
+    const img = modal.querySelector('.card-background-image');
     const details = modal.querySelector('.modal-primary-body-text ');
     const technologie = modal.querySelector('.modal-tag');
     const linkLiveDemo = modal.querySelector('a.link-live');
     const linkGit = modal.querySelector('a.link-git');
     title.textContent = data[index].name;
-    img.src = data[index].featuredImage;
+    img.src = data[index].featured_image;
     details.textContent = data[index].description;
     technologie.innerHTML = data[index].technologies.map((item) => `<li>${item}</li>`).join('');
-    linkLiveDemo.href = data[index].linkToLive;
-    linkGit.href = data[index].linkToSource;
+    linkLiveDemo.href = data[index].link_to_live;
+    linkGit.href = data[index].link_to_source;
 
-    modal.style.display = 'block';
+    modal.style.display = 'flex';
   });
 });
 

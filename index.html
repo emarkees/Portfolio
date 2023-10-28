@@ -5,11 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" integrity="sha512-XJ3ntWHl40opEiE+6dGhfK9NAKOCELrpjiBRQKtu6uJf9Pli8XY+Hikp7rlFzY4ElLSFtzjx9GGgHql7PLSeog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link  type="text/javascript" src="Script.js">
-    <link rel="stylesheet" href="styledes.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" integrity="sha512-XJ3ntWHl40opEiE+6dGhfK9NAKOCELrpjiBRQKtu6uJf9Pli8XY+Hikp7rlFzY4ElLSFtzjx9GGgHql7PLSeog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link  type="text/javascript" src="Script.js">
+  <link rel="stylesheet" href="styledes.css">
   <title>Document</title>
 </head>
 <body>
@@ -50,22 +50,19 @@
       </div>
       <div class="social-section-icon"> <!-- review-->
         <ul class="icons">
-          <li><a href="twitter.com/Mc_Emarkees" class="fa-brands fa-twitter">""</a></li>
-          <li><a href="github.com/emarkees" class="fa-brands fa-github"></a></li>
-          <li><a href="linkedin.com" class="fa-brands fa-linkedin-in"></a></li>
-          <li><a href="medium.com" class="fa-brands fa-medium"></a></li>
-          <li><a href="angellist.com" class="fa-brands fa-angellist"></a></li>
+          <li><a href="twitter.com/Mc_Emarkees" class="fa-brands fa-twitter fa-xm"></a></li>
+          <li><a href="github.com/emarkees" class="fa-brands fa-github fa-xm"></a></li>
+          <li><a href="https://www.linkedin.com/in/adeyemi-olusola" class="fa-brands fa-linkedin-in fa-xm"></a></li>
+          <li><a href="https://medium.com/@olusolaadeyemi8" class="fa-brands fa-medium fa-xm"></a></li>
+          <li><a href="https://wellfound.com/u/adeyemi-olusola" class="fa-brands fa-xm fa-angellist"></a></li>
         </ul>
       </div>
     </div>
   </section>
 
   <!-- Work Section-->
-  <div class="work-container" id="works">
-
-  </div>  
+  <div class="work-container" id="works"></div>  
   <section id="about">
-
     <div class="About-top">
       <h1 class="about_header_text">
         About  Myself
@@ -88,7 +85,8 @@
         </div>
       </div>
       <div id="action">
-        <button type="button" class="normalButnAbout"> Get my resume</button>
+        <button type="button" class="normalButnAbout"> Get my resume
+        </button>
       </div>
       
     </div>
@@ -98,10 +96,10 @@
         <div id="dropdown_header">
           <h3 class="drp_text">Languages</h3>
           <i class="dropdown_hamburger">
-            <i class="fa-solid fa-angle-down"></i>
+            <i class="fa-solid fa-angle-right"></i>
           </i>
         </div>
-        <div class="dropdown">
+        <div class="dropdown" id="dropdown">
           <div id="java_dropdown">
             <img src="./asset/About/javaScript.svg" alt="Javascript Logo" class="image">
             <h4 class="drp_txt">JavaScript</h4>
@@ -116,7 +114,7 @@
           </div>        
         </div>         
       </div>
-      
+      <hr class="hr"></hr>
       <div class="dropdown_container">
         <div id="dropdown_header">
           <h3 class="drp_text">Frameworks</h3>
@@ -124,6 +122,20 @@
             <i class="fa-solid fa-angle-right"></i>
           </i>
         </div>
+        <div class="dropdown" id="dropdown">
+          <div id="java_dropdown">
+            <img src="./asset/About/javaScript.svg" alt="Javascript Logo" class="image">
+            <h4 class="drp_txt">JavaScript</h4>
+          </div>
+          <div id="java_dropdown">
+            <img src="./asset/About/Html.svg" alt="Html Logo" class="image">
+            <h4 class="drp_txt">HTML</h4>
+          </div>
+          <div id="java_dropdown">
+            <img src="./asset/About/Css.svg" alt="Css Logo" class="image">
+            <h4 class="drp_txt">CSS</h4>
+          </div>        
+        </div>  
       </div>
       <hr class="hr"></hr>
       <div class="dropdown_container">
@@ -133,6 +145,14 @@
             <i class="fa-solid fa-angle-right"></i>
           </i>
         </div>
+        <div class="dropdown" id="dropdown">
+          <ul>
+            <li>Teamwork</li>
+            <li>Communication</li>
+            <li>Project Management</li>
+            <!-- Add more skills as needed -->
+          </ul>     
+        </div>         
       </div>
       <hr class="hr"></hr>
       

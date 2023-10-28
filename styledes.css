@@ -173,16 +173,17 @@
 
   .work-container {
     display: grid;
-    grid-template-columns: 80%;
-    grid-template-rows: 1.5fr 0.5fr 1.5fr auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    margin: 3rem 2rem;
     align-items: center;
     justify-content: center;
     padding: 0;
-    width: 100%;
+    width: auto;
     height: auto;
   }
 
-  .card-section {
+  .card-scion {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -197,9 +198,9 @@
 
   .card-background-image {
     align-items: flex-start;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
+    padding: 0;
+    width: 60%;
+    height: auto;
     flex: 50%;
   }
 
@@ -217,9 +218,11 @@
 
   .card-primary-text {
     align-items: flex-start;
-    gap: 10px;
-    width: 80%;
-    height: 40%;
+    justify-content: flex-start;
+    gap: 8px;
+    width: 90%;
+    max-width: 500%;
+    height: 20%;
     order: 0;
   }
 
@@ -260,7 +263,7 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
-    height: 575px;
+    height: 600px;
     border-radius: 0 90px 0 0;
     background: #fff;
     margin-top: 150px;
@@ -269,11 +272,11 @@
   .About-top {
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: 50%;
     flex: 50%;
     gap: 10px;
     height: auto;
-    padding-left: 6rem;
+    padding-left: 3rem;
     margin-top: 6.5rem;
   }
 
@@ -314,12 +317,15 @@
 
   .skillList {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
-    padding-right: 6rem;
-    width: 50%;
+
+    /* padding-right: 6rem; */
+    width: 40%;
     height: auto;
-    margin-top: 5.5rem;
+    max-height: 500px;
+    right: 100px;
   }
 
   .drp_text {
@@ -327,6 +333,7 @@
     align-items: flex-start;
     width: fit-content;
     margin-left: 10px;
+    height: auto;
   }
 
   .dropdown_container {
@@ -345,7 +352,7 @@
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-    height: 70px;
+    height: 72px;
     order: 0;
   }
 
@@ -357,13 +364,19 @@
     float: right;
   }
 
-  .fa-angle-down {
+  .fa-angle-right {
     display: flex;
     align-items: flex-end;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .fa-angle-right.rotate {
+    transform: rotate(90deg);
   }
 
   .dropdown {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: flex-start;
     gap: 12px;
@@ -494,6 +507,22 @@
     align-items: center;
   }
 
+  .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 10px;
+    position: absolute;
+    width: 90%;
+    height: 48px;
+    border: 1px solid#6070ff;
+    border-radius: 8px;
+    list-style-type: none;
+    cursor: pointer;
+  }
+
   #action_contact {
     display: flex;
     width: 100%;
@@ -529,29 +558,30 @@
   .modal {
     display: none;
     position: fixed;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px;
-    gap: 12px;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
-    height: 75%;
-    background-color: rgb(0, 0, 0);
-    background-color: #f4f5f7;
+    opacity: 1;
+    height: auto;
     overflow: scroll;
   }
 
   .modal-content {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 12px;
     gap: 8px;
-    height: auto;
-    flex: 50%;
-    order: 0;
+    width: 75%;
+    max-width: 600px;
+    height: 50%;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     background: #fff;
@@ -563,7 +593,7 @@
     align-items: flex-start;
     padding: 12px;
     gap: 12px;
-    margin: 10px;
+    margin: 10px 2px;
     width: 100%;
     height: auto;
     flex: 50%;
@@ -571,11 +601,12 @@
   }
 
   .modal-primary-body-text {
-    width: 65%;
+    width: 40%;
     height: auto;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    text-align: justify;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
     order: 0;
   }
 
@@ -595,7 +626,7 @@
     align-items: flex-start;
     padding: 0;
     gap: 3px;
-    width: 35%;
+    width: 50%;
     height: 70%;
     order: 1;
   }

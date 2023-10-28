@@ -4,12 +4,17 @@
 
 body {
   height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   background: #f7f7f9;
 }
 
 .header-background-image {
   height: 718px;
   width: 100%;
+  margin: 0;
+  padding: 0;
   border-radius: 0 0 0 75px;
   background: #fff;
   background-image: url(./asset/images/headershape.svg);
@@ -282,7 +287,7 @@ ul li a {
   margin: 0;
 }
 
-#work {
+/* #work {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 1.2fr 0.1fr 1.2fr 0.5fr;
@@ -291,27 +296,25 @@ ul li a {
   gap: 1px;
   width: auto;
   height: auto;
-}
+} */
 
 .work-container {
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 1.2fr 0.1fr 1.2fr 0.5fr;
+  grid-template-rows: 1fr 1fr;
   align-items: center;
   justify-items: center;
-  gap: 1px;
   width: auto;
   height: auto;
+  padding: 0;
+  margin-top: 50px;
+  grid-gap: 50px;
 }
 
 .card-section {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  position: relative;
   align-items: center;
   padding: 12px;
-  gap: 8px;
   width: 90%;
   height: auto;
   flex: 50%;
@@ -324,9 +327,15 @@ ul li a {
 .card-background-image {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 311.5px;
+  height: 256.52px;
   margin: 0;
-  height: 100%;
+}
+
+.card-section-background-image img {
+  width: 100%;
+  height: 256.52px;
+  object-fit: cover; /* This ensures the image fully covers the specified dimensions */
 }
 
 .card-section-background-image {
@@ -339,6 +348,7 @@ ul li a {
   height: auto;
   flex: 50%;
   order: 1;
+  object-fit: cover;
 }
 
 .card-text-section {
@@ -387,7 +397,7 @@ ul li a {
   margin: 0;
   padding: 0;
   width: 80%;
-  height: auto;
+  height: 5rem;
   color: #172b4d;
   flex: none;
   order: 0;
@@ -459,9 +469,15 @@ ul li a {
   flex-grow: 0;
 }
 
+.card-primary-body-text p {
+  width: 311.5px;
+  height: 72px;
+  object-fit: cover;
+}
+
 .card-primary-body-text {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 72px;
   font-size: 15px;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
@@ -642,7 +658,7 @@ button {
   align-items: center;
   gap: 30px;
   width: 100%;
-  height: 1018px;
+  height: auto;
   background: #fff;
   border-radius: 0  75px 0 0;
   margin-top: 40px;
@@ -769,7 +785,7 @@ button {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 72px;
+  height: 50px;
   order: 0;
   flex-grow: 0;
 }
@@ -799,14 +815,20 @@ button {
 }
 
 .dropdown {
-  display: flex;
+  display: none;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 2px;
   gap: 12px;
   width: 100%;
   order: 1;
   flex-grow: 0;
+}
+
+.dropdown.active {
+  left: 0;
+  margin: 0;
+  display: flex;
 }
 
 #java_dropdown {
@@ -862,6 +884,7 @@ hr {
 #contactMe {
   display: flex;
   flex-direction: column;
+  margin-top: 3rem;
   align-items: center;
   justify-items: center;
   max-width: 100%;
@@ -1024,13 +1047,14 @@ hr {
   border-radius: 16px;
   background: #fff;
   z-index: 1001;
+  text-decoration: none;
 }
 
 .closehamburger {
   display: flex;
-  position: relative;
+  position: absolute;
   right: 6%;
-  bottom: 6%;
+  top: 10px;
   font-size: 35px;
   cursor: pointer;
 }
@@ -1044,9 +1068,19 @@ hr {
   height: auto;
 }
 
+.modal-primary-text {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.modal-primary-body-text p {
+  object-fit: cover;
+}
+
 .modal-primary-body-text {
-  width: 100%;
-  height: 100%;
+  width: 317px;
+  height: 200px;
   font-size: 15px;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
