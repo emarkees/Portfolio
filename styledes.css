@@ -5,13 +5,14 @@
     margin: 0;
     background: #f4f5f7;
     scroll-behavior: smooth;
+    background: #50bfe8;
   }
 
   .header-background-image {
     height: 748px;
     width: 100%;
     border-radius: 0 0 0 75px;
-    background: #fff;
+    background: #e850bd;
     background-image: url(./asset/images/header.svg);
     background-repeat: no-repeat;
     background-size: 93% 90%;
@@ -25,10 +26,11 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    height: 10vh;
+    height: 12vh;
     width: 100%;
     list-style-type: none;
     background: #fff;
+    background: #50bfe8;
   }
 
   .hamburger {
@@ -40,13 +42,19 @@
     align-items: center;
     margin-left: 12rem;
     align-content: center;
-    background: #fff;
   }
-
+/* 
   .logo {
     align-items: center;
     -webkit-animation: spin 5s infinite;
     animation: spin 5s infinite;
+  } */
+
+  .new_logo {
+    margin-top: 1rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
   }
 
   @-webkit-keyframes spin {
