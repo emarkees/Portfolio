@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   background: #f7f7f9;
+  background: #50bfe8;
 }
 
 .header-background-image {
@@ -16,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   border-radius: 0 0 0 75px;
-  background: #fff;
+  background: #e850bd;
   background-image: url(./asset/images/headershape.svg);
   background-repeat: no-repeat;
   background-size: 100% 95%;
@@ -55,6 +56,13 @@ body {
   text-decoration: none;
   -webkit-animation: spin 5s infinite;
   animation: spin 5s infinite;
+}
+
+.new_logo {
+  margin-top: 1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 @-webkit-keyframes spin {
@@ -224,6 +232,13 @@ body.blur .menu::after {
   flex: none;
   flex-grow: 0;
   margin-top: 0.5rem;
+}
+
+.new_log {
+  display: none;
+  align-items: center;
+  height: 50%;
+  clip-path: ellipse(35% 50% at 50% 50%);
 }
 
 .social-section {
@@ -749,6 +764,13 @@ button {
   background-color: #fff;
 }
 
+.resume,
+.normalButnAbout {
+  text-decoration: none;
+  background-color: #6070ff;
+  color: #fff;
+}
+
 .normalButnAbout:hover {
   background: #6070ff;
   color: #fff;
@@ -891,7 +913,7 @@ hr {
   height: 49rem;
   border-radius: 75px 0 0 0;
   text-align: center;
-  background: #6070ff;
+  background: #e850bd;
   background-image: url(./asset/Contact/contactimg.svg);
   background-repeat: no-repeat;
   background-size: 90% 90%;
@@ -1027,7 +1049,7 @@ hr {
   z-index: 1001;
   height: 100%;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
   overflow: scroll;
 }
 
